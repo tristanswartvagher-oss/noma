@@ -49,7 +49,56 @@ export function AppProvider({children}:{children:React.ReactNode}){
     setMeal(date,type,recipeId,servings){const r=s.recipes.find(x=>x.id===recipeId);const n=servings||Math.max(1,Math.min(r?.defaultServings||s.householdSize,s.householdSize));setS(x=>({...x,plan:{...x.plan,[date]:{...(x.plan[date]||{}),[type]:{recipeId,servings:n}}}}))},
     removeMeal(date,type){setS(x=>{const day={...(x.plan[date]||{})};delete day[type];return {...x,plan:{...x.plan,[date]:day}}})},
     changeServings(date,type,delta){setS(x=>{const m=x.plan[date]?.[type];if(!m)return x;return {...x,plan:{...x.plan,[date]:{...(x.plan[date]||{}),[type]:{...m,servings:Math.max(1,m.servings+delta)}}}}})},
-    saveFeedback(recipeId,quantity,rating,note,changes){setS(x=>{const old=x.learning[recipeId]||{overallMultiplier:1,ingredientMultipliers:{},notes:[]};const d=quantity==='low'?.08:quantity==='high'?-.08:0;const overallMultiplier=Math.max(.75,Math.min(1.35,old.overallMultiplier+d));const ingredientMultipliers={...old.ingredientMultipliers};Object.entries(changes).forEach(([id,c])=>ingredientMultipliers[id]=Math.max(.7,Math.min(1.5,(ingredientMultipliers[id]||1)+c)));return {...x,learning:{...x.learning,[recipeId]:{overallMultiplier,ingredientMultipliers,rating,notes:note.trim()?[...old.notes.slice(-4),note.trim()]:old.notes}}}}})},
+    saveFeedback(recipeId, quantity, rating, note, changes) {
+  setS(x => {
+    const old = x.learning[recipeId] || {
+      overallMultiplier: 1,
+      ingredientMultipliers: {},
+      notes: [],
+    };
+
+    const d =
+      quantity === 'low'
+        ? 0.08
+        : quantity === 'high'
+        ? -0.08
+        : 0;
+
+    const overallMultiplier = Math.max(
+      0.75,
+      Math.min(1.35, old.overallMultiplier + d)
+    );
+
+    const ingredientMultipliers = {
+      ...old.ingredientMultipliers,
+    };
+
+    Object.entries(changes).forEach(([id, c]) => {
+      ingredientMultipliers[id] = Math.max(
+        0.7,
+        Math.min(
+          1.5,
+          (ingredientMultipliers[id] || 1) + c
+        )
+      );
+    });
+
+    return {
+      ...x,
+      learning: {
+        ...x.learning,
+        [recipeId]: {
+          overallMultiplier,
+          ingredientMultipliers,
+          rating,
+          notes: note.trim()
+            ? [...old.notes.slice(-4), note.trim()]
+            : old.notes,
+        },
+      },
+    };
+  });
+},
     toggleChecked(key){setS(x=>({...x,checked:{...x.checked,[key]:!x.checked[key]}}))},
     toggleAlreadyHave(key){setS(x=>({...x,alreadyHave:{...x.alreadyHave,[key]:!x.alreadyHave[key]}}))},
     setGoals(patch){setS(x=>({...x,goals:{...x.goals,...patch}}))},
