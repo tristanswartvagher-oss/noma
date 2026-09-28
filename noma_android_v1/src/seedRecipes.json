@@ -1,0 +1,2900 @@
+[
+  {
+    "id": "greek_salad",
+    "title": "Salade grecque",
+    "category": "Entrée",
+    "defaultServings": 2,
+    "timeMinutes": 10,
+    "emoji": "🥗",
+    "ingredients": [
+      {
+        "foodId": "tomato",
+        "amount": 250,
+        "unit": "g",
+        "grams": 250
+      },
+      {
+        "foodId": "cucumber",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "feta",
+        "amount": 80,
+        "unit": "g",
+        "grams": 80
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 15,
+        "unit": "g",
+        "grams": 15
+      },
+      {
+        "foodId": "onion",
+        "amount": 40,
+        "unit": "g",
+        "grams": 40
+      }
+    ],
+    "steps": [
+      "Couper les légumes.",
+      "Ajouter la feta et l’oignon.",
+      "Assaisonner avec l’huile d’olive."
+    ],
+    "tags": [
+      "Frais",
+      "Rapide"
+    ]
+  },
+  {
+    "id": "tomato_mozza",
+    "title": "Tomate mozzarella",
+    "category": "Entrée",
+    "defaultServings": 2,
+    "timeMinutes": 8,
+    "emoji": "🍅",
+    "ingredients": [
+      {
+        "foodId": "tomato",
+        "amount": 300,
+        "unit": "g",
+        "grams": 300
+      },
+      {
+        "foodId": "mozzarella",
+        "amount": 125,
+        "unit": "g",
+        "grams": 125
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 10,
+        "unit": "g",
+        "grams": 10
+      }
+    ],
+    "steps": [
+      "Trancher les tomates et la mozzarella.",
+      "Dresser et assaisonner."
+    ],
+    "tags": [
+      "Rapide"
+    ]
+  },
+  {
+    "id": "hummus",
+    "title": "Houmous maison",
+    "category": "Entrée",
+    "defaultServings": 4,
+    "timeMinutes": 10,
+    "emoji": "🧆",
+    "ingredients": [
+      {
+        "foodId": "chickpeas",
+        "amount": 250,
+        "unit": "g",
+        "grams": 250
+      },
+      {
+        "foodId": "sesame",
+        "amount": 25,
+        "unit": "g",
+        "grams": 25
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 20,
+        "unit": "g",
+        "grams": 20
+      },
+      {
+        "foodId": "lemon",
+        "amount": 40,
+        "unit": "g",
+        "grams": 40
+      },
+      {
+        "foodId": "garlic",
+        "amount": 5,
+        "unit": "g",
+        "grams": 5
+      }
+    ],
+    "steps": [
+      "Cuire ou utiliser les pois chiches préparés.",
+      "Mixer tous les ingrédients jusqu’à texture lisse."
+    ],
+    "tags": [
+      "Végétarien"
+    ]
+  },
+  {
+    "id": "lentil_salad",
+    "title": "Salade de lentilles",
+    "category": "Entrée",
+    "defaultServings": 4,
+    "timeMinutes": 25,
+    "emoji": "🥣",
+    "ingredients": [
+      {
+        "foodId": "lentils",
+        "amount": 220,
+        "unit": "g",
+        "grams": 220
+      },
+      {
+        "foodId": "carrot",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      },
+      {
+        "foodId": "onion",
+        "amount": 70,
+        "unit": "g",
+        "grams": 70
+      },
+      {
+        "foodId": "mustard",
+        "amount": 15,
+        "unit": "g",
+        "grams": 15
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 15,
+        "unit": "g",
+        "grams": 15
+      }
+    ],
+    "steps": [
+      "Cuire les lentilles.",
+      "Ajouter les légumes finement coupés.",
+      "Assaisonner."
+    ],
+    "tags": [
+      "Végétarien"
+    ]
+  },
+  {
+    "id": "tuna_avocado",
+    "title": "Avocat au thon",
+    "category": "Entrée",
+    "defaultServings": 2,
+    "timeMinutes": 8,
+    "emoji": "🥑",
+    "ingredients": [
+      {
+        "foodId": "avocado",
+        "amount": 240,
+        "unit": "g",
+        "grams": 240
+      },
+      {
+        "foodId": "tuna",
+        "amount": 140,
+        "unit": "g",
+        "grams": 140
+      },
+      {
+        "foodId": "greek_yogurt",
+        "amount": 40,
+        "unit": "g",
+        "grams": 40
+      },
+      {
+        "foodId": "lemon",
+        "amount": 30,
+        "unit": "g",
+        "grams": 30
+      }
+    ],
+    "steps": [
+      "Mélanger le thon, le yaourt et le citron.",
+      "Garnir les demi-avocats."
+    ],
+    "tags": [
+      "Protéiné",
+      "Rapide"
+    ]
+  },
+  {
+    "id": "egg_mimosa",
+    "title": "Œufs mimosa",
+    "category": "Entrée",
+    "defaultServings": 2,
+    "timeMinutes": 15,
+    "emoji": "🥚",
+    "ingredients": [
+      {
+        "foodId": "egg",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "mayonnaise",
+        "amount": 35,
+        "unit": "g",
+        "grams": 35
+      },
+      {
+        "foodId": "mustard",
+        "amount": 8,
+        "unit": "g",
+        "grams": 8
+      }
+    ],
+    "steps": [
+      "Cuire les œufs durs.",
+      "Mélanger les jaunes avec mayonnaise et moutarde.",
+      "Garnir les blancs."
+    ],
+    "tags": [
+      "Classique"
+    ]
+  },
+  {
+    "id": "zucchini_soup",
+    "title": "Velouté de courgettes",
+    "category": "Entrée",
+    "defaultServings": 4,
+    "timeMinutes": 25,
+    "emoji": "🥒",
+    "ingredients": [
+      {
+        "foodId": "zucchini",
+        "amount": 600,
+        "unit": "g",
+        "grams": 600
+      },
+      {
+        "foodId": "potato",
+        "amount": 180,
+        "unit": "g",
+        "grams": 180
+      },
+      {
+        "foodId": "onion",
+        "amount": 80,
+        "unit": "g",
+        "grams": 80
+      },
+      {
+        "foodId": "cream",
+        "amount": 60,
+        "unit": "g",
+        "grams": 60
+      }
+    ],
+    "steps": [
+      "Cuire les légumes dans l’eau.",
+      "Mixer avec la crème.",
+      "Rectifier l’assaisonnement."
+    ],
+    "tags": [
+      "Léger"
+    ]
+  },
+  {
+    "id": "bruschetta",
+    "title": "Bruschetta tomate",
+    "category": "Entrée",
+    "defaultServings": 4,
+    "timeMinutes": 12,
+    "emoji": "🥖",
+    "ingredients": [
+      {
+        "foodId": "bread",
+        "amount": 240,
+        "unit": "g",
+        "grams": 240
+      },
+      {
+        "foodId": "tomato",
+        "amount": 320,
+        "unit": "g",
+        "grams": 320
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 20,
+        "unit": "g",
+        "grams": 20
+      },
+      {
+        "foodId": "garlic",
+        "amount": 8,
+        "unit": "g",
+        "grams": 8
+      }
+    ],
+    "steps": [
+      "Griller le pain.",
+      "Frotter avec l’ail.",
+      "Ajouter les tomates et l’huile."
+    ],
+    "tags": [
+      "Convivial"
+    ]
+  },
+  {
+    "id": "tabbouleh",
+    "title": "Taboulé",
+    "category": "Entrée",
+    "defaultServings": 4,
+    "timeMinutes": 20,
+    "emoji": "🌿",
+    "ingredients": [
+      {
+        "foodId": "couscous",
+        "amount": 220,
+        "unit": "g",
+        "grams": 220
+      },
+      {
+        "foodId": "tomato",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "cucumber",
+        "amount": 180,
+        "unit": "g",
+        "grams": 180
+      },
+      {
+        "foodId": "lemon",
+        "amount": 50,
+        "unit": "g",
+        "grams": 50
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 20,
+        "unit": "g",
+        "grams": 20
+      }
+    ],
+    "steps": [
+      "Réhydrater la semoule.",
+      "Couper les légumes.",
+      "Mélanger et laisser refroidir."
+    ],
+    "tags": [
+      "Frais"
+    ]
+  },
+  {
+    "id": "carrot_salad",
+    "title": "Carottes râpées citron",
+    "category": "Entrée",
+    "defaultServings": 4,
+    "timeMinutes": 10,
+    "emoji": "🥕",
+    "ingredients": [
+      {
+        "foodId": "carrot",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "lemon",
+        "amount": 50,
+        "unit": "g",
+        "grams": 50
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 15,
+        "unit": "g",
+        "grams": 15
+      },
+      {
+        "foodId": "mustard",
+        "amount": 8,
+        "unit": "g",
+        "grams": 8
+      }
+    ],
+    "steps": [
+      "Râper les carottes.",
+      "Mélanger l’assaisonnement.",
+      "Servir frais."
+    ],
+    "tags": [
+      "Rapide"
+    ]
+  },
+  {
+    "id": "cucumber_yogurt",
+    "title": "Concombre au yaourt",
+    "category": "Entrée",
+    "defaultServings": 4,
+    "timeMinutes": 10,
+    "emoji": "🥒",
+    "ingredients": [
+      {
+        "foodId": "cucumber",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "greek_yogurt",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "lemon",
+        "amount": 30,
+        "unit": "g",
+        "grams": 30
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 10,
+        "unit": "g",
+        "grams": 10
+      }
+    ],
+    "steps": [
+      "Couper le concombre.",
+      "Mélanger au yaourt et au citron.",
+      "Servir bien frais."
+    ],
+    "tags": [
+      "Frais"
+    ]
+  },
+  {
+    "id": "broccoli_salad",
+    "title": "Salade brocoli feta",
+    "category": "Entrée",
+    "defaultServings": 4,
+    "timeMinutes": 18,
+    "emoji": "🥦",
+    "ingredients": [
+      {
+        "foodId": "broccoli",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "feta",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      },
+      {
+        "foodId": "almonds",
+        "amount": 40,
+        "unit": "g",
+        "grams": 40
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 15,
+        "unit": "g",
+        "grams": 15
+      },
+      {
+        "foodId": "lemon",
+        "amount": 30,
+        "unit": "g",
+        "grams": 30
+      }
+    ],
+    "steps": [
+      "Cuire rapidement le brocoli.",
+      "Ajouter feta et amandes.",
+      "Assaisonner."
+    ],
+    "tags": [
+      "Végétarien"
+    ]
+  },
+  {
+    "id": "salmon_toast",
+    "title": "Toast saumon fumé",
+    "category": "Entrée",
+    "defaultServings": 4,
+    "timeMinutes": 10,
+    "emoji": "🥪",
+    "ingredients": [
+      {
+        "foodId": "whole_bread",
+        "amount": 240,
+        "unit": "g",
+        "grams": 240
+      },
+      {
+        "foodId": "smoked_salmon",
+        "amount": 160,
+        "unit": "g",
+        "grams": 160
+      },
+      {
+        "foodId": "cottage",
+        "amount": 120,
+        "unit": "g",
+        "grams": 120
+      },
+      {
+        "foodId": "lemon",
+        "amount": 30,
+        "unit": "g",
+        "grams": 30
+      }
+    ],
+    "steps": [
+      "Griller le pain.",
+      "Tartiner de fromage blanc.",
+      "Ajouter saumon et citron."
+    ],
+    "tags": [
+      "Protéiné"
+    ]
+  },
+  {
+    "id": "stuffed_mushrooms",
+    "title": "Champignons farcis ricotta",
+    "category": "Entrée",
+    "defaultServings": 4,
+    "timeMinutes": 25,
+    "emoji": "🍄",
+    "ingredients": [
+      {
+        "foodId": "mushroom",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "ricotta",
+        "amount": 180,
+        "unit": "g",
+        "grams": 180
+      },
+      {
+        "foodId": "parmesan",
+        "amount": 40,
+        "unit": "g",
+        "grams": 40
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 10,
+        "unit": "g",
+        "grams": 10
+      }
+    ],
+    "steps": [
+      "Retirer les pieds des champignons.",
+      "Farcir de ricotta et parmesan.",
+      "Cuire au four."
+    ],
+    "tags": [
+      "Végétarien"
+    ]
+  },
+  {
+    "id": "cauliflower_soup",
+    "title": "Velouté chou-fleur",
+    "category": "Entrée",
+    "defaultServings": 4,
+    "timeMinutes": 25,
+    "emoji": "🥣",
+    "ingredients": [
+      {
+        "foodId": "cauliflower",
+        "amount": 650,
+        "unit": "g",
+        "grams": 650
+      },
+      {
+        "foodId": "potato",
+        "amount": 180,
+        "unit": "g",
+        "grams": 180
+      },
+      {
+        "foodId": "onion",
+        "amount": 70,
+        "unit": "g",
+        "grams": 70
+      },
+      {
+        "foodId": "cream",
+        "amount": 60,
+        "unit": "g",
+        "grams": 60
+      }
+    ],
+    "steps": [
+      "Cuire les légumes.",
+      "Mixer finement.",
+      "Ajouter la crème."
+    ],
+    "tags": [
+      "Léger"
+    ]
+  },
+  {
+    "id": "chicken_curry",
+    "title": "Poulet curry riz",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 30,
+    "emoji": "🍛",
+    "ingredients": [
+      {
+        "foodId": "chicken",
+        "amount": 600,
+        "unit": "g",
+        "grams": 600
+      },
+      {
+        "foodId": "rice_basmati",
+        "amount": 300,
+        "unit": "g",
+        "grams": 300
+      },
+      {
+        "foodId": "coconut_milk",
+        "amount": 400,
+        "unit": "g",
+        "grams": 400
+      },
+      {
+        "foodId": "onion",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      },
+      {
+        "foodId": "curry_powder",
+        "amount": 15,
+        "unit": "g",
+        "grams": 15
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 10,
+        "unit": "g",
+        "grams": 10
+      }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Faire revenir oignon et poulet.",
+      "Ajouter curry et lait de coco puis mijoter."
+    ],
+    "tags": [
+      "Protéiné",
+      "Familial"
+    ]
+  },
+  {
+    "id": "salmon_rice",
+    "title": "Saumon riz brocoli",
+    "category": "Plat",
+    "defaultServings": 2,
+    "timeMinutes": 25,
+    "emoji": "🍣",
+    "ingredients": [
+      {
+        "foodId": "salmon",
+        "amount": 300,
+        "unit": "g",
+        "grams": 300
+      },
+      {
+        "foodId": "rice_basmati",
+        "amount": 160,
+        "unit": "g",
+        "grams": 160
+      },
+      {
+        "foodId": "broccoli",
+        "amount": 300,
+        "unit": "g",
+        "grams": 300
+      },
+      {
+        "foodId": "lemon",
+        "amount": 30,
+        "unit": "g",
+        "grams": 30
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 8,
+        "unit": "g",
+        "grams": 8
+      }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Cuire le saumon et le brocoli.",
+      "Servir avec le citron."
+    ],
+    "tags": [
+      "Protéiné",
+      "Rapide"
+    ]
+  },
+  {
+    "id": "beef_lasagna",
+    "title": "Lasagnes bolognaise",
+    "category": "Plat",
+    "defaultServings": 6,
+    "timeMinutes": 55,
+    "emoji": "🍝",
+    "ingredients": [
+      {
+        "foodId": "beef_5",
+        "amount": 700,
+        "unit": "g",
+        "grams": 700
+      },
+      {
+        "foodId": "pasta",
+        "amount": 350,
+        "unit": "g",
+        "grams": 350
+      },
+      {
+        "foodId": "tomato_crushed",
+        "amount": 800,
+        "unit": "g",
+        "grams": 800
+      },
+      {
+        "foodId": "onion",
+        "amount": 150,
+        "unit": "g",
+        "grams": 150
+      },
+      {
+        "foodId": "grated_cheese",
+        "amount": 180,
+        "unit": "g",
+        "grams": 180
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 10,
+        "unit": "g",
+        "grams": 10
+      }
+    ],
+    "steps": [
+      "Préparer la sauce bolognaise.",
+      "Monter les couches.",
+      "Cuire au four jusqu’à gratinage."
+    ],
+    "tags": [
+      "Famille",
+      "Batch cooking"
+    ]
+  },
+  {
+    "id": "chili_con_carne",
+    "title": "Chili con carne",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 40,
+    "emoji": "🌶️",
+    "ingredients": [
+      {
+        "foodId": "beef_5",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "kidney_beans",
+        "amount": 260,
+        "unit": "g",
+        "grams": 260
+      },
+      {
+        "foodId": "tomato_crushed",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "corn",
+        "amount": 180,
+        "unit": "g",
+        "grams": 180
+      },
+      {
+        "foodId": "onion",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      },
+      {
+        "foodId": "rice_basmati",
+        "amount": 250,
+        "unit": "g",
+        "grams": 250
+      }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Faire revenir bœuf et oignon.",
+      "Ajouter haricots, maïs et tomate puis mijoter."
+    ],
+    "tags": [
+      "Batch cooking"
+    ]
+  },
+  {
+    "id": "chili_sin_carne",
+    "title": "Chili sin carne",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 35,
+    "emoji": "🫘",
+    "ingredients": [
+      {
+        "foodId": "kidney_beans",
+        "amount": 280,
+        "unit": "g",
+        "grams": 280
+      },
+      {
+        "foodId": "black_beans",
+        "amount": 220,
+        "unit": "g",
+        "grams": 220
+      },
+      {
+        "foodId": "tomato_crushed",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "corn",
+        "amount": 180,
+        "unit": "g",
+        "grams": 180
+      },
+      {
+        "foodId": "onion",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      },
+      {
+        "foodId": "rice_basmati",
+        "amount": 250,
+        "unit": "g",
+        "grams": 250
+      }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Faire revenir l’oignon.",
+      "Ajouter les légumineuses, tomate et maïs."
+    ],
+    "tags": [
+      "Végétarien"
+    ]
+  },
+  {
+    "id": "carbonara",
+    "title": "Pâtes carbonara",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 25,
+    "emoji": "🍝",
+    "ingredients": [
+      {
+        "foodId": "pasta",
+        "amount": 400,
+        "unit": "g",
+        "grams": 400
+      },
+      {
+        "foodId": "egg",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "bacon",
+        "amount": 180,
+        "unit": "g",
+        "grams": 180
+      },
+      {
+        "foodId": "parmesan",
+        "amount": 90,
+        "unit": "g",
+        "grams": 90
+      }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Dorer les lardons.",
+      "Mélanger œufs et parmesan puis assembler hors du feu."
+    ],
+    "tags": [
+      "Classique"
+    ]
+  },
+  {
+    "id": "bolognese",
+    "title": "Spaghetti bolognaise",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 35,
+    "emoji": "🍝",
+    "ingredients": [
+      {
+        "foodId": "pasta",
+        "amount": 400,
+        "unit": "g",
+        "grams": 400
+      },
+      {
+        "foodId": "beef_5",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "tomato_crushed",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "onion",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      },
+      {
+        "foodId": "carrot",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 10,
+        "unit": "g",
+        "grams": 10
+      }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Préparer la sauce au bœuf et tomate.",
+      "Servir ensemble."
+    ],
+    "tags": [
+      "Familial"
+    ]
+  },
+  {
+    "id": "mushroom_risotto",
+    "title": "Risotto champignons",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 35,
+    "emoji": "🍚",
+    "ingredients": [
+      {
+        "foodId": "rice_white",
+        "amount": 320,
+        "unit": "g",
+        "grams": 320
+      },
+      {
+        "foodId": "mushroom",
+        "amount": 400,
+        "unit": "g",
+        "grams": 400
+      },
+      {
+        "foodId": "onion",
+        "amount": 80,
+        "unit": "g",
+        "grams": 80
+      },
+      {
+        "foodId": "parmesan",
+        "amount": 70,
+        "unit": "g",
+        "grams": 70
+      },
+      {
+        "foodId": "butter",
+        "amount": 25,
+        "unit": "g",
+        "grams": 25
+      }
+    ],
+    "steps": [
+      "Faire revenir oignon et champignons.",
+      "Cuire le riz progressivement avec de l’eau ou bouillon.",
+      "Ajouter beurre et parmesan."
+    ],
+    "tags": [
+      "Végétarien"
+    ]
+  },
+  {
+    "id": "red_lentil_dahl",
+    "title": "Dahl de lentilles corail",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 35,
+    "emoji": "🥘",
+    "ingredients": [
+      {
+        "foodId": "red_lentils",
+        "amount": 320,
+        "unit": "g",
+        "grams": 320
+      },
+      {
+        "foodId": "coconut_milk",
+        "amount": 300,
+        "unit": "g",
+        "grams": 300
+      },
+      {
+        "foodId": "tomato_crushed",
+        "amount": 300,
+        "unit": "g",
+        "grams": 300
+      },
+      {
+        "foodId": "onion",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      },
+      {
+        "foodId": "curry_powder",
+        "amount": 15,
+        "unit": "g",
+        "grams": 15
+      },
+      {
+        "foodId": "rice_basmati",
+        "amount": 240,
+        "unit": "g",
+        "grams": 240
+      }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Faire revenir oignon et épices.",
+      "Ajouter lentilles, tomate et coco puis mijoter."
+    ],
+    "tags": [
+      "Végétarien"
+    ]
+  },
+  {
+    "id": "chickpea_curry",
+    "title": "Curry de pois chiches",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 35,
+    "emoji": "🥘",
+    "ingredients": [
+      {
+        "foodId": "chickpeas",
+        "amount": 300,
+        "unit": "g",
+        "grams": 300
+      },
+      {
+        "foodId": "coconut_milk",
+        "amount": 350,
+        "unit": "g",
+        "grams": 350
+      },
+      {
+        "foodId": "tomato_crushed",
+        "amount": 300,
+        "unit": "g",
+        "grams": 300
+      },
+      {
+        "foodId": "spinach",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "rice_basmati",
+        "amount": 240,
+        "unit": "g",
+        "grams": 240
+      },
+      {
+        "foodId": "curry_powder",
+        "amount": 12,
+        "unit": "g",
+        "grams": 12
+      }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Mijoter pois chiches, tomate, coco et curry.",
+      "Ajouter les épinards."
+    ],
+    "tags": [
+      "Végétarien"
+    ]
+  },
+  {
+    "id": "beef_tacos",
+    "title": "Tacos maison",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 30,
+    "emoji": "🌮",
+    "ingredients": [
+      {
+        "foodId": "beef_5",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "tortilla",
+        "amount": 320,
+        "unit": "g",
+        "grams": 320
+      },
+      {
+        "foodId": "tomato",
+        "amount": 250,
+        "unit": "g",
+        "grams": 250
+      },
+      {
+        "foodId": "avocado",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "grated_cheese",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      },
+      {
+        "foodId": "lettuce",
+        "amount": 120,
+        "unit": "g",
+        "grams": 120
+      }
+    ],
+    "steps": [
+      "Cuire le bœuf.",
+      "Préparer les garnitures.",
+      "Assembler les tacos."
+    ],
+    "tags": [
+      "Convivial"
+    ]
+  },
+  {
+    "id": "chicken_wrap",
+    "title": "Wrap poulet avocat",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 25,
+    "emoji": "🌯",
+    "ingredients": [
+      {
+        "foodId": "chicken",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "tortilla",
+        "amount": 320,
+        "unit": "g",
+        "grams": 320
+      },
+      {
+        "foodId": "avocado",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "tomato",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "lettuce",
+        "amount": 120,
+        "unit": "g",
+        "grams": 120
+      },
+      {
+        "foodId": "greek_yogurt",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      }
+    ],
+    "steps": [
+      "Cuire le poulet.",
+      "Préparer les légumes.",
+      "Garnir les tortillas et rouler."
+    ],
+    "tags": [
+      "Rapide"
+    ]
+  },
+  {
+    "id": "salmon_poke",
+    "title": "Poke saumon avocat",
+    "category": "Plat",
+    "defaultServings": 2,
+    "timeMinutes": 25,
+    "emoji": "🥗",
+    "ingredients": [
+      {
+        "foodId": "salmon",
+        "amount": 280,
+        "unit": "g",
+        "grams": 280
+      },
+      {
+        "foodId": "rice_basmati",
+        "amount": 160,
+        "unit": "g",
+        "grams": 160
+      },
+      {
+        "foodId": "avocado",
+        "amount": 140,
+        "unit": "g",
+        "grams": 140
+      },
+      {
+        "foodId": "cucumber",
+        "amount": 150,
+        "unit": "g",
+        "grams": 150
+      },
+      {
+        "foodId": "soy_sauce",
+        "amount": 25,
+        "unit": "g",
+        "grams": 25
+      },
+      {
+        "foodId": "sesame",
+        "amount": 10,
+        "unit": "g",
+        "grams": 10
+      }
+    ],
+    "steps": [
+      "Cuire et refroidir le riz.",
+      "Préparer saumon et légumes.",
+      "Assembler et assaisonner."
+    ],
+    "tags": [
+      "Frais",
+      "Protéiné"
+    ]
+  },
+  {
+    "id": "lorraine_quiche",
+    "title": "Quiche lorraine",
+    "category": "Plat",
+    "defaultServings": 6,
+    "timeMinutes": 55,
+    "emoji": "🥧",
+    "ingredients": [
+      {
+        "foodId": "flour",
+        "amount": 250,
+        "unit": "g",
+        "grams": 250
+      },
+      {
+        "foodId": "butter",
+        "amount": 125,
+        "unit": "g",
+        "grams": 125
+      },
+      {
+        "foodId": "egg",
+        "amount": 300,
+        "unit": "g",
+        "grams": 300
+      },
+      {
+        "foodId": "bacon",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "cream",
+        "amount": 250,
+        "unit": "g",
+        "grams": 250
+      },
+      {
+        "foodId": "grated_cheese",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      }
+    ],
+    "steps": [
+      "Préparer la pâte.",
+      "Mélanger la garniture.",
+      "Cuire jusqu’à coloration."
+    ],
+    "tags": [
+      "Familial"
+    ]
+  },
+  {
+    "id": "dauphinois",
+    "title": "Gratin dauphinois",
+    "category": "Plat",
+    "defaultServings": 6,
+    "timeMinutes": 60,
+    "emoji": "🥔",
+    "ingredients": [
+      {
+        "foodId": "potato",
+        "amount": 1200,
+        "unit": "g",
+        "grams": 1200
+      },
+      {
+        "foodId": "cream",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "milk",
+        "amount": 300,
+        "unit": "g",
+        "grams": 300
+      },
+      {
+        "foodId": "garlic",
+        "amount": 8,
+        "unit": "g",
+        "grams": 8
+      },
+      {
+        "foodId": "grated_cheese",
+        "amount": 120,
+        "unit": "g",
+        "grams": 120
+      }
+    ],
+    "steps": [
+      "Trancher les pommes de terre.",
+      "Disposer avec crème et lait.",
+      "Cuire lentement au four."
+    ],
+    "tags": [
+      "Familial"
+    ]
+  },
+  {
+    "id": "shepherds_pie",
+    "title": "Hachis parmentier",
+    "category": "Plat",
+    "defaultServings": 6,
+    "timeMinutes": 55,
+    "emoji": "🥔",
+    "ingredients": [
+      {
+        "foodId": "beef_5",
+        "amount": 700,
+        "unit": "g",
+        "grams": 700
+      },
+      {
+        "foodId": "potato",
+        "amount": 1200,
+        "unit": "g",
+        "grams": 1200
+      },
+      {
+        "foodId": "milk",
+        "amount": 250,
+        "unit": "g",
+        "grams": 250
+      },
+      {
+        "foodId": "butter",
+        "amount": 40,
+        "unit": "g",
+        "grams": 40
+      },
+      {
+        "foodId": "onion",
+        "amount": 120,
+        "unit": "g",
+        "grams": 120
+      },
+      {
+        "foodId": "grated_cheese",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      }
+    ],
+    "steps": [
+      "Préparer la purée.",
+      "Cuire le bœuf avec l’oignon.",
+      "Monter et gratiner."
+    ],
+    "tags": [
+      "Familial"
+    ]
+  },
+  {
+    "id": "basque_chicken",
+    "title": "Poulet basquaise",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 45,
+    "emoji": "🍗",
+    "ingredients": [
+      {
+        "foodId": "chicken",
+        "amount": 700,
+        "unit": "g",
+        "grams": 700
+      },
+      {
+        "foodId": "pepper",
+        "amount": 400,
+        "unit": "g",
+        "grams": 400
+      },
+      {
+        "foodId": "tomato_crushed",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "onion",
+        "amount": 120,
+        "unit": "g",
+        "grams": 120
+      },
+      {
+        "foodId": "rice_basmati",
+        "amount": 280,
+        "unit": "g",
+        "grams": 280
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 15,
+        "unit": "g",
+        "grams": 15
+      }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Dorer le poulet.",
+      "Mijoter avec poivrons, oignon et tomate."
+    ],
+    "tags": [
+      "Familial"
+    ]
+  },
+  {
+    "id": "asian_beef",
+    "title": "Bœuf sauté asiatique",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 25,
+    "emoji": "🥢",
+    "ingredients": [
+      {
+        "foodId": "beef_5",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "rice_basmati",
+        "amount": 300,
+        "unit": "g",
+        "grams": 300
+      },
+      {
+        "foodId": "broccoli",
+        "amount": 350,
+        "unit": "g",
+        "grams": 350
+      },
+      {
+        "foodId": "pepper",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "soy_sauce",
+        "amount": 50,
+        "unit": "g",
+        "grams": 50
+      },
+      {
+        "foodId": "sesame",
+        "amount": 15,
+        "unit": "g",
+        "grams": 15
+      }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Saisir bœuf et légumes.",
+      "Ajouter sauce soja et sésame."
+    ],
+    "tags": [
+      "Rapide",
+      "Protéiné"
+    ]
+  },
+  {
+    "id": "stir_fry_noodles",
+    "title": "Nouilles sautées poulet",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 25,
+    "emoji": "🍜",
+    "ingredients": [
+      {
+        "foodId": "pasta",
+        "amount": 350,
+        "unit": "g",
+        "grams": 350
+      },
+      {
+        "foodId": "chicken",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "carrot",
+        "amount": 150,
+        "unit": "g",
+        "grams": 150
+      },
+      {
+        "foodId": "pepper",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "zucchini",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "soy_sauce",
+        "amount": 45,
+        "unit": "g",
+        "grams": 45
+      }
+    ],
+    "steps": [
+      "Cuire les nouilles.",
+      "Sauter poulet et légumes.",
+      "Ajouter les nouilles et la sauce soja."
+    ],
+    "tags": [
+      "Rapide"
+    ]
+  },
+  {
+    "id": "couscous_chicken",
+    "title": "Couscous poulet légumes",
+    "category": "Plat",
+    "defaultServings": 6,
+    "timeMinutes": 60,
+    "emoji": "🥘",
+    "ingredients": [
+      {
+        "foodId": "couscous",
+        "amount": 450,
+        "unit": "g",
+        "grams": 450
+      },
+      {
+        "foodId": "chicken",
+        "amount": 800,
+        "unit": "g",
+        "grams": 800
+      },
+      {
+        "foodId": "carrot",
+        "amount": 300,
+        "unit": "g",
+        "grams": 300
+      },
+      {
+        "foodId": "zucchini",
+        "amount": 350,
+        "unit": "g",
+        "grams": 350
+      },
+      {
+        "foodId": "chickpeas",
+        "amount": 250,
+        "unit": "g",
+        "grams": 250
+      },
+      {
+        "foodId": "tomato_crushed",
+        "amount": 350,
+        "unit": "g",
+        "grams": 350
+      }
+    ],
+    "steps": [
+      "Cuire la semoule.",
+      "Mijoter poulet et légumes.",
+      "Ajouter les pois chiches et servir."
+    ],
+    "tags": [
+      "Familial"
+    ]
+  },
+  {
+    "id": "homemade_burger",
+    "title": "Burger maison",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 35,
+    "emoji": "🍔",
+    "ingredients": [
+      {
+        "foodId": "bread",
+        "amount": 320,
+        "unit": "g",
+        "grams": 320
+      },
+      {
+        "foodId": "beef_5",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "grated_cheese",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      },
+      {
+        "foodId": "tomato",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "lettuce",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      },
+      {
+        "foodId": "onion",
+        "amount": 80,
+        "unit": "g",
+        "grams": 80
+      },
+      {
+        "foodId": "potato",
+        "amount": 800,
+        "unit": "g",
+        "grams": 800
+      }
+    ],
+    "steps": [
+      "Cuire les pommes de terre au four.",
+      "Cuire les steaks.",
+      "Assembler les burgers."
+    ],
+    "tags": [
+      "Convivial"
+    ]
+  },
+  {
+    "id": "spanish_omelette",
+    "title": "Tortilla pommes de terre",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 35,
+    "emoji": "🍳",
+    "ingredients": [
+      {
+        "foodId": "egg",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "potato",
+        "amount": 700,
+        "unit": "g",
+        "grams": 700
+      },
+      {
+        "foodId": "onion",
+        "amount": 120,
+        "unit": "g",
+        "grams": 120
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 25,
+        "unit": "g",
+        "grams": 25
+      }
+    ],
+    "steps": [
+      "Cuire doucement pommes de terre et oignon.",
+      "Ajouter les œufs battus.",
+      "Cuire des deux côtés."
+    ],
+    "tags": [
+      "Végétarien"
+    ]
+  },
+  {
+    "id": "pesto_chicken_pasta",
+    "title": "Pâtes pesto poulet",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 25,
+    "emoji": "🍝",
+    "ingredients": [
+      {
+        "foodId": "pasta",
+        "amount": 400,
+        "unit": "g",
+        "grams": 400
+      },
+      {
+        "foodId": "chicken",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "pesto",
+        "amount": 120,
+        "unit": "g",
+        "grams": 120
+      },
+      {
+        "foodId": "tomato",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "parmesan",
+        "amount": 50,
+        "unit": "g",
+        "grams": 50
+      }
+    ],
+    "steps": [
+      "Cuire les pâtes.",
+      "Cuire le poulet.",
+      "Mélanger avec pesto, tomates et parmesan."
+    ],
+    "tags": [
+      "Rapide"
+    ]
+  },
+  {
+    "id": "baked_salmon",
+    "title": "Saumon au four légumes",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 35,
+    "emoji": "🐟",
+    "ingredients": [
+      {
+        "foodId": "salmon",
+        "amount": 600,
+        "unit": "g",
+        "grams": 600
+      },
+      {
+        "foodId": "potato",
+        "amount": 700,
+        "unit": "g",
+        "grams": 700
+      },
+      {
+        "foodId": "zucchini",
+        "amount": 300,
+        "unit": "g",
+        "grams": 300
+      },
+      {
+        "foodId": "broccoli",
+        "amount": 300,
+        "unit": "g",
+        "grams": 300
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 20,
+        "unit": "g",
+        "grams": 20
+      },
+      {
+        "foodId": "lemon",
+        "amount": 40,
+        "unit": "g",
+        "grams": 40
+      }
+    ],
+    "steps": [
+      "Couper les légumes.",
+      "Cuire légumes puis saumon au four.",
+      "Ajouter citron et servir."
+    ],
+    "tags": [
+      "Protéiné"
+    ]
+  },
+  {
+    "id": "quinoa_bowl",
+    "title": "Bowl quinoa légumes feta",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 30,
+    "emoji": "🥗",
+    "ingredients": [
+      {
+        "foodId": "quinoa",
+        "amount": 280,
+        "unit": "g",
+        "grams": 280
+      },
+      {
+        "foodId": "chickpeas",
+        "amount": 220,
+        "unit": "g",
+        "grams": 220
+      },
+      {
+        "foodId": "zucchini",
+        "amount": 250,
+        "unit": "g",
+        "grams": 250
+      },
+      {
+        "foodId": "pepper",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "feta",
+        "amount": 120,
+        "unit": "g",
+        "grams": 120
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 20,
+        "unit": "g",
+        "grams": 20
+      }
+    ],
+    "steps": [
+      "Cuire le quinoa.",
+      "Rôtir les légumes.",
+      "Assembler avec pois chiches et feta."
+    ],
+    "tags": [
+      "Végétarien"
+    ]
+  },
+  {
+    "id": "tofu_stirfry",
+    "title": "Tofu sauté riz légumes",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 25,
+    "emoji": "🥢",
+    "ingredients": [
+      {
+        "foodId": "tofu",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "rice_basmati",
+        "amount": 300,
+        "unit": "g",
+        "grams": 300
+      },
+      {
+        "foodId": "broccoli",
+        "amount": 300,
+        "unit": "g",
+        "grams": 300
+      },
+      {
+        "foodId": "carrot",
+        "amount": 150,
+        "unit": "g",
+        "grams": 150
+      },
+      {
+        "foodId": "soy_sauce",
+        "amount": 50,
+        "unit": "g",
+        "grams": 50
+      },
+      {
+        "foodId": "sesame",
+        "amount": 15,
+        "unit": "g",
+        "grams": 15
+      }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Saisir tofu et légumes.",
+      "Ajouter sauce soja et sésame."
+    ],
+    "tags": [
+      "Végétarien",
+      "Protéiné"
+    ]
+  },
+  {
+    "id": "turkey_meatballs",
+    "title": "Boulettes de dinde tomate",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 40,
+    "emoji": "🍲",
+    "ingredients": [
+      {
+        "foodId": "turkey",
+        "amount": 600,
+        "unit": "g",
+        "grams": 600
+      },
+      {
+        "foodId": "egg",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      },
+      {
+        "foodId": "tomato_crushed",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "pasta",
+        "amount": 350,
+        "unit": "g",
+        "grams": 350
+      },
+      {
+        "foodId": "parmesan",
+        "amount": 50,
+        "unit": "g",
+        "grams": 50
+      },
+      {
+        "foodId": "onion",
+        "amount": 80,
+        "unit": "g",
+        "grams": 80
+      }
+    ],
+    "steps": [
+      "Former les boulettes.",
+      "Les cuire dans la sauce tomate.",
+      "Servir avec les pâtes."
+    ],
+    "tags": [
+      "Protéiné"
+    ]
+  },
+  {
+    "id": "cod_potatoes",
+    "title": "Cabillaud pommes de terre",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 35,
+    "emoji": "🐟",
+    "ingredients": [
+      {
+        "foodId": "cod",
+        "amount": 650,
+        "unit": "g",
+        "grams": 650
+      },
+      {
+        "foodId": "potato",
+        "amount": 900,
+        "unit": "g",
+        "grams": 900
+      },
+      {
+        "foodId": "green_beans",
+        "amount": 400,
+        "unit": "g",
+        "grams": 400
+      },
+      {
+        "foodId": "olive_oil",
+        "amount": 20,
+        "unit": "g",
+        "grams": 20
+      },
+      {
+        "foodId": "lemon",
+        "amount": 40,
+        "unit": "g",
+        "grams": 40
+      }
+    ],
+    "steps": [
+      "Cuire les pommes de terre.",
+      "Cuire le cabillaud et les haricots verts.",
+      "Servir avec citron et huile."
+    ],
+    "tags": [
+      "Léger"
+    ]
+  },
+  {
+    "id": "shrimp_rice",
+    "title": "Riz sauté crevettes",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 25,
+    "emoji": "🍤",
+    "ingredients": [
+      {
+        "foodId": "shrimp",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "rice_basmati",
+        "amount": 320,
+        "unit": "g",
+        "grams": 320
+      },
+      {
+        "foodId": "egg",
+        "amount": 150,
+        "unit": "g",
+        "grams": 150
+      },
+      {
+        "foodId": "peas",
+        "amount": 180,
+        "unit": "g",
+        "grams": 180
+      },
+      {
+        "foodId": "carrot",
+        "amount": 150,
+        "unit": "g",
+        "grams": 150
+      },
+      {
+        "foodId": "soy_sauce",
+        "amount": 45,
+        "unit": "g",
+        "grams": 45
+      }
+    ],
+    "steps": [
+      "Cuire puis refroidir le riz.",
+      "Sauter œuf, crevettes et légumes.",
+      "Ajouter riz et sauce soja."
+    ],
+    "tags": [
+      "Rapide"
+    ]
+  },
+  {
+    "id": "stuffed_zucchini",
+    "title": "Courgettes farcies",
+    "category": "Plat",
+    "defaultServings": 4,
+    "timeMinutes": 45,
+    "emoji": "🥒",
+    "ingredients": [
+      {
+        "foodId": "zucchini",
+        "amount": 1000,
+        "unit": "g",
+        "grams": 1000
+      },
+      {
+        "foodId": "beef_5",
+        "amount": 500,
+        "unit": "g",
+        "grams": 500
+      },
+      {
+        "foodId": "tomato_crushed",
+        "amount": 250,
+        "unit": "g",
+        "grams": 250
+      },
+      {
+        "foodId": "onion",
+        "amount": 80,
+        "unit": "g",
+        "grams": 80
+      },
+      {
+        "foodId": "grated_cheese",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      },
+      {
+        "foodId": "rice_basmati",
+        "amount": 220,
+        "unit": "g",
+        "grams": 220
+      }
+    ],
+    "steps": [
+      "Cuire le riz.",
+      "Farcir les courgettes avec bœuf et tomate.",
+      "Cuire au four et gratiner."
+    ],
+    "tags": [
+      "Familial"
+    ]
+  },
+  {
+    "id": "pancakes",
+    "title": "Pancakes",
+    "category": "Dessert & Encas",
+    "defaultServings": 4,
+    "timeMinutes": 20,
+    "emoji": "🥞",
+    "ingredients": [
+      {
+        "foodId": "flour",
+        "amount": 250,
+        "unit": "g",
+        "grams": 250
+      },
+      {
+        "foodId": "milk",
+        "amount": 300,
+        "unit": "g",
+        "grams": 300
+      },
+      {
+        "foodId": "egg",
+        "amount": 150,
+        "unit": "g",
+        "grams": 150
+      },
+      {
+        "foodId": "sugar",
+        "amount": 30,
+        "unit": "g",
+        "grams": 30
+      },
+      {
+        "foodId": "butter",
+        "amount": 20,
+        "unit": "g",
+        "grams": 20
+      },
+      {
+        "foodId": "baking_powder",
+        "amount": 10,
+        "unit": "g",
+        "grams": 10
+      }
+    ],
+    "steps": [
+      "Mélanger les ingrédients.",
+      "Cuire les pancakes à la poêle.",
+      "Servir chaud."
+    ],
+    "tags": [
+      "Petit-déj"
+    ]
+  },
+  {
+    "id": "overnight_oats",
+    "title": "Overnight oats",
+    "category": "Dessert & Encas",
+    "defaultServings": 1,
+    "timeMinutes": 5,
+    "emoji": "🥣",
+    "ingredients": [
+      {
+        "foodId": "oats",
+        "amount": 70,
+        "unit": "g",
+        "grams": 70
+      },
+      {
+        "foodId": "milk",
+        "amount": 160,
+        "unit": "g",
+        "grams": 160
+      },
+      {
+        "foodId": "skyr",
+        "amount": 120,
+        "unit": "g",
+        "grams": 120
+      },
+      {
+        "foodId": "berries",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      },
+      {
+        "foodId": "honey",
+        "amount": 10,
+        "unit": "g",
+        "grams": 10
+      }
+    ],
+    "steps": [
+      "Mélanger avoine, lait et skyr.",
+      "Réserver une nuit.",
+      "Ajouter fruits et miel."
+    ],
+    "tags": [
+      "Petit-déj",
+      "Protéiné"
+    ]
+  },
+  {
+    "id": "banana_bread",
+    "title": "Banana bread",
+    "category": "Dessert & Encas",
+    "defaultServings": 8,
+    "timeMinutes": 55,
+    "emoji": "🍌",
+    "ingredients": [
+      {
+        "foodId": "banana",
+        "amount": 350,
+        "unit": "g",
+        "grams": 350
+      },
+      {
+        "foodId": "flour",
+        "amount": 220,
+        "unit": "g",
+        "grams": 220
+      },
+      {
+        "foodId": "egg",
+        "amount": 150,
+        "unit": "g",
+        "grams": 150
+      },
+      {
+        "foodId": "butter",
+        "amount": 80,
+        "unit": "g",
+        "grams": 80
+      },
+      {
+        "foodId": "sugar",
+        "amount": 70,
+        "unit": "g",
+        "grams": 70
+      },
+      {
+        "foodId": "baking_powder",
+        "amount": 10,
+        "unit": "g",
+        "grams": 10
+      }
+    ],
+    "steps": [
+      "Écraser les bananes.",
+      "Mélanger tous les ingrédients.",
+      "Cuire au four."
+    ],
+    "tags": [
+      "Gourmand"
+    ]
+  },
+  {
+    "id": "cookies",
+    "title": "Cookies chocolat",
+    "category": "Dessert & Encas",
+    "defaultServings": 12,
+    "timeMinutes": 25,
+    "emoji": "🍪",
+    "ingredients": [
+      {
+        "foodId": "flour",
+        "amount": 240,
+        "unit": "g",
+        "grams": 240
+      },
+      {
+        "foodId": "butter",
+        "amount": 120,
+        "unit": "g",
+        "grams": 120
+      },
+      {
+        "foodId": "sugar",
+        "amount": 110,
+        "unit": "g",
+        "grams": 110
+      },
+      {
+        "foodId": "egg",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      },
+      {
+        "foodId": "dark_chocolate",
+        "amount": 140,
+        "unit": "g",
+        "grams": 140
+      }
+    ],
+    "steps": [
+      "Préparer la pâte.",
+      "Former les cookies.",
+      "Cuire jusqu’à bords dorés."
+    ],
+    "tags": [
+      "Gourmand"
+    ]
+  },
+  {
+    "id": "chocolate_mousse",
+    "title": "Mousse au chocolat",
+    "category": "Dessert & Encas",
+    "defaultServings": 4,
+    "timeMinutes": 20,
+    "emoji": "🍫",
+    "ingredients": [
+      {
+        "foodId": "dark_chocolate",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "egg",
+        "amount": 250,
+        "unit": "g",
+        "grams": 250
+      }
+    ],
+    "steps": [
+      "Faire fondre le chocolat.",
+      "Séparer et monter les blancs.",
+      "Incorporer délicatement puis refroidir."
+    ],
+    "tags": [
+      "Gourmand"
+    ]
+  },
+  {
+    "id": "apple_crumble",
+    "title": "Crumble aux pommes",
+    "category": "Dessert & Encas",
+    "defaultServings": 6,
+    "timeMinutes": 45,
+    "emoji": "🍎",
+    "ingredients": [
+      {
+        "foodId": "apple",
+        "amount": 800,
+        "unit": "g",
+        "grams": 800
+      },
+      {
+        "foodId": "flour",
+        "amount": 160,
+        "unit": "g",
+        "grams": 160
+      },
+      {
+        "foodId": "butter",
+        "amount": 110,
+        "unit": "g",
+        "grams": 110
+      },
+      {
+        "foodId": "sugar",
+        "amount": 90,
+        "unit": "g",
+        "grams": 90
+      },
+      {
+        "foodId": "cinnamon",
+        "amount": 5,
+        "unit": "g",
+        "grams": 5
+      }
+    ],
+    "steps": [
+      "Couper les pommes.",
+      "Préparer la pâte à crumble.",
+      "Cuire jusqu’à coloration."
+    ],
+    "tags": [
+      "Gourmand"
+    ]
+  },
+  {
+    "id": "skyr_berries",
+    "title": "Skyr fruits rouges",
+    "category": "Dessert & Encas",
+    "defaultServings": 1,
+    "timeMinutes": 5,
+    "emoji": "🍓",
+    "ingredients": [
+      {
+        "foodId": "skyr",
+        "amount": 250,
+        "unit": "g",
+        "grams": 250
+      },
+      {
+        "foodId": "berries",
+        "amount": 150,
+        "unit": "g",
+        "grams": 150
+      },
+      {
+        "foodId": "honey",
+        "amount": 10,
+        "unit": "g",
+        "grams": 10
+      },
+      {
+        "foodId": "almonds",
+        "amount": 15,
+        "unit": "g",
+        "grams": 15
+      }
+    ],
+    "steps": [
+      "Verser le skyr.",
+      "Ajouter fruits, miel et amandes."
+    ],
+    "tags": [
+      "Protéiné",
+      "Rapide"
+    ]
+  },
+  {
+    "id": "skyr_granola",
+    "title": "Bowl skyr granola",
+    "category": "Dessert & Encas",
+    "defaultServings": 1,
+    "timeMinutes": 5,
+    "emoji": "🥣",
+    "ingredients": [
+      {
+        "foodId": "skyr",
+        "amount": 250,
+        "unit": "g",
+        "grams": 250
+      },
+      {
+        "foodId": "granola",
+        "amount": 50,
+        "unit": "g",
+        "grams": 50
+      },
+      {
+        "foodId": "banana",
+        "amount": 120,
+        "unit": "g",
+        "grams": 120
+      },
+      {
+        "foodId": "blueberry",
+        "amount": 60,
+        "unit": "g",
+        "grams": 60
+      }
+    ],
+    "steps": [
+      "Mettre le skyr dans un bol.",
+      "Ajouter granola et fruits."
+    ],
+    "tags": [
+      "Petit-déj",
+      "Protéiné"
+    ]
+  },
+  {
+    "id": "energy_balls",
+    "title": "Energy balls cacao",
+    "category": "Dessert & Encas",
+    "defaultServings": 10,
+    "timeMinutes": 15,
+    "emoji": "⚡",
+    "ingredients": [
+      {
+        "foodId": "oats",
+        "amount": 150,
+        "unit": "g",
+        "grams": 150
+      },
+      {
+        "foodId": "peanut_butter",
+        "amount": 120,
+        "unit": "g",
+        "grams": 120
+      },
+      {
+        "foodId": "honey",
+        "amount": 60,
+        "unit": "g",
+        "grams": 60
+      },
+      {
+        "foodId": "cocoa",
+        "amount": 25,
+        "unit": "g",
+        "grams": 25
+      },
+      {
+        "foodId": "chia",
+        "amount": 20,
+        "unit": "g",
+        "grams": 20
+      }
+    ],
+    "steps": [
+      "Mélanger tous les ingrédients.",
+      "Former des boules.",
+      "Réserver au frais."
+    ],
+    "tags": [
+      "Snack"
+    ]
+  },
+  {
+    "id": "porridge",
+    "title": "Porridge banane",
+    "category": "Dessert & Encas",
+    "defaultServings": 1,
+    "timeMinutes": 8,
+    "emoji": "🥣",
+    "ingredients": [
+      {
+        "foodId": "oats",
+        "amount": 70,
+        "unit": "g",
+        "grams": 70
+      },
+      {
+        "foodId": "milk",
+        "amount": 250,
+        "unit": "g",
+        "grams": 250
+      },
+      {
+        "foodId": "banana",
+        "amount": 120,
+        "unit": "g",
+        "grams": 120
+      },
+      {
+        "foodId": "peanut_butter",
+        "amount": 15,
+        "unit": "g",
+        "grams": 15
+      },
+      {
+        "foodId": "cinnamon",
+        "amount": 2,
+        "unit": "g",
+        "grams": 2
+      }
+    ],
+    "steps": [
+      "Cuire l’avoine dans le lait.",
+      "Ajouter banane et cannelle.",
+      "Terminer avec le beurre de cacahuète."
+    ],
+    "tags": [
+      "Petit-déj"
+    ]
+  },
+  {
+    "id": "brownie",
+    "title": "Brownie chocolat",
+    "category": "Dessert & Encas",
+    "defaultServings": 9,
+    "timeMinutes": 35,
+    "emoji": "🍫",
+    "ingredients": [
+      {
+        "foodId": "dark_chocolate",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "butter",
+        "amount": 120,
+        "unit": "g",
+        "grams": 120
+      },
+      {
+        "foodId": "sugar",
+        "amount": 120,
+        "unit": "g",
+        "grams": 120
+      },
+      {
+        "foodId": "egg",
+        "amount": 200,
+        "unit": "g",
+        "grams": 200
+      },
+      {
+        "foodId": "flour",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      },
+      {
+        "foodId": "walnuts",
+        "amount": 70,
+        "unit": "g",
+        "grams": 70
+      }
+    ],
+    "steps": [
+      "Faire fondre chocolat et beurre.",
+      "Ajouter les autres ingrédients.",
+      "Cuire en gardant le centre fondant."
+    ],
+    "tags": [
+      "Gourmand"
+    ]
+  },
+  {
+    "id": "apple_compote",
+    "title": "Compote pomme cannelle",
+    "category": "Dessert & Encas",
+    "defaultServings": 4,
+    "timeMinutes": 25,
+    "emoji": "🍎",
+    "ingredients": [
+      {
+        "foodId": "apple",
+        "amount": 900,
+        "unit": "g",
+        "grams": 900
+      },
+      {
+        "foodId": "cinnamon",
+        "amount": 3,
+        "unit": "g",
+        "grams": 3
+      },
+      {
+        "foodId": "honey",
+        "amount": 20,
+        "unit": "g",
+        "grams": 20
+      }
+    ],
+    "steps": [
+      "Couper les pommes.",
+      "Cuire doucement.",
+      "Mixer ou écraser avec cannelle et miel."
+    ],
+    "tags": [
+      "Léger"
+    ]
+  },
+  {
+    "id": "chia_pudding",
+    "title": "Pudding de chia",
+    "category": "Dessert & Encas",
+    "defaultServings": 2,
+    "timeMinutes": 5,
+    "emoji": "🥄",
+    "ingredients": [
+      {
+        "foodId": "chia",
+        "amount": 60,
+        "unit": "g",
+        "grams": 60
+      },
+      {
+        "foodId": "milk",
+        "amount": 350,
+        "unit": "g",
+        "grams": 350
+      },
+      {
+        "foodId": "berries",
+        "amount": 150,
+        "unit": "g",
+        "grams": 150
+      },
+      {
+        "foodId": "maple",
+        "amount": 20,
+        "unit": "g",
+        "grams": 20
+      }
+    ],
+    "steps": [
+      "Mélanger chia et lait.",
+      "Réserver plusieurs heures.",
+      "Ajouter fruits et sirop."
+    ],
+    "tags": [
+      "Petit-déj"
+    ]
+  },
+  {
+    "id": "protein_pancakes",
+    "title": "Pancakes skyr banane",
+    "category": "Dessert & Encas",
+    "defaultServings": 2,
+    "timeMinutes": 15,
+    "emoji": "🥞",
+    "ingredients": [
+      {
+        "foodId": "oats",
+        "amount": 100,
+        "unit": "g",
+        "grams": 100
+      },
+      {
+        "foodId": "egg",
+        "amount": 150,
+        "unit": "g",
+        "grams": 150
+      },
+      {
+        "foodId": "banana",
+        "amount": 120,
+        "unit": "g",
+        "grams": 120
+      },
+      {
+        "foodId": "skyr",
+        "amount": 150,
+        "unit": "g",
+        "grams": 150
+      }
+    ],
+    "steps": [
+      "Mixer tous les ingrédients.",
+      "Cuire les pancakes.",
+      "Servir avec le reste de skyr si souhaité."
+    ],
+    "tags": [
+      "Protéiné"
+    ]
+  },
+  {
+    "id": "pear_chocolate",
+    "title": "Poire chocolat amandes",
+    "category": "Dessert & Encas",
+    "defaultServings": 2,
+    "timeMinutes": 12,
+    "emoji": "🍐",
+    "ingredients": [
+      {
+        "foodId": "pear",
+        "amount": 360,
+        "unit": "g",
+        "grams": 360
+      },
+      {
+        "foodId": "dark_chocolate",
+        "amount": 50,
+        "unit": "g",
+        "grams": 50
+      },
+      {
+        "foodId": "almonds",
+        "amount": 25,
+        "unit": "g",
+        "grams": 25
+      }
+    ],
+    "steps": [
+      "Couper les poires.",
+      "Faire fondre le chocolat.",
+      "Napper et ajouter les amandes."
+    ],
+    "tags": [
+      "Rapide"
+    ]
+  }
+]
