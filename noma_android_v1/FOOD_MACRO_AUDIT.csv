@@ -1,0 +1,106 @@
+﻿id;name;referenceUnit;kcal;protein;carbs;fat;fiber;atwater_check_kcal;delta_kcal;auditStatus;verified_external;note
+rice_basmati;Riz basmati;g;356;8.9;77.8;1.0;1.3;353.2;2.8;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+rice_white;Riz blanc;g;360;7.0;79.0;0.6;1.3;346.8;13.2;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+rice_brown;Riz complet;g;362;7.5;76.2;2.7;3.4;352.3;9.7;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+pasta;Pâtes;g;353;12.5;71.5;1.5;3.0;343.5;9.5;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+whole_pasta;Pâtes complètes;g;348;13.0;66.0;2.5;8.0;322.5;25.5;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+couscous;Semoule de couscous;g;376;12.8;77.4;0.6;5.0;356.2;19.8;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+quinoa;Quinoa;g;368;14.1;64.2;6.1;7.0;354.1;13.9;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+oats;Flocons d’avoine;g;379;13.2;67.7;6.5;10.1;361.9;17.1;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+flour;Farine de blé;g;364;10.3;76.3;1.0;2.7;350.0;14.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+whole_flour;Farine complète;g;340;13.2;72.0;2.5;10.7;341.9;-1.9;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+bread;Pain;g;265;9.0;49.0;3.2;2.7;255.4;9.6;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+whole_bread;Pain complet;g;247;13.0;41.0;4.2;7.0;239.8;7.2;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+tortilla;Tortilla de blé;g;312;8.3;52.0;7.8;3.4;304.6;7.4;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+potato;Pomme de terre;g;77;2.0;17.5;0.1;2.2;74.5;2.5;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+sweet_potato;Patate douce;g;86;1.6;20.1;0.1;3.0;81.7;4.3;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+lentils;Lentilles vertes;g;352;24.6;63.4;1.1;10.7;340.5;11.5;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+red_lentils;Lentilles corail;g;358;24.6;63.1;2.2;10.8;349.0;9.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+chickpeas;Pois chiches;g;364;19.3;60.7;6.0;17.4;339.2;24.8;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+kidney_beans;Haricots rouges;g;333;23.6;60.0;0.8;24.9;291.8;41.2;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+black_beans;Haricots noirs;g;341;21.6;62.4;1.4;15.5;317.6;23.4;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+chicken;Blanc de poulet;g;120;22.5;0;2.6;0;113.4;6.6;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+turkey;Escalope de dinde;g;114;24.0;0;1.5;0;109.5;4.5;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+beef_5;Bœuf haché 5%;g;137;21.4;0;5.0;0;130.6;6.4;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+beef_15;Bœuf haché 15%;g;215;18.6;0;15.0;0;209.4;5.6;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+pork;Filet de porc;g;143;21.0;0;6.0;0;138.0;5.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+bacon;Lardons;g;310;16.0;1.0;27.0;0;311.0;-1.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+salmon;Saumon;g;208;20.0;0;13.0;0;197.0;11.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+tuna;Thon au naturel égoutté;g;116;26.0;0;1.0;0;113.0;3.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+cod;Cabillaud;g;82;18.0;0;0.7;0;78.3;3.7;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+shrimp;Crevettes;g;85;20.0;0.2;0.5;0;85.3;-0.3;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+egg;Œuf;g;143;12.6;0.7;9.5;0;138.7;4.3;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+milk;Lait demi-écrémé;ml;47;3.3;4.8;1.6;0;46.8;0.2;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+whole_milk;Lait entier;ml;61;3.2;4.8;3.3;0;61.7;-0.7;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+cream;Crème fraîche 15%;ml;170;2.8;3.5;15.0;0;160.2;9.8;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+greek_yogurt;Yaourt grec 2%;g;73;9.9;3.9;2.0;0;73.2;-0.2;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+skyr;Skyr nature;g;63;11.0;4.0;0.2;0;61.8;1.2;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+cottage;Fromage blanc 3%;g;75;7.5;4.0;3.0;0;73.0;2.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+mozzarella;Mozzarella;g;250;18.0;2.0;19.0;0;251.0;-1.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+parmesan;Parmesan;g;431;38.0;4.1;29.0;0;429.4;1.6;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+grated_cheese;Emmental râpé;g;380;28.0;0.5;29.0;0;375.0;5.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+feta;Feta;g;264;14.2;4.1;21.3;0;264.9;-0.9;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+butter;Beurre;g;717;0.9;0.1;81.1;0;733.9;-16.9;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+olive_oil;Huile d’olive;ml;884;0;0;100;0;900.0;-16.0;review_external;False;Valeur plausible mais base 100 g / 100 ml à certifier avec la source externe avant publication.
+rapeseed_oil;Huile de colza;ml;884;0;0;100;0;900.0;-16.0;review_external;False;Valeur plausible mais base 100 g / 100 ml à certifier avec la source externe avant publication.
+coconut_milk;Lait de coco;ml;197;2.0;2.8;20.0;0;199.2;-2.2;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+tomato;Tomate;g;18;0.9;3.9;0.2;1.2;18.6;-0.6;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+tomato_crushed;Tomates concassées;g;32;1.6;5.8;0.3;1.5;29.3;2.7;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+tomato_paste;Concentré de tomate;g;82;4.3;18.9;0.5;4.1;89.1;-7.1;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+onion;Oignon;g;40;1.1;9.3;0.1;1.7;39.1;0.9;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+garlic;Ail;g;149;6.4;33.1;0.5;2.1;158.3;-9.3;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+carrot;Carotte;g;41;0.9;9.6;0.2;2.8;38.2;2.8;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+zucchini;Courgette;g;17;1.2;3.1;0.3;1.0;17.9;-0.9;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+eggplant;Aubergine;g;25;1.0;5.9;0.2;3.0;23.4;1.6;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+pepper;Poivron;g;31;1.0;6.0;0.3;2.1;26.5;4.5;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+broccoli;Brocoli;g;34;2.8;6.6;0.4;2.6;36.0;-2.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+spinach;Épinards;g;23;2.9;3.6;0.4;2.2;25.2;-2.2;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+mushroom;Champignons de Paris;g;22;3.1;3.3;0.3;1.0;26.3;-4.3;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+cucumber;Concombre;g;15;0.7;3.6;0.1;0.5;17.1;-2.1;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+lettuce;Salade verte;g;15;1.4;2.9;0.2;1.3;16.4;-1.4;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+avocado;Avocat;g;160;2.0;8.5;14.7;6.7;160.9;-0.9;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+corn;Maïs en conserve égoutté;g;96;3.4;21.0;1.5;2.4;106.3;-10.3;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+green_beans;Haricots verts;g;31;1.8;7.0;0.2;3.4;30.2;0.8;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+peas;Petits pois;g;81;5.4;14.5;0.4;5.1;73.0;8.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+leek;Poireau;g;61;1.5;14.2;0.3;1.8;61.9;-0.9;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+cauliflower;Chou-fleur;g;25;1.9;5.0;0.3;2.0;26.3;-1.3;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+cabbage;Chou blanc;g;25;1.3;5.8;0.1;2.5;24.3;0.7;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+apple;Pomme;g;52;0.3;13.8;0.2;2.4;53.4;-1.4;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+banana;Banane;g;89;1.1;22.8;0.3;2.6;93.1;-4.1;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+pear;Poire;g;57;0.4;15.2;0.1;3.1;57.1;-0.1;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+orange;Orange;g;47;0.9;11.8;0.1;2.4;46.9;0.1;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+lemon;Citron;g;29;1.1;9.3;0.3;2.8;38.7;-9.7;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+strawberry;Fraise;g;32;0.7;7.7;0.3;2.0;32.3;-0.3;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+blueberry;Myrtille;g;57;0.7;14.5;0.3;2.4;58.7;-1.7;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+berries;Fruits rouges;g;45;1.0;10.0;0.4;4.0;39.6;5.4;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+mango;Mangue;g;60;0.8;15.0;0.4;1.6;63.6;-3.6;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+pineapple;Ananas;g;50;0.5;13.1;0.1;1.4;52.5;-2.5;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+cocoa;Cacao non sucré;g;228;19.6;57.9;13.7;33.2;366.9;-138.9;review_external;False;"Écart énergie/macros attendu avec les facteurs énergétiques spécifiques et les fibres ; valeurs conservées."
+dark_chocolate;Chocolat noir 70%;g;598;7.8;45.9;42.6;10.9;576.4;21.6;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+sugar;Sucre;g;400;0;100;0;0;400.0;0.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+honey;Miel;g;304;0.3;82.4;0;0.2;330.4;-26.4;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+maple;Sirop d’érable;g;260;0;67.0;0.1;0;268.9;-8.9;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+peanut_butter;Beurre de cacahuète;g;588;25.0;20.0;50.0;6.0;618.0;-30.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+almonds;Amandes;g;579;21.2;21.6;49.9;12.5;595.3;-16.3;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+walnuts;Noix;g;654;15.2;13.7;65.2;6.7;689.0;-35.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+cashews;Noix de cajou;g;553;18.2;30.2;43.8;3.3;581.2;-28.2;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+chia;Graines de chia;g;486;16.5;42.1;30.7;34.4;441.9;44.1;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+sesame;Graines de sésame;g;573;17.7;23.5;49.7;11.8;588.5;-15.5;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+tofu;Tofu ferme;g;144;17.3;2.8;8.7;2.3;154.1;-10.1;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+soy_sauce;Sauce soja;ml;53;8.1;4.9;0.6;0.8;55.8;-2.8;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+mustard;Moutarde;ml;66;4.4;5.8;4.0;3.2;70.4;-4.4;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+mayonnaise;Mayonnaise;ml;680;1.0;1.0;75.0;0;683.0;-3.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+ketchup;Ketchup;ml;112;1.3;26.0;0.2;0.3;110.4;1.6;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+pesto;Pesto;ml;440;5.0;6.0;44.0;2.0;436.0;4.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+curry_powder;Curry en poudre;g;325;14.3;55.8;14.0;53.2;300.0;25.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+paprika;Paprika;g;282;14.1;54.0;13.0;34.9;319.6;-37.6;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+cumin;Cumin;g;375;17.8;44.2;22.3;10.5;427.7;-52.7;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+cinnamon;Cannelle;g;247;4.0;80.6;1.2;53.1;243.0;4.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+baking_powder;Levure chimique;g;53;0;28.0;0;0.2;111.6;-58.6;review_external;False;"Écart énergie/macros important ; ingrédient utilisé en très faible quantité. Valeurs conservées, à rapprocher d'une table officielle."
+vanilla;Extrait de vanille;ml;288;0.1;12.7;0.1;0;52.1;235.9;review_external;False;"L'énergie de l'extrait de vanille inclut notamment l'alcool, non représenté dans P/G/L ; valeurs conservées."
+ham;Jambon blanc;g;116;20.0;1.0;3.5;0;115.5;0.5;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+smoked_salmon;Saumon fumé;g;117;18.3;0;4.3;0;111.9;5.1;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+ricotta;Ricotta;g;174;11.3;3.0;13.0;0;174.2;-0.2;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+goat_cheese;Fromage de chèvre;g;364;22.0;0.1;30.0;0;358.4;5.6;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+coconut_yogurt;Yaourt coco;g;100;1.5;5.0;8.0;1.0;96.0;4.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.
+granola;Granola;g;450;10.0;64.0;17.0;7.0;435.0;15.0;passed_internal;False;Contrôle interne : bornes, unité de référence et cohérence arithmétique.

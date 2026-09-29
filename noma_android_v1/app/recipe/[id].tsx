@@ -1,10 +1,214 @@
-import {Ionicons} from '@expo/vector-icons';import {router,useLocalSearchParams} from 'expo-router';import React,{useMemo,useState} from 'react';import {Pressable,ScrollView,StyleSheet,Text,View} from 'react-native';import {PrimaryButton} from '@/src/components';import {recipeNutrition,roundMacro} from '@/src/nutrition';import {useApp} from '@/src/store';import {colors,radius} from '@/src/theme';
-export default function Detail(){const {id}=useLocalSearchParams<{id:string}>();const {recipes,foods,learning,goals}=useApp();const r=recipes.find(x=>x.id===id)!;const l=learning[id];const [serv,setServ]=useState(r.defaultServings);const scale=serv/r.defaultServings;const n=recipeNutrition(r,foods,l,serv);const per={kcal:n.kcal/serv,protein:n.protein/serv,carbs:n.carbs/serv,fat:n.fat/serv};
-return <ScrollView contentContainerStyle={s.c}><Pressable onPress={()=>router.back()} style={s.back}><Ionicons name="chevron-back" size={25} color={colors.text}/></Pressable><Text style={s.title}>{r.title}</Text><View style={s.hero}><Text style={{fontSize:82}}>{r.emoji}</Text></View>
-<View style={s.serv}><Pressable onPress={()=>setServ(Math.max(1,serv-1))} style={s.round}><Ionicons name="remove" size={22} color={colors.sageDark}/></Pressable><View><Text style={s.servN}>{serv}</Text><Text style={s.small}>parts</Text></View><Pressable onPress={()=>setServ(serv+1)} style={[s.round,{backgroundColor:colors.sage}]}><Ionicons name="add" size={22} color="#fff"/></Pressable></View>
-{goals.enabled?<View style={s.macros}>{[['kcal',Math.round(per.kcal),'kcal'],['prot',roundMacro(per.protein),'g'],['gluc',roundMacro(per.carbs),'g'],['lip',roundMacro(per.fat),'g']].map(([k,v,u])=><View key={k as string} style={s.macro}><Text style={s.macroN}>{v}</Text><Text style={s.small}>{u} {k!=='kcal'?k:''}</Text></View>)}</View>:null}
-<View style={s.card}><View style={s.head}><Text style={s.h}>Ingrédients</Text><Text style={s.small}>{serv} parts</Text></View>{r.ingredients.map(i=>{const f=foods.find(x=>x.id===i.foodId)!;const im=l?.ingredientMultipliers?.[i.foodId]||1;const qty=i.amount*scale*(l?.overallMultiplier||1)*im;return <View key={i.foodId} style={s.row}><Text style={s.item}>{f.name}</Text><Text style={s.qty}>{Math.round(qty*10)/10} {i.unit}</Text></View>})}</View>
-<View style={s.card}><Text style={s.h}>Étapes</Text>{r.steps.map((x,i)=><View key={i} style={s.step}><View style={s.stepN}><Text style={{fontWeight:'900',color:colors.sageDark}}>{i+1}</Text></View><Text style={{flex:1,color:colors.text,lineHeight:21}}>{x}</Text></View>)}</View>
-{l?<View style={s.learn}><Ionicons name="sparkles-outline" size={22} color={colors.sageDark}/><View style={{flex:1}}><Text style={s.h}>Chez toi</Text><Text style={s.small}>{l.notes.at(-1)||'Cette recette a déjà été adaptée.'}</Text></View><Ionicons name="checkmark-circle" size={23} color={colors.sage}/></View>:null}
-<PrimaryButton label="Après le repas" icon="sparkles-outline" onPress={()=>router.push(`/feedback/${r.id}`)}/></ScrollView>}
-const s=StyleSheet.create({c:{paddingHorizontal:18,paddingTop:58,paddingBottom:35},back:{width:40,height:40,justifyContent:'center'},title:{fontFamily:'Georgia',fontSize:36,fontWeight:'700',color:colors.text,marginBottom:12},hero:{height:210,borderRadius:radius.lg,backgroundColor:colors.beige,alignItems:'center',justifyContent:'center',marginBottom:12},serv:{backgroundColor:'#fff',borderRadius:radius.lg,borderWidth:1,borderColor:colors.border,padding:12,flexDirection:'row',alignItems:'center',justifyContent:'center',gap:34},round:{width:44,height:44,borderRadius:22,backgroundColor:colors.sageSoft,alignItems:'center',justifyContent:'center'},servN:{fontSize:27,fontWeight:'900',color:colors.text,textAlign:'center'},small:{fontSize:12,color:colors.muted,marginTop:2},macros:{flexDirection:'row',backgroundColor:'#fff',borderWidth:1,borderColor:colors.border,borderRadius:radius.md,marginTop:10,overflow:'hidden'},macro:{flex:1,alignItems:'center',padding:11,borderRightWidth:1,borderRightColor:colors.border},macroN:{fontWeight:'900',color:colors.text},card:{backgroundColor:'#fff',borderRadius:radius.lg,borderWidth:1,borderColor:colors.border,padding:16,marginTop:11},head:{flexDirection:'row',justifyContent:'space-between'},h:{fontSize:17,fontWeight:'900',color:colors.text,marginBottom:8},row:{flexDirection:'row',justifyContent:'space-between',paddingVertical:9,borderTopWidth:1,borderTopColor:'#F0F2EE'},item:{color:colors.text},qty:{color:colors.muted},step:{flexDirection:'row',gap:10,paddingVertical:8},stepN:{width:27,height:27,borderRadius:14,backgroundColor:colors.sageSoft,alignItems:'center',justifyContent:'center'},learn:{flexDirection:'row',gap:11,alignItems:'center',padding:15,borderRadius:radius.lg,backgroundColor:colors.sageSoft,marginVertical:11}})
+import {Ionicons} from '@expo/vector-icons';
+import {router,useLocalSearchParams} from 'expo-router';
+import React,{useState} from 'react';
+import {Alert,Pressable,StyleSheet,Text,View} from 'react-native';
+import {Page,PrimaryButton,Stepper} from '@/src/components';
+import {perServing,roundMacro} from '@/src/nutrition';
+import {useApp} from '@/src/store';
+import {colors,radius} from '@/src/theme';
+
+function formatAmount(value:number){
+  const rounded=Math.round(value*10)/10;
+  return Number.isInteger(rounded)?String(Math.round(rounded)):String(rounded);
+}
+
+export default function RecipeDetail(){
+  const {id}=useLocalSearchParams<{id:string}>();
+  const {
+    recipes,foods,learning,goals,favorites,toggleFavorite,
+    resetRecipeLearning,resetIngredientAdjustment,deleteRecipe
+  }=useApp();
+  const recipe=recipes.find(r=>r.id===id);
+  const learned=learning[id];
+  const [servings,setServings]=useState(recipe?.defaultServings||1);
+
+  if(!recipe){
+    return <Page><Text style={s.title}>Recette introuvable</Text><PrimaryButton label="Retour" onPress={()=>router.back()}/></Page>;
+  }
+
+  const scale=servings/recipe.defaultServings;
+  const macro=perServing(recipe,foods,learned);
+  const adjustedIngredients=Object.entries(learned?.ingredientMultipliers||{}).filter(([,m])=>Math.abs(m-1)>.001);
+  const globalAdjusted=learned&&Math.abs(learned.overallMultiplier-1)>.001;
+
+  function confirmDelete(){
+    Alert.alert(
+      'Supprimer cette recette ?',
+      'Elle sera aussi retirée des repas où elle était planifiée.',
+      [
+        {text:'Annuler',style:'cancel'},
+        {text:'Supprimer',style:'destructive',onPress:()=>{deleteRecipe(recipe.id);router.back();}}
+      ]
+    );
+  }
+
+  return (
+    <Page>
+      <View style={s.topbar}>
+        <Pressable onPress={()=>router.back()} style={s.iconButton}>
+          <Ionicons name="chevron-back" size={24} color={colors.text}/>
+        </Pressable>
+        <View style={{flexDirection:'row',gap:4}}>
+          {recipe.custom&&(
+            <Pressable onPress={()=>router.push({pathname:'/new-recipe',params:{id:recipe.id}})} style={s.iconButton}>
+              <Ionicons name="create-outline" size={22} color={colors.text}/>
+            </Pressable>
+          )}
+          <Pressable onPress={()=>toggleFavorite(recipe.id)} style={s.iconButton}>
+            <Ionicons name={favorites[recipe.id]?'heart':'heart-outline'} size={23} color={favorites[recipe.id]?colors.sage:colors.text}/>
+          </Pressable>
+        </View>
+      </View>
+
+      <Text style={s.title}>{recipe.title}</Text>
+      <Text style={s.subtitle}>{recipe.category} · {recipe.timeMinutes} min{recipe.custom?' · Recette perso':''}</Text>
+
+      <View style={s.hero}><Text style={{fontSize:82}}>{recipe.emoji}</Text></View>
+
+      <View style={s.servings}>
+        <Stepper
+          value={servings}
+          label="portions"
+          onMinus={()=>setServings(Math.max(1,servings-1))}
+          onPlus={()=>setServings(servings+1)}
+        />
+      </View>
+
+      {goals.enabled&&(
+        <View style={s.macros}>
+          {[
+            ['kcal',Math.round(macro.kcal),'kcal'],
+            ['prot',roundMacro(macro.protein),'g'],
+            ['gluc',roundMacro(macro.carbs),'g'],
+            ['lip',roundMacro(macro.fat),'g']
+          ].map(([key,value,unit])=>(
+            <View key={String(key)} style={s.macro}>
+              <Text style={s.macroN}>{value}</Text>
+              <Text style={s.small}>{unit} {key!=='kcal'?key:''}</Text>
+            </View>
+          ))}
+          <Text style={s.perPart}>par portion</Text>
+        </View>
+      )}
+
+      <View style={s.card}>
+        <View style={s.cardHead}>
+          <Text style={s.h}>Ingrédients</Text>
+          <Text style={s.small}>{servings} portions</Text>
+        </View>
+
+        {recipe.ingredients.map(ing=>{
+          const food=foods.find(f=>f.id===ing.foodId);
+          if(!food) return null;
+          const personal=learned?.ingredientMultipliers?.[ing.foodId]||1;
+          const overall=learned?.overallMultiplier||1;
+          const amount=ing.amount*scale*overall*personal;
+          const changed=Math.abs(overall*personal-1)>.001;
+          return (
+            <View key={`${ing.foodId}-${ing.unit}`} style={s.row}>
+              <View style={{flex:1}}>
+                <Text style={s.item}>{food.name}</Text>
+                {changed?<Text style={s.personal}>adapté par Noma</Text>:null}
+              </View>
+              <Text style={s.qty}>{formatAmount(amount)} {ing.unit}</Text>
+            </View>
+          );
+        })}
+      </View>
+
+      {learned&&(
+        <View style={s.learnCard}>
+          <View style={s.learnTitle}>
+            <Ionicons name="sparkles-outline" size={21} color={colors.sageDark}/>
+            <Text style={s.h}>Chez toi</Text>
+          </View>
+
+          {globalAdjusted&&(
+            <View style={s.adjustment}>
+              <Text style={s.item}>Quantité globale</Text>
+              <Text style={s.multiplier}>{learned.overallMultiplier>=1?'+':''}{Math.round((learned.overallMultiplier-1)*100)}%</Text>
+            </View>
+          )}
+
+          {adjustedIngredients.map(([foodId,multiplier])=>{
+            const food=foods.find(f=>f.id===foodId);
+            return (
+              <View key={foodId} style={s.adjustment}>
+                <Text style={[s.item,{flex:1}]}>{food?.name||foodId}</Text>
+                <Text style={s.multiplier}>{multiplier>=1?'+':''}{Math.round((multiplier-1)*100)}%</Text>
+                <Pressable accessibilityLabel="Supprimer cet ajustement" onPress={()=>resetIngredientAdjustment(recipe.id,foodId)} style={s.miniButton}>
+                  <Ionicons name="close" size={16} color={colors.muted}/>
+                </Pressable>
+              </View>
+            );
+          })}
+
+          {learned.notes.at(-1)?<Text style={s.note}>“{learned.notes.at(-1)}”</Text>:null}
+
+          <Pressable onPress={()=>resetRecipeLearning(recipe.id)} style={s.reset}>
+            <Text style={s.resetText}>Réinitialiser tous les ajustements</Text>
+          </Pressable>
+        </View>
+      )}
+
+      <View style={s.card}>
+        <Text style={s.h}>Étapes</Text>
+        {recipe.steps.map((step,index)=>(
+          <View key={index} style={s.step}>
+            <View style={s.stepN}><Text style={{fontWeight:'900',color:colors.sageDark}}>{index+1}</Text></View>
+            <Text style={s.stepText}>{step}</Text>
+          </View>
+        ))}
+      </View>
+
+      <View style={{marginTop:12}}>
+        <PrimaryButton
+          label="Après le repas"
+          icon="sparkles-outline"
+          onPress={()=>router.push(`/feedback/${recipe.id}`)}
+        />
+      </View>
+
+      {recipe.custom&&(
+        <Pressable onPress={confirmDelete} style={s.delete}>
+          <Ionicons name="trash-outline" size={18} color={colors.danger}/>
+          <Text style={s.deleteText}>Supprimer la recette</Text>
+        </Pressable>
+      )}
+    </Page>
+  );
+}
+
+const s=StyleSheet.create({
+  topbar:{flexDirection:'row',justifyContent:'space-between',alignItems:'center'},
+  iconButton:{width:44,height:44,alignItems:'center',justifyContent:'center'},
+  title:{fontFamily:'Georgia',fontSize:36,fontWeight:'700',color:colors.text,marginTop:4},
+  subtitle:{color:colors.muted,fontSize:13,marginTop:3,marginBottom:12},
+  hero:{height:190,borderRadius:radius.lg,backgroundColor:colors.beige,alignItems:'center',justifyContent:'center',marginBottom:12},
+  servings:{backgroundColor:'#fff',borderRadius:radius.lg,borderWidth:1,borderColor:colors.border,padding:13,alignItems:'center'},
+  macros:{position:'relative',flexDirection:'row',backgroundColor:'#fff',borderWidth:1,borderColor:colors.border,borderRadius:radius.md,marginTop:10,marginBottom:20,overflow:'visible'},
+  macro:{flex:1,alignItems:'center',paddingVertical:13,borderRightWidth:1,borderRightColor:colors.border},
+  macroN:{fontWeight:'900',color:colors.text},
+  small:{fontSize:11.5,color:colors.muted,marginTop:2},
+  perPart:{position:'absolute',bottom:-18,right:5,fontSize:10.5,color:colors.muted},
+  card:{backgroundColor:'#fff',borderRadius:radius.lg,borderWidth:1,borderColor:colors.border,padding:16,marginTop:11},
+  cardHead:{flexDirection:'row',justifyContent:'space-between',alignItems:'center'},
+  h:{fontSize:17,fontWeight:'900',color:colors.text},
+  row:{flexDirection:'row',justifyContent:'space-between',alignItems:'center',paddingVertical:10,borderTopWidth:1,borderTopColor:'#F0F2EE'},
+  item:{color:colors.text,fontSize:14.5},
+  personal:{fontSize:10.5,color:colors.sageDark,fontWeight:'800',marginTop:2},
+  qty:{color:colors.muted,fontWeight:'700'},
+  learnCard:{backgroundColor:colors.sageSoft,borderRadius:radius.lg,padding:16,marginTop:11},
+  learnTitle:{flexDirection:'row',alignItems:'center',gap:8,marginBottom:8},
+  adjustment:{minHeight:42,flexDirection:'row',alignItems:'center',gap:8,borderTopWidth:1,borderTopColor:'#DCE6D7'},
+  multiplier:{fontWeight:'900',color:colors.sageDark},
+  miniButton:{width:32,height:32,borderRadius:16,backgroundColor:'#fff',alignItems:'center',justifyContent:'center'},
+  note:{fontSize:12.5,color:colors.text,fontStyle:'italic',marginTop:10},
+  reset:{alignSelf:'flex-start',marginTop:12,paddingVertical:8},
+  resetText:{fontSize:12,color:colors.sageDark,fontWeight:'900'},
+  step:{flexDirection:'row',gap:10,paddingVertical:9},
+  stepN:{width:28,height:28,borderRadius:14,backgroundColor:colors.sageSoft,alignItems:'center',justifyContent:'center'},
+  stepText:{flex:1,color:colors.text,lineHeight:21},
+  delete:{minHeight:52,flexDirection:'row',alignItems:'center',justifyContent:'center',gap:7,marginTop:10},
+  deleteText:{fontWeight:'900',color:colors.danger}
+});

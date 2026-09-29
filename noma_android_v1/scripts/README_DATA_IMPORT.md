@@ -1,10 +1,27 @@
-# Import nutritionnel vérifié
+# Données nutritionnelles
 
-La V1 contient une base locale de démarrage afin que l'app fonctionne immédiatement.
-Les lignes sont marquées `verified: false` tant qu'elles n'ont pas été rapprochées d'une source officielle.
+La V2 embarque 105 aliments de démarrage afin de rendre l'application utilisable hors ligne.
+Ils sont explicitement marqués `verified: false`.
 
-Pour la production, remplacer/compléter `src/seedFoods.json` par un export vérifié (CIQUAL/ANSES ou autre source autorisée).
-Conserver les IDs utilisés dans `seedRecipes.json` ou fournir une table de correspondance.
+Pour une diffusion publique, importer une source vérifiée et autorisée, par exemple CIQUAL/ANSES,
+puis renseigner pour chaque aliment :
 
-Colonnes recommandées:
-id,name,normalizedName,category,state,referenceQuantity,referenceUnit,kcal,protein,carbs,fat,fiber,source,verified
+- id
+- name
+- normalizedName
+- category
+- state
+- referenceQuantity
+- referenceUnit (`g` ou `ml`)
+- kcal
+- protein
+- carbs
+- fat
+- fiber
+- source
+- sourceId
+- verified
+- pieceWeight (optionnel, pour convertir `pièce` vers l'unité nutritionnelle)
+
+Les recettes pointent vers `Food.id`. Pour remplacer un aliment existant sans casser les recettes,
+conserver son ID ou fournir une table de correspondance.

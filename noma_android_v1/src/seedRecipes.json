@@ -9,33 +9,33 @@
     "ingredients": [
       {
         "foodId": "tomato",
-        "amount": 250,
+        "amount": 250.0,
         "unit": "g",
-        "grams": 250
+        "nutritionAmount": 250.0
       },
       {
         "foodId": "cucumber",
-        "amount": 200,
+        "amount": 200.0,
         "unit": "g",
-        "grams": 200
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "feta",
-        "amount": 80,
+        "amount": 80.0,
         "unit": "g",
-        "grams": 80
+        "nutritionAmount": 80.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 15,
-        "unit": "g",
-        "grams": 15
+        "amount": 15.0,
+        "unit": "ml",
+        "nutritionAmount": 15.0
       },
       {
         "foodId": "onion",
-        "amount": 40,
+        "amount": 40.0,
         "unit": "g",
-        "grams": 40
+        "nutritionAmount": 40.0
       }
     ],
     "steps": [
@@ -58,21 +58,21 @@
     "ingredients": [
       {
         "foodId": "tomato",
-        "amount": 300,
+        "amount": 300.0,
         "unit": "g",
-        "grams": 300
+        "nutritionAmount": 300.0
       },
       {
         "foodId": "mozzarella",
-        "amount": 125,
+        "amount": 125.0,
         "unit": "g",
-        "grams": 125
+        "nutritionAmount": 125.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 10,
-        "unit": "g",
-        "grams": 10
+        "amount": 10.0,
+        "unit": "ml",
+        "nutritionAmount": 10.0
       }
     ],
     "steps": [
@@ -93,33 +93,33 @@
     "ingredients": [
       {
         "foodId": "chickpeas",
-        "amount": 250,
+        "amount": 250.0,
         "unit": "g",
-        "grams": 250
+        "nutritionAmount": 250.0
       },
       {
         "foodId": "sesame",
-        "amount": 25,
+        "amount": 25.0,
         "unit": "g",
-        "grams": 25
+        "nutritionAmount": 25.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 20,
-        "unit": "g",
-        "grams": 20
+        "amount": 20.0,
+        "unit": "ml",
+        "nutritionAmount": 20.0
       },
       {
         "foodId": "lemon",
-        "amount": 40,
+        "amount": 40.0,
         "unit": "g",
-        "grams": 40
+        "nutritionAmount": 40.0
       },
       {
         "foodId": "garlic",
-        "amount": 5,
+        "amount": 5.0,
         "unit": "g",
-        "grams": 5
+        "nutritionAmount": 5.0
       }
     ],
     "steps": [
@@ -140,33 +140,33 @@
     "ingredients": [
       {
         "foodId": "lentils",
-        "amount": 220,
+        "amount": 220.0,
         "unit": "g",
-        "grams": 220
+        "nutritionAmount": 220.0
       },
       {
         "foodId": "carrot",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       },
       {
         "foodId": "onion",
-        "amount": 70,
+        "amount": 70.0,
         "unit": "g",
-        "grams": 70
+        "nutritionAmount": 70.0
       },
       {
         "foodId": "mustard",
-        "amount": 15,
-        "unit": "g",
-        "grams": 15
+        "amount": 15.0,
+        "unit": "ml",
+        "nutritionAmount": 15.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 15,
-        "unit": "g",
-        "grams": 15
+        "amount": 15.0,
+        "unit": "ml",
+        "nutritionAmount": 15.0
       }
     ],
     "steps": [
@@ -188,27 +188,27 @@
     "ingredients": [
       {
         "foodId": "avocado",
-        "amount": 240,
+        "amount": 240.0,
         "unit": "g",
-        "grams": 240
+        "nutritionAmount": 240.0
       },
       {
         "foodId": "tuna",
-        "amount": 140,
+        "amount": 140.0,
         "unit": "g",
-        "grams": 140
+        "nutritionAmount": 140.0
       },
       {
         "foodId": "greek_yogurt",
-        "amount": 40,
+        "amount": 40.0,
         "unit": "g",
-        "grams": 40
+        "nutritionAmount": 40.0
       },
       {
         "foodId": "lemon",
-        "amount": 30,
+        "amount": 30.0,
         "unit": "g",
-        "grams": 30
+        "nutritionAmount": 30.0
       }
     ],
     "steps": [
@@ -230,21 +230,21 @@
     "ingredients": [
       {
         "foodId": "egg",
-        "amount": 200,
-        "unit": "g",
-        "grams": 200
+        "amount": 4.0,
+        "unit": "pièce",
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "mayonnaise",
-        "amount": 35,
-        "unit": "g",
-        "grams": 35
+        "amount": 35.0,
+        "unit": "ml",
+        "nutritionAmount": 35.0
       },
       {
         "foodId": "mustard",
-        "amount": 8,
-        "unit": "g",
-        "grams": 8
+        "amount": 8.0,
+        "unit": "ml",
+        "nutritionAmount": 8.0
       }
     ],
     "steps": [
@@ -266,27 +266,27 @@
     "ingredients": [
       {
         "foodId": "zucchini",
-        "amount": 600,
+        "amount": 600.0,
         "unit": "g",
-        "grams": 600
+        "nutritionAmount": 600.0
       },
       {
         "foodId": "potato",
-        "amount": 180,
+        "amount": 180.0,
         "unit": "g",
-        "grams": 180
+        "nutritionAmount": 180.0
       },
       {
         "foodId": "onion",
-        "amount": 80,
+        "amount": 80.0,
         "unit": "g",
-        "grams": 80
+        "nutritionAmount": 80.0
       },
       {
         "foodId": "cream",
-        "amount": 60,
-        "unit": "g",
-        "grams": 60
+        "amount": 60.0,
+        "unit": "ml",
+        "nutritionAmount": 60.0
       }
     ],
     "steps": [
@@ -308,27 +308,27 @@
     "ingredients": [
       {
         "foodId": "bread",
-        "amount": 240,
+        "amount": 240.0,
         "unit": "g",
-        "grams": 240
+        "nutritionAmount": 240.0
       },
       {
         "foodId": "tomato",
-        "amount": 320,
+        "amount": 320.0,
         "unit": "g",
-        "grams": 320
+        "nutritionAmount": 320.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 20,
-        "unit": "g",
-        "grams": 20
+        "amount": 20.0,
+        "unit": "ml",
+        "nutritionAmount": 20.0
       },
       {
         "foodId": "garlic",
-        "amount": 8,
+        "amount": 8.0,
         "unit": "g",
-        "grams": 8
+        "nutritionAmount": 8.0
       }
     ],
     "steps": [
@@ -350,33 +350,33 @@
     "ingredients": [
       {
         "foodId": "couscous",
-        "amount": 220,
+        "amount": 220.0,
         "unit": "g",
-        "grams": 220
+        "nutritionAmount": 220.0
       },
       {
         "foodId": "tomato",
-        "amount": 200,
+        "amount": 200.0,
         "unit": "g",
-        "grams": 200
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "cucumber",
-        "amount": 180,
+        "amount": 180.0,
         "unit": "g",
-        "grams": 180
+        "nutritionAmount": 180.0
       },
       {
         "foodId": "lemon",
-        "amount": 50,
+        "amount": 50.0,
         "unit": "g",
-        "grams": 50
+        "nutritionAmount": 50.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 20,
-        "unit": "g",
-        "grams": 20
+        "amount": 20.0,
+        "unit": "ml",
+        "nutritionAmount": 20.0
       }
     ],
     "steps": [
@@ -398,27 +398,27 @@
     "ingredients": [
       {
         "foodId": "carrot",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "lemon",
-        "amount": 50,
+        "amount": 50.0,
         "unit": "g",
-        "grams": 50
+        "nutritionAmount": 50.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 15,
-        "unit": "g",
-        "grams": 15
+        "amount": 15.0,
+        "unit": "ml",
+        "nutritionAmount": 15.0
       },
       {
         "foodId": "mustard",
-        "amount": 8,
-        "unit": "g",
-        "grams": 8
+        "amount": 8.0,
+        "unit": "ml",
+        "nutritionAmount": 8.0
       }
     ],
     "steps": [
@@ -440,27 +440,27 @@
     "ingredients": [
       {
         "foodId": "cucumber",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "greek_yogurt",
-        "amount": 200,
+        "amount": 200.0,
         "unit": "g",
-        "grams": 200
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "lemon",
-        "amount": 30,
+        "amount": 30.0,
         "unit": "g",
-        "grams": 30
+        "nutritionAmount": 30.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 10,
-        "unit": "g",
-        "grams": 10
+        "amount": 10.0,
+        "unit": "ml",
+        "nutritionAmount": 10.0
       }
     ],
     "steps": [
@@ -482,33 +482,33 @@
     "ingredients": [
       {
         "foodId": "broccoli",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "feta",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       },
       {
         "foodId": "almonds",
-        "amount": 40,
+        "amount": 40.0,
         "unit": "g",
-        "grams": 40
+        "nutritionAmount": 40.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 15,
-        "unit": "g",
-        "grams": 15
+        "amount": 15.0,
+        "unit": "ml",
+        "nutritionAmount": 15.0
       },
       {
         "foodId": "lemon",
-        "amount": 30,
+        "amount": 30.0,
         "unit": "g",
-        "grams": 30
+        "nutritionAmount": 30.0
       }
     ],
     "steps": [
@@ -530,27 +530,27 @@
     "ingredients": [
       {
         "foodId": "whole_bread",
-        "amount": 240,
+        "amount": 240.0,
         "unit": "g",
-        "grams": 240
+        "nutritionAmount": 240.0
       },
       {
         "foodId": "smoked_salmon",
-        "amount": 160,
+        "amount": 160.0,
         "unit": "g",
-        "grams": 160
+        "nutritionAmount": 160.0
       },
       {
         "foodId": "cottage",
-        "amount": 120,
+        "amount": 120.0,
         "unit": "g",
-        "grams": 120
+        "nutritionAmount": 120.0
       },
       {
         "foodId": "lemon",
-        "amount": 30,
+        "amount": 30.0,
         "unit": "g",
-        "grams": 30
+        "nutritionAmount": 30.0
       }
     ],
     "steps": [
@@ -572,27 +572,27 @@
     "ingredients": [
       {
         "foodId": "mushroom",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "ricotta",
-        "amount": 180,
+        "amount": 180.0,
         "unit": "g",
-        "grams": 180
+        "nutritionAmount": 180.0
       },
       {
         "foodId": "parmesan",
-        "amount": 40,
+        "amount": 40.0,
         "unit": "g",
-        "grams": 40
+        "nutritionAmount": 40.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 10,
-        "unit": "g",
-        "grams": 10
+        "amount": 10.0,
+        "unit": "ml",
+        "nutritionAmount": 10.0
       }
     ],
     "steps": [
@@ -614,27 +614,27 @@
     "ingredients": [
       {
         "foodId": "cauliflower",
-        "amount": 650,
+        "amount": 650.0,
         "unit": "g",
-        "grams": 650
+        "nutritionAmount": 650.0
       },
       {
         "foodId": "potato",
-        "amount": 180,
+        "amount": 180.0,
         "unit": "g",
-        "grams": 180
+        "nutritionAmount": 180.0
       },
       {
         "foodId": "onion",
-        "amount": 70,
+        "amount": 70.0,
         "unit": "g",
-        "grams": 70
+        "nutritionAmount": 70.0
       },
       {
         "foodId": "cream",
-        "amount": 60,
-        "unit": "g",
-        "grams": 60
+        "amount": 60.0,
+        "unit": "ml",
+        "nutritionAmount": 60.0
       }
     ],
     "steps": [
@@ -656,39 +656,39 @@
     "ingredients": [
       {
         "foodId": "chicken",
-        "amount": 600,
+        "amount": 600.0,
         "unit": "g",
-        "grams": 600
+        "nutritionAmount": 600.0
       },
       {
         "foodId": "rice_basmati",
-        "amount": 300,
+        "amount": 300.0,
         "unit": "g",
-        "grams": 300
+        "nutritionAmount": 300.0
       },
       {
         "foodId": "coconut_milk",
-        "amount": 400,
-        "unit": "g",
-        "grams": 400
+        "amount": 400.0,
+        "unit": "ml",
+        "nutritionAmount": 400.0
       },
       {
         "foodId": "onion",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       },
       {
         "foodId": "curry_powder",
-        "amount": 15,
+        "amount": 15.0,
         "unit": "g",
-        "grams": 15
+        "nutritionAmount": 15.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 10,
-        "unit": "g",
-        "grams": 10
+        "amount": 10.0,
+        "unit": "ml",
+        "nutritionAmount": 10.0
       }
     ],
     "steps": [
@@ -711,33 +711,33 @@
     "ingredients": [
       {
         "foodId": "salmon",
-        "amount": 300,
+        "amount": 300.0,
         "unit": "g",
-        "grams": 300
+        "nutritionAmount": 300.0
       },
       {
         "foodId": "rice_basmati",
-        "amount": 160,
+        "amount": 160.0,
         "unit": "g",
-        "grams": 160
+        "nutritionAmount": 160.0
       },
       {
         "foodId": "broccoli",
-        "amount": 300,
+        "amount": 300.0,
         "unit": "g",
-        "grams": 300
+        "nutritionAmount": 300.0
       },
       {
         "foodId": "lemon",
-        "amount": 30,
+        "amount": 30.0,
         "unit": "g",
-        "grams": 30
+        "nutritionAmount": 30.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 8,
-        "unit": "g",
-        "grams": 8
+        "amount": 8.0,
+        "unit": "ml",
+        "nutritionAmount": 8.0
       }
     ],
     "steps": [
@@ -760,39 +760,39 @@
     "ingredients": [
       {
         "foodId": "beef_5",
-        "amount": 700,
+        "amount": 700.0,
         "unit": "g",
-        "grams": 700
+        "nutritionAmount": 700.0
       },
       {
         "foodId": "pasta",
-        "amount": 350,
+        "amount": 350.0,
         "unit": "g",
-        "grams": 350
+        "nutritionAmount": 350.0
       },
       {
         "foodId": "tomato_crushed",
-        "amount": 800,
+        "amount": 800.0,
         "unit": "g",
-        "grams": 800
+        "nutritionAmount": 800.0
       },
       {
         "foodId": "onion",
-        "amount": 150,
+        "amount": 150.0,
         "unit": "g",
-        "grams": 150
+        "nutritionAmount": 150.0
       },
       {
         "foodId": "grated_cheese",
-        "amount": 180,
+        "amount": 180.0,
         "unit": "g",
-        "grams": 180
+        "nutritionAmount": 180.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 10,
-        "unit": "g",
-        "grams": 10
+        "amount": 10.0,
+        "unit": "ml",
+        "nutritionAmount": 10.0
       }
     ],
     "steps": [
@@ -815,39 +815,39 @@
     "ingredients": [
       {
         "foodId": "beef_5",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "kidney_beans",
-        "amount": 260,
+        "amount": 260.0,
         "unit": "g",
-        "grams": 260
+        "nutritionAmount": 260.0
       },
       {
         "foodId": "tomato_crushed",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "corn",
-        "amount": 180,
+        "amount": 180.0,
         "unit": "g",
-        "grams": 180
+        "nutritionAmount": 180.0
       },
       {
         "foodId": "onion",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       },
       {
         "foodId": "rice_basmati",
-        "amount": 250,
+        "amount": 250.0,
         "unit": "g",
-        "grams": 250
+        "nutritionAmount": 250.0
       }
     ],
     "steps": [
@@ -869,39 +869,39 @@
     "ingredients": [
       {
         "foodId": "kidney_beans",
-        "amount": 280,
+        "amount": 280.0,
         "unit": "g",
-        "grams": 280
+        "nutritionAmount": 280.0
       },
       {
         "foodId": "black_beans",
-        "amount": 220,
+        "amount": 220.0,
         "unit": "g",
-        "grams": 220
+        "nutritionAmount": 220.0
       },
       {
         "foodId": "tomato_crushed",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "corn",
-        "amount": 180,
+        "amount": 180.0,
         "unit": "g",
-        "grams": 180
+        "nutritionAmount": 180.0
       },
       {
         "foodId": "onion",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       },
       {
         "foodId": "rice_basmati",
-        "amount": 250,
+        "amount": 250.0,
         "unit": "g",
-        "grams": 250
+        "nutritionAmount": 250.0
       }
     ],
     "steps": [
@@ -923,27 +923,27 @@
     "ingredients": [
       {
         "foodId": "pasta",
-        "amount": 400,
+        "amount": 400.0,
         "unit": "g",
-        "grams": 400
+        "nutritionAmount": 400.0
       },
       {
         "foodId": "egg",
-        "amount": 200,
-        "unit": "g",
-        "grams": 200
+        "amount": 4.0,
+        "unit": "pièce",
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "bacon",
-        "amount": 180,
+        "amount": 180.0,
         "unit": "g",
-        "grams": 180
+        "nutritionAmount": 180.0
       },
       {
         "foodId": "parmesan",
-        "amount": 90,
+        "amount": 90.0,
         "unit": "g",
-        "grams": 90
+        "nutritionAmount": 90.0
       }
     ],
     "steps": [
@@ -965,39 +965,39 @@
     "ingredients": [
       {
         "foodId": "pasta",
-        "amount": 400,
+        "amount": 400.0,
         "unit": "g",
-        "grams": 400
+        "nutritionAmount": 400.0
       },
       {
         "foodId": "beef_5",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "tomato_crushed",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "onion",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       },
       {
         "foodId": "carrot",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 10,
-        "unit": "g",
-        "grams": 10
+        "amount": 10.0,
+        "unit": "ml",
+        "nutritionAmount": 10.0
       }
     ],
     "steps": [
@@ -1019,33 +1019,33 @@
     "ingredients": [
       {
         "foodId": "rice_white",
-        "amount": 320,
+        "amount": 320.0,
         "unit": "g",
-        "grams": 320
+        "nutritionAmount": 320.0
       },
       {
         "foodId": "mushroom",
-        "amount": 400,
+        "amount": 400.0,
         "unit": "g",
-        "grams": 400
+        "nutritionAmount": 400.0
       },
       {
         "foodId": "onion",
-        "amount": 80,
+        "amount": 80.0,
         "unit": "g",
-        "grams": 80
+        "nutritionAmount": 80.0
       },
       {
         "foodId": "parmesan",
-        "amount": 70,
+        "amount": 70.0,
         "unit": "g",
-        "grams": 70
+        "nutritionAmount": 70.0
       },
       {
         "foodId": "butter",
-        "amount": 25,
+        "amount": 25.0,
         "unit": "g",
-        "grams": 25
+        "nutritionAmount": 25.0
       }
     ],
     "steps": [
@@ -1067,39 +1067,39 @@
     "ingredients": [
       {
         "foodId": "red_lentils",
-        "amount": 320,
+        "amount": 320.0,
         "unit": "g",
-        "grams": 320
+        "nutritionAmount": 320.0
       },
       {
         "foodId": "coconut_milk",
-        "amount": 300,
-        "unit": "g",
-        "grams": 300
+        "amount": 300.0,
+        "unit": "ml",
+        "nutritionAmount": 300.0
       },
       {
         "foodId": "tomato_crushed",
-        "amount": 300,
+        "amount": 300.0,
         "unit": "g",
-        "grams": 300
+        "nutritionAmount": 300.0
       },
       {
         "foodId": "onion",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       },
       {
         "foodId": "curry_powder",
-        "amount": 15,
+        "amount": 15.0,
         "unit": "g",
-        "grams": 15
+        "nutritionAmount": 15.0
       },
       {
         "foodId": "rice_basmati",
-        "amount": 240,
+        "amount": 240.0,
         "unit": "g",
-        "grams": 240
+        "nutritionAmount": 240.0
       }
     ],
     "steps": [
@@ -1121,39 +1121,39 @@
     "ingredients": [
       {
         "foodId": "chickpeas",
-        "amount": 300,
+        "amount": 300.0,
         "unit": "g",
-        "grams": 300
+        "nutritionAmount": 300.0
       },
       {
         "foodId": "coconut_milk",
-        "amount": 350,
-        "unit": "g",
-        "grams": 350
+        "amount": 350.0,
+        "unit": "ml",
+        "nutritionAmount": 350.0
       },
       {
         "foodId": "tomato_crushed",
-        "amount": 300,
+        "amount": 300.0,
         "unit": "g",
-        "grams": 300
+        "nutritionAmount": 300.0
       },
       {
         "foodId": "spinach",
-        "amount": 200,
+        "amount": 200.0,
         "unit": "g",
-        "grams": 200
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "rice_basmati",
-        "amount": 240,
+        "amount": 240.0,
         "unit": "g",
-        "grams": 240
+        "nutritionAmount": 240.0
       },
       {
         "foodId": "curry_powder",
-        "amount": 12,
+        "amount": 12.0,
         "unit": "g",
-        "grams": 12
+        "nutritionAmount": 12.0
       }
     ],
     "steps": [
@@ -1175,39 +1175,39 @@
     "ingredients": [
       {
         "foodId": "beef_5",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "tortilla",
-        "amount": 320,
+        "amount": 320.0,
         "unit": "g",
-        "grams": 320
+        "nutritionAmount": 320.0
       },
       {
         "foodId": "tomato",
-        "amount": 250,
+        "amount": 250.0,
         "unit": "g",
-        "grams": 250
+        "nutritionAmount": 250.0
       },
       {
         "foodId": "avocado",
-        "amount": 200,
+        "amount": 200.0,
         "unit": "g",
-        "grams": 200
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "grated_cheese",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       },
       {
         "foodId": "lettuce",
-        "amount": 120,
+        "amount": 120.0,
         "unit": "g",
-        "grams": 120
+        "nutritionAmount": 120.0
       }
     ],
     "steps": [
@@ -1229,39 +1229,39 @@
     "ingredients": [
       {
         "foodId": "chicken",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "tortilla",
-        "amount": 320,
+        "amount": 320.0,
         "unit": "g",
-        "grams": 320
+        "nutritionAmount": 320.0
       },
       {
         "foodId": "avocado",
-        "amount": 200,
+        "amount": 200.0,
         "unit": "g",
-        "grams": 200
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "tomato",
-        "amount": 200,
+        "amount": 200.0,
         "unit": "g",
-        "grams": 200
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "lettuce",
-        "amount": 120,
+        "amount": 120.0,
         "unit": "g",
-        "grams": 120
+        "nutritionAmount": 120.0
       },
       {
         "foodId": "greek_yogurt",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       }
     ],
     "steps": [
@@ -1283,39 +1283,39 @@
     "ingredients": [
       {
         "foodId": "salmon",
-        "amount": 280,
+        "amount": 280.0,
         "unit": "g",
-        "grams": 280
+        "nutritionAmount": 280.0
       },
       {
         "foodId": "rice_basmati",
-        "amount": 160,
+        "amount": 160.0,
         "unit": "g",
-        "grams": 160
+        "nutritionAmount": 160.0
       },
       {
         "foodId": "avocado",
-        "amount": 140,
+        "amount": 140.0,
         "unit": "g",
-        "grams": 140
+        "nutritionAmount": 140.0
       },
       {
         "foodId": "cucumber",
-        "amount": 150,
+        "amount": 150.0,
         "unit": "g",
-        "grams": 150
+        "nutritionAmount": 150.0
       },
       {
         "foodId": "soy_sauce",
-        "amount": 25,
-        "unit": "g",
-        "grams": 25
+        "amount": 25.0,
+        "unit": "ml",
+        "nutritionAmount": 25.0
       },
       {
         "foodId": "sesame",
-        "amount": 10,
+        "amount": 10.0,
         "unit": "g",
-        "grams": 10
+        "nutritionAmount": 10.0
       }
     ],
     "steps": [
@@ -1338,39 +1338,39 @@
     "ingredients": [
       {
         "foodId": "flour",
-        "amount": 250,
+        "amount": 250.0,
         "unit": "g",
-        "grams": 250
+        "nutritionAmount": 250.0
       },
       {
         "foodId": "butter",
-        "amount": 125,
+        "amount": 125.0,
         "unit": "g",
-        "grams": 125
+        "nutritionAmount": 125.0
       },
       {
         "foodId": "egg",
-        "amount": 300,
-        "unit": "g",
-        "grams": 300
+        "amount": 6.0,
+        "unit": "pièce",
+        "nutritionAmount": 300.0
       },
       {
         "foodId": "bacon",
-        "amount": 200,
+        "amount": 200.0,
         "unit": "g",
-        "grams": 200
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "cream",
-        "amount": 250,
-        "unit": "g",
-        "grams": 250
+        "amount": 250.0,
+        "unit": "ml",
+        "nutritionAmount": 250.0
       },
       {
         "foodId": "grated_cheese",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       }
     ],
     "steps": [
@@ -1392,33 +1392,33 @@
     "ingredients": [
       {
         "foodId": "potato",
-        "amount": 1200,
+        "amount": 1200.0,
         "unit": "g",
-        "grams": 1200
+        "nutritionAmount": 1200.0
       },
       {
         "foodId": "cream",
-        "amount": 500,
-        "unit": "g",
-        "grams": 500
+        "amount": 500.0,
+        "unit": "ml",
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "milk",
-        "amount": 300,
-        "unit": "g",
-        "grams": 300
+        "amount": 300.0,
+        "unit": "ml",
+        "nutritionAmount": 300.0
       },
       {
         "foodId": "garlic",
-        "amount": 8,
+        "amount": 8.0,
         "unit": "g",
-        "grams": 8
+        "nutritionAmount": 8.0
       },
       {
         "foodId": "grated_cheese",
-        "amount": 120,
+        "amount": 120.0,
         "unit": "g",
-        "grams": 120
+        "nutritionAmount": 120.0
       }
     ],
     "steps": [
@@ -1440,39 +1440,39 @@
     "ingredients": [
       {
         "foodId": "beef_5",
-        "amount": 700,
+        "amount": 700.0,
         "unit": "g",
-        "grams": 700
+        "nutritionAmount": 700.0
       },
       {
         "foodId": "potato",
-        "amount": 1200,
+        "amount": 1200.0,
         "unit": "g",
-        "grams": 1200
+        "nutritionAmount": 1200.0
       },
       {
         "foodId": "milk",
-        "amount": 250,
-        "unit": "g",
-        "grams": 250
+        "amount": 250.0,
+        "unit": "ml",
+        "nutritionAmount": 250.0
       },
       {
         "foodId": "butter",
-        "amount": 40,
+        "amount": 40.0,
         "unit": "g",
-        "grams": 40
+        "nutritionAmount": 40.0
       },
       {
         "foodId": "onion",
-        "amount": 120,
+        "amount": 120.0,
         "unit": "g",
-        "grams": 120
+        "nutritionAmount": 120.0
       },
       {
         "foodId": "grated_cheese",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       }
     ],
     "steps": [
@@ -1494,39 +1494,39 @@
     "ingredients": [
       {
         "foodId": "chicken",
-        "amount": 700,
+        "amount": 700.0,
         "unit": "g",
-        "grams": 700
+        "nutritionAmount": 700.0
       },
       {
         "foodId": "pepper",
-        "amount": 400,
+        "amount": 400.0,
         "unit": "g",
-        "grams": 400
+        "nutritionAmount": 400.0
       },
       {
         "foodId": "tomato_crushed",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "onion",
-        "amount": 120,
+        "amount": 120.0,
         "unit": "g",
-        "grams": 120
+        "nutritionAmount": 120.0
       },
       {
         "foodId": "rice_basmati",
-        "amount": 280,
+        "amount": 280.0,
         "unit": "g",
-        "grams": 280
+        "nutritionAmount": 280.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 15,
-        "unit": "g",
-        "grams": 15
+        "amount": 15.0,
+        "unit": "ml",
+        "nutritionAmount": 15.0
       }
     ],
     "steps": [
@@ -1548,39 +1548,39 @@
     "ingredients": [
       {
         "foodId": "beef_5",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "rice_basmati",
-        "amount": 300,
+        "amount": 300.0,
         "unit": "g",
-        "grams": 300
+        "nutritionAmount": 300.0
       },
       {
         "foodId": "broccoli",
-        "amount": 350,
+        "amount": 350.0,
         "unit": "g",
-        "grams": 350
+        "nutritionAmount": 350.0
       },
       {
         "foodId": "pepper",
-        "amount": 200,
+        "amount": 200.0,
         "unit": "g",
-        "grams": 200
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "soy_sauce",
-        "amount": 50,
-        "unit": "g",
-        "grams": 50
+        "amount": 50.0,
+        "unit": "ml",
+        "nutritionAmount": 50.0
       },
       {
         "foodId": "sesame",
-        "amount": 15,
+        "amount": 15.0,
         "unit": "g",
-        "grams": 15
+        "nutritionAmount": 15.0
       }
     ],
     "steps": [
@@ -1603,39 +1603,39 @@
     "ingredients": [
       {
         "foodId": "pasta",
-        "amount": 350,
+        "amount": 350.0,
         "unit": "g",
-        "grams": 350
+        "nutritionAmount": 350.0
       },
       {
         "foodId": "chicken",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "carrot",
-        "amount": 150,
+        "amount": 150.0,
         "unit": "g",
-        "grams": 150
+        "nutritionAmount": 150.0
       },
       {
         "foodId": "pepper",
-        "amount": 200,
+        "amount": 200.0,
         "unit": "g",
-        "grams": 200
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "zucchini",
-        "amount": 200,
+        "amount": 200.0,
         "unit": "g",
-        "grams": 200
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "soy_sauce",
-        "amount": 45,
-        "unit": "g",
-        "grams": 45
+        "amount": 45.0,
+        "unit": "ml",
+        "nutritionAmount": 45.0
       }
     ],
     "steps": [
@@ -1657,39 +1657,39 @@
     "ingredients": [
       {
         "foodId": "couscous",
-        "amount": 450,
+        "amount": 450.0,
         "unit": "g",
-        "grams": 450
+        "nutritionAmount": 450.0
       },
       {
         "foodId": "chicken",
-        "amount": 800,
+        "amount": 800.0,
         "unit": "g",
-        "grams": 800
+        "nutritionAmount": 800.0
       },
       {
         "foodId": "carrot",
-        "amount": 300,
+        "amount": 300.0,
         "unit": "g",
-        "grams": 300
+        "nutritionAmount": 300.0
       },
       {
         "foodId": "zucchini",
-        "amount": 350,
+        "amount": 350.0,
         "unit": "g",
-        "grams": 350
+        "nutritionAmount": 350.0
       },
       {
         "foodId": "chickpeas",
-        "amount": 250,
+        "amount": 250.0,
         "unit": "g",
-        "grams": 250
+        "nutritionAmount": 250.0
       },
       {
         "foodId": "tomato_crushed",
-        "amount": 350,
+        "amount": 350.0,
         "unit": "g",
-        "grams": 350
+        "nutritionAmount": 350.0
       }
     ],
     "steps": [
@@ -1711,45 +1711,45 @@
     "ingredients": [
       {
         "foodId": "bread",
-        "amount": 320,
+        "amount": 320.0,
         "unit": "g",
-        "grams": 320
+        "nutritionAmount": 320.0
       },
       {
         "foodId": "beef_5",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "grated_cheese",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       },
       {
         "foodId": "tomato",
-        "amount": 200,
+        "amount": 200.0,
         "unit": "g",
-        "grams": 200
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "lettuce",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       },
       {
         "foodId": "onion",
-        "amount": 80,
+        "amount": 80.0,
         "unit": "g",
-        "grams": 80
+        "nutritionAmount": 80.0
       },
       {
         "foodId": "potato",
-        "amount": 800,
+        "amount": 800.0,
         "unit": "g",
-        "grams": 800
+        "nutritionAmount": 800.0
       }
     ],
     "steps": [
@@ -1771,27 +1771,27 @@
     "ingredients": [
       {
         "foodId": "egg",
-        "amount": 500,
-        "unit": "g",
-        "grams": 500
+        "amount": 10.0,
+        "unit": "pièce",
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "potato",
-        "amount": 700,
+        "amount": 700.0,
         "unit": "g",
-        "grams": 700
+        "nutritionAmount": 700.0
       },
       {
         "foodId": "onion",
-        "amount": 120,
+        "amount": 120.0,
         "unit": "g",
-        "grams": 120
+        "nutritionAmount": 120.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 25,
-        "unit": "g",
-        "grams": 25
+        "amount": 25.0,
+        "unit": "ml",
+        "nutritionAmount": 25.0
       }
     ],
     "steps": [
@@ -1813,33 +1813,33 @@
     "ingredients": [
       {
         "foodId": "pasta",
-        "amount": 400,
+        "amount": 400.0,
         "unit": "g",
-        "grams": 400
+        "nutritionAmount": 400.0
       },
       {
         "foodId": "chicken",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "pesto",
-        "amount": 120,
-        "unit": "g",
-        "grams": 120
+        "amount": 120.0,
+        "unit": "ml",
+        "nutritionAmount": 120.0
       },
       {
         "foodId": "tomato",
-        "amount": 200,
+        "amount": 200.0,
         "unit": "g",
-        "grams": 200
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "parmesan",
-        "amount": 50,
+        "amount": 50.0,
         "unit": "g",
-        "grams": 50
+        "nutritionAmount": 50.0
       }
     ],
     "steps": [
@@ -1861,39 +1861,39 @@
     "ingredients": [
       {
         "foodId": "salmon",
-        "amount": 600,
+        "amount": 600.0,
         "unit": "g",
-        "grams": 600
+        "nutritionAmount": 600.0
       },
       {
         "foodId": "potato",
-        "amount": 700,
+        "amount": 700.0,
         "unit": "g",
-        "grams": 700
+        "nutritionAmount": 700.0
       },
       {
         "foodId": "zucchini",
-        "amount": 300,
+        "amount": 300.0,
         "unit": "g",
-        "grams": 300
+        "nutritionAmount": 300.0
       },
       {
         "foodId": "broccoli",
-        "amount": 300,
+        "amount": 300.0,
         "unit": "g",
-        "grams": 300
+        "nutritionAmount": 300.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 20,
-        "unit": "g",
-        "grams": 20
+        "amount": 20.0,
+        "unit": "ml",
+        "nutritionAmount": 20.0
       },
       {
         "foodId": "lemon",
-        "amount": 40,
+        "amount": 40.0,
         "unit": "g",
-        "grams": 40
+        "nutritionAmount": 40.0
       }
     ],
     "steps": [
@@ -1915,39 +1915,39 @@
     "ingredients": [
       {
         "foodId": "quinoa",
-        "amount": 280,
+        "amount": 280.0,
         "unit": "g",
-        "grams": 280
+        "nutritionAmount": 280.0
       },
       {
         "foodId": "chickpeas",
-        "amount": 220,
+        "amount": 220.0,
         "unit": "g",
-        "grams": 220
+        "nutritionAmount": 220.0
       },
       {
         "foodId": "zucchini",
-        "amount": 250,
+        "amount": 250.0,
         "unit": "g",
-        "grams": 250
+        "nutritionAmount": 250.0
       },
       {
         "foodId": "pepper",
-        "amount": 200,
+        "amount": 200.0,
         "unit": "g",
-        "grams": 200
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "feta",
-        "amount": 120,
+        "amount": 120.0,
         "unit": "g",
-        "grams": 120
+        "nutritionAmount": 120.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 20,
-        "unit": "g",
-        "grams": 20
+        "amount": 20.0,
+        "unit": "ml",
+        "nutritionAmount": 20.0
       }
     ],
     "steps": [
@@ -1969,39 +1969,39 @@
     "ingredients": [
       {
         "foodId": "tofu",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "rice_basmati",
-        "amount": 300,
+        "amount": 300.0,
         "unit": "g",
-        "grams": 300
+        "nutritionAmount": 300.0
       },
       {
         "foodId": "broccoli",
-        "amount": 300,
+        "amount": 300.0,
         "unit": "g",
-        "grams": 300
+        "nutritionAmount": 300.0
       },
       {
         "foodId": "carrot",
-        "amount": 150,
+        "amount": 150.0,
         "unit": "g",
-        "grams": 150
+        "nutritionAmount": 150.0
       },
       {
         "foodId": "soy_sauce",
-        "amount": 50,
-        "unit": "g",
-        "grams": 50
+        "amount": 50.0,
+        "unit": "ml",
+        "nutritionAmount": 50.0
       },
       {
         "foodId": "sesame",
-        "amount": 15,
+        "amount": 15.0,
         "unit": "g",
-        "grams": 15
+        "nutritionAmount": 15.0
       }
     ],
     "steps": [
@@ -2024,39 +2024,39 @@
     "ingredients": [
       {
         "foodId": "turkey",
-        "amount": 600,
+        "amount": 600.0,
         "unit": "g",
-        "grams": 600
+        "nutritionAmount": 600.0
       },
       {
         "foodId": "egg",
-        "amount": 100,
-        "unit": "g",
-        "grams": 100
+        "amount": 2.0,
+        "unit": "pièce",
+        "nutritionAmount": 100.0
       },
       {
         "foodId": "tomato_crushed",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "pasta",
-        "amount": 350,
+        "amount": 350.0,
         "unit": "g",
-        "grams": 350
+        "nutritionAmount": 350.0
       },
       {
         "foodId": "parmesan",
-        "amount": 50,
+        "amount": 50.0,
         "unit": "g",
-        "grams": 50
+        "nutritionAmount": 50.0
       },
       {
         "foodId": "onion",
-        "amount": 80,
+        "amount": 80.0,
         "unit": "g",
-        "grams": 80
+        "nutritionAmount": 80.0
       }
     ],
     "steps": [
@@ -2078,33 +2078,33 @@
     "ingredients": [
       {
         "foodId": "cod",
-        "amount": 650,
+        "amount": 650.0,
         "unit": "g",
-        "grams": 650
+        "nutritionAmount": 650.0
       },
       {
         "foodId": "potato",
-        "amount": 900,
+        "amount": 900.0,
         "unit": "g",
-        "grams": 900
+        "nutritionAmount": 900.0
       },
       {
         "foodId": "green_beans",
-        "amount": 400,
+        "amount": 400.0,
         "unit": "g",
-        "grams": 400
+        "nutritionAmount": 400.0
       },
       {
         "foodId": "olive_oil",
-        "amount": 20,
-        "unit": "g",
-        "grams": 20
+        "amount": 20.0,
+        "unit": "ml",
+        "nutritionAmount": 20.0
       },
       {
         "foodId": "lemon",
-        "amount": 40,
+        "amount": 40.0,
         "unit": "g",
-        "grams": 40
+        "nutritionAmount": 40.0
       }
     ],
     "steps": [
@@ -2126,39 +2126,39 @@
     "ingredients": [
       {
         "foodId": "shrimp",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "rice_basmati",
-        "amount": 320,
+        "amount": 320.0,
         "unit": "g",
-        "grams": 320
+        "nutritionAmount": 320.0
       },
       {
         "foodId": "egg",
-        "amount": 150,
-        "unit": "g",
-        "grams": 150
+        "amount": 3.0,
+        "unit": "pièce",
+        "nutritionAmount": 150.0
       },
       {
         "foodId": "peas",
-        "amount": 180,
+        "amount": 180.0,
         "unit": "g",
-        "grams": 180
+        "nutritionAmount": 180.0
       },
       {
         "foodId": "carrot",
-        "amount": 150,
+        "amount": 150.0,
         "unit": "g",
-        "grams": 150
+        "nutritionAmount": 150.0
       },
       {
         "foodId": "soy_sauce",
-        "amount": 45,
-        "unit": "g",
-        "grams": 45
+        "amount": 45.0,
+        "unit": "ml",
+        "nutritionAmount": 45.0
       }
     ],
     "steps": [
@@ -2180,39 +2180,39 @@
     "ingredients": [
       {
         "foodId": "zucchini",
-        "amount": 1000,
+        "amount": 1000.0,
         "unit": "g",
-        "grams": 1000
+        "nutritionAmount": 1000.0
       },
       {
         "foodId": "beef_5",
-        "amount": 500,
+        "amount": 500.0,
         "unit": "g",
-        "grams": 500
+        "nutritionAmount": 500.0
       },
       {
         "foodId": "tomato_crushed",
-        "amount": 250,
+        "amount": 250.0,
         "unit": "g",
-        "grams": 250
+        "nutritionAmount": 250.0
       },
       {
         "foodId": "onion",
-        "amount": 80,
+        "amount": 80.0,
         "unit": "g",
-        "grams": 80
+        "nutritionAmount": 80.0
       },
       {
         "foodId": "grated_cheese",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       },
       {
         "foodId": "rice_basmati",
-        "amount": 220,
+        "amount": 220.0,
         "unit": "g",
-        "grams": 220
+        "nutritionAmount": 220.0
       }
     ],
     "steps": [
@@ -2234,39 +2234,39 @@
     "ingredients": [
       {
         "foodId": "flour",
-        "amount": 250,
+        "amount": 250.0,
         "unit": "g",
-        "grams": 250
+        "nutritionAmount": 250.0
       },
       {
         "foodId": "milk",
-        "amount": 300,
-        "unit": "g",
-        "grams": 300
+        "amount": 300.0,
+        "unit": "ml",
+        "nutritionAmount": 300.0
       },
       {
         "foodId": "egg",
-        "amount": 150,
-        "unit": "g",
-        "grams": 150
+        "amount": 3.0,
+        "unit": "pièce",
+        "nutritionAmount": 150.0
       },
       {
         "foodId": "sugar",
-        "amount": 30,
+        "amount": 30.0,
         "unit": "g",
-        "grams": 30
+        "nutritionAmount": 30.0
       },
       {
         "foodId": "butter",
-        "amount": 20,
+        "amount": 20.0,
         "unit": "g",
-        "grams": 20
+        "nutritionAmount": 20.0
       },
       {
         "foodId": "baking_powder",
-        "amount": 10,
+        "amount": 10.0,
         "unit": "g",
-        "grams": 10
+        "nutritionAmount": 10.0
       }
     ],
     "steps": [
@@ -2288,33 +2288,33 @@
     "ingredients": [
       {
         "foodId": "oats",
-        "amount": 70,
+        "amount": 70.0,
         "unit": "g",
-        "grams": 70
+        "nutritionAmount": 70.0
       },
       {
         "foodId": "milk",
-        "amount": 160,
-        "unit": "g",
-        "grams": 160
+        "amount": 160.0,
+        "unit": "ml",
+        "nutritionAmount": 160.0
       },
       {
         "foodId": "skyr",
-        "amount": 120,
+        "amount": 120.0,
         "unit": "g",
-        "grams": 120
+        "nutritionAmount": 120.0
       },
       {
         "foodId": "berries",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       },
       {
         "foodId": "honey",
-        "amount": 10,
+        "amount": 10.0,
         "unit": "g",
-        "grams": 10
+        "nutritionAmount": 10.0
       }
     ],
     "steps": [
@@ -2337,39 +2337,39 @@
     "ingredients": [
       {
         "foodId": "banana",
-        "amount": 350,
+        "amount": 350.0,
         "unit": "g",
-        "grams": 350
+        "nutritionAmount": 350.0
       },
       {
         "foodId": "flour",
-        "amount": 220,
+        "amount": 220.0,
         "unit": "g",
-        "grams": 220
+        "nutritionAmount": 220.0
       },
       {
         "foodId": "egg",
-        "amount": 150,
-        "unit": "g",
-        "grams": 150
+        "amount": 3.0,
+        "unit": "pièce",
+        "nutritionAmount": 150.0
       },
       {
         "foodId": "butter",
-        "amount": 80,
+        "amount": 80.0,
         "unit": "g",
-        "grams": 80
+        "nutritionAmount": 80.0
       },
       {
         "foodId": "sugar",
-        "amount": 70,
+        "amount": 70.0,
         "unit": "g",
-        "grams": 70
+        "nutritionAmount": 70.0
       },
       {
         "foodId": "baking_powder",
-        "amount": 10,
+        "amount": 10.0,
         "unit": "g",
-        "grams": 10
+        "nutritionAmount": 10.0
       }
     ],
     "steps": [
@@ -2391,33 +2391,33 @@
     "ingredients": [
       {
         "foodId": "flour",
-        "amount": 240,
+        "amount": 240.0,
         "unit": "g",
-        "grams": 240
+        "nutritionAmount": 240.0
       },
       {
         "foodId": "butter",
-        "amount": 120,
+        "amount": 120.0,
         "unit": "g",
-        "grams": 120
+        "nutritionAmount": 120.0
       },
       {
         "foodId": "sugar",
-        "amount": 110,
+        "amount": 110.0,
         "unit": "g",
-        "grams": 110
+        "nutritionAmount": 110.0
       },
       {
         "foodId": "egg",
-        "amount": 100,
-        "unit": "g",
-        "grams": 100
+        "amount": 2.0,
+        "unit": "pièce",
+        "nutritionAmount": 100.0
       },
       {
         "foodId": "dark_chocolate",
-        "amount": 140,
+        "amount": 140.0,
         "unit": "g",
-        "grams": 140
+        "nutritionAmount": 140.0
       }
     ],
     "steps": [
@@ -2439,15 +2439,15 @@
     "ingredients": [
       {
         "foodId": "dark_chocolate",
-        "amount": 200,
+        "amount": 200.0,
         "unit": "g",
-        "grams": 200
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "egg",
-        "amount": 250,
-        "unit": "g",
-        "grams": 250
+        "amount": 5.0,
+        "unit": "pièce",
+        "nutritionAmount": 250.0
       }
     ],
     "steps": [
@@ -2469,33 +2469,33 @@
     "ingredients": [
       {
         "foodId": "apple",
-        "amount": 800,
+        "amount": 800.0,
         "unit": "g",
-        "grams": 800
+        "nutritionAmount": 800.0
       },
       {
         "foodId": "flour",
-        "amount": 160,
+        "amount": 160.0,
         "unit": "g",
-        "grams": 160
+        "nutritionAmount": 160.0
       },
       {
         "foodId": "butter",
-        "amount": 110,
+        "amount": 110.0,
         "unit": "g",
-        "grams": 110
+        "nutritionAmount": 110.0
       },
       {
         "foodId": "sugar",
-        "amount": 90,
+        "amount": 90.0,
         "unit": "g",
-        "grams": 90
+        "nutritionAmount": 90.0
       },
       {
         "foodId": "cinnamon",
-        "amount": 5,
+        "amount": 5.0,
         "unit": "g",
-        "grams": 5
+        "nutritionAmount": 5.0
       }
     ],
     "steps": [
@@ -2517,27 +2517,27 @@
     "ingredients": [
       {
         "foodId": "skyr",
-        "amount": 250,
+        "amount": 250.0,
         "unit": "g",
-        "grams": 250
+        "nutritionAmount": 250.0
       },
       {
         "foodId": "berries",
-        "amount": 150,
+        "amount": 150.0,
         "unit": "g",
-        "grams": 150
+        "nutritionAmount": 150.0
       },
       {
         "foodId": "honey",
-        "amount": 10,
+        "amount": 10.0,
         "unit": "g",
-        "grams": 10
+        "nutritionAmount": 10.0
       },
       {
         "foodId": "almonds",
-        "amount": 15,
+        "amount": 15.0,
         "unit": "g",
-        "grams": 15
+        "nutritionAmount": 15.0
       }
     ],
     "steps": [
@@ -2559,27 +2559,27 @@
     "ingredients": [
       {
         "foodId": "skyr",
-        "amount": 250,
+        "amount": 250.0,
         "unit": "g",
-        "grams": 250
+        "nutritionAmount": 250.0
       },
       {
         "foodId": "granola",
-        "amount": 50,
+        "amount": 50.0,
         "unit": "g",
-        "grams": 50
+        "nutritionAmount": 50.0
       },
       {
         "foodId": "banana",
-        "amount": 120,
+        "amount": 120.0,
         "unit": "g",
-        "grams": 120
+        "nutritionAmount": 120.0
       },
       {
         "foodId": "blueberry",
-        "amount": 60,
+        "amount": 60.0,
         "unit": "g",
-        "grams": 60
+        "nutritionAmount": 60.0
       }
     ],
     "steps": [
@@ -2601,33 +2601,33 @@
     "ingredients": [
       {
         "foodId": "oats",
-        "amount": 150,
+        "amount": 150.0,
         "unit": "g",
-        "grams": 150
+        "nutritionAmount": 150.0
       },
       {
         "foodId": "peanut_butter",
-        "amount": 120,
+        "amount": 120.0,
         "unit": "g",
-        "grams": 120
+        "nutritionAmount": 120.0
       },
       {
         "foodId": "honey",
-        "amount": 60,
+        "amount": 60.0,
         "unit": "g",
-        "grams": 60
+        "nutritionAmount": 60.0
       },
       {
         "foodId": "cocoa",
-        "amount": 25,
+        "amount": 25.0,
         "unit": "g",
-        "grams": 25
+        "nutritionAmount": 25.0
       },
       {
         "foodId": "chia",
-        "amount": 20,
+        "amount": 20.0,
         "unit": "g",
-        "grams": 20
+        "nutritionAmount": 20.0
       }
     ],
     "steps": [
@@ -2649,33 +2649,33 @@
     "ingredients": [
       {
         "foodId": "oats",
-        "amount": 70,
+        "amount": 70.0,
         "unit": "g",
-        "grams": 70
+        "nutritionAmount": 70.0
       },
       {
         "foodId": "milk",
-        "amount": 250,
-        "unit": "g",
-        "grams": 250
+        "amount": 250.0,
+        "unit": "ml",
+        "nutritionAmount": 250.0
       },
       {
         "foodId": "banana",
-        "amount": 120,
+        "amount": 120.0,
         "unit": "g",
-        "grams": 120
+        "nutritionAmount": 120.0
       },
       {
         "foodId": "peanut_butter",
-        "amount": 15,
+        "amount": 15.0,
         "unit": "g",
-        "grams": 15
+        "nutritionAmount": 15.0
       },
       {
         "foodId": "cinnamon",
-        "amount": 2,
+        "amount": 2.0,
         "unit": "g",
-        "grams": 2
+        "nutritionAmount": 2.0
       }
     ],
     "steps": [
@@ -2697,39 +2697,39 @@
     "ingredients": [
       {
         "foodId": "dark_chocolate",
-        "amount": 200,
+        "amount": 200.0,
         "unit": "g",
-        "grams": 200
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "butter",
-        "amount": 120,
+        "amount": 120.0,
         "unit": "g",
-        "grams": 120
+        "nutritionAmount": 120.0
       },
       {
         "foodId": "sugar",
-        "amount": 120,
+        "amount": 120.0,
         "unit": "g",
-        "grams": 120
+        "nutritionAmount": 120.0
       },
       {
         "foodId": "egg",
-        "amount": 200,
-        "unit": "g",
-        "grams": 200
+        "amount": 4.0,
+        "unit": "pièce",
+        "nutritionAmount": 200.0
       },
       {
         "foodId": "flour",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       },
       {
         "foodId": "walnuts",
-        "amount": 70,
+        "amount": 70.0,
         "unit": "g",
-        "grams": 70
+        "nutritionAmount": 70.0
       }
     ],
     "steps": [
@@ -2751,21 +2751,21 @@
     "ingredients": [
       {
         "foodId": "apple",
-        "amount": 900,
+        "amount": 900.0,
         "unit": "g",
-        "grams": 900
+        "nutritionAmount": 900.0
       },
       {
         "foodId": "cinnamon",
-        "amount": 3,
+        "amount": 3.0,
         "unit": "g",
-        "grams": 3
+        "nutritionAmount": 3.0
       },
       {
         "foodId": "honey",
-        "amount": 20,
+        "amount": 20.0,
         "unit": "g",
-        "grams": 20
+        "nutritionAmount": 20.0
       }
     ],
     "steps": [
@@ -2787,27 +2787,27 @@
     "ingredients": [
       {
         "foodId": "chia",
-        "amount": 60,
+        "amount": 60.0,
         "unit": "g",
-        "grams": 60
+        "nutritionAmount": 60.0
       },
       {
         "foodId": "milk",
-        "amount": 350,
-        "unit": "g",
-        "grams": 350
+        "amount": 350.0,
+        "unit": "ml",
+        "nutritionAmount": 350.0
       },
       {
         "foodId": "berries",
-        "amount": 150,
+        "amount": 150.0,
         "unit": "g",
-        "grams": 150
+        "nutritionAmount": 150.0
       },
       {
         "foodId": "maple",
-        "amount": 20,
+        "amount": 20.0,
         "unit": "g",
-        "grams": 20
+        "nutritionAmount": 20.0
       }
     ],
     "steps": [
@@ -2829,27 +2829,27 @@
     "ingredients": [
       {
         "foodId": "oats",
-        "amount": 100,
+        "amount": 100.0,
         "unit": "g",
-        "grams": 100
+        "nutritionAmount": 100.0
       },
       {
         "foodId": "egg",
-        "amount": 150,
-        "unit": "g",
-        "grams": 150
+        "amount": 3.0,
+        "unit": "pièce",
+        "nutritionAmount": 150.0
       },
       {
         "foodId": "banana",
-        "amount": 120,
+        "amount": 120.0,
         "unit": "g",
-        "grams": 120
+        "nutritionAmount": 120.0
       },
       {
         "foodId": "skyr",
-        "amount": 150,
+        "amount": 150.0,
         "unit": "g",
-        "grams": 150
+        "nutritionAmount": 150.0
       }
     ],
     "steps": [
@@ -2871,21 +2871,21 @@
     "ingredients": [
       {
         "foodId": "pear",
-        "amount": 360,
+        "amount": 360.0,
         "unit": "g",
-        "grams": 360
+        "nutritionAmount": 360.0
       },
       {
         "foodId": "dark_chocolate",
-        "amount": 50,
+        "amount": 50.0,
         "unit": "g",
-        "grams": 50
+        "nutritionAmount": 50.0
       },
       {
         "foodId": "almonds",
-        "amount": 25,
+        "amount": 25.0,
         "unit": "g",
-        "grams": 25
+        "nutritionAmount": 25.0
       }
     ],
     "steps": [

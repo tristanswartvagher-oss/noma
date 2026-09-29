@@ -12,8 +12,10 @@
     "carbs": 77.8,
     "fat": 1.0,
     "fiber": 1.3,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "rice_white",
@@ -28,8 +30,10 @@
     "carbs": 79.0,
     "fat": 0.6,
     "fiber": 1.3,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "rice_brown",
@@ -44,8 +48,10 @@
     "carbs": 76.2,
     "fat": 2.7,
     "fiber": 3.4,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "pasta",
@@ -60,8 +66,10 @@
     "carbs": 71.5,
     "fat": 1.5,
     "fiber": 3.0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "whole_pasta",
@@ -76,8 +84,10 @@
     "carbs": 66.0,
     "fat": 2.5,
     "fiber": 8.0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "couscous",
@@ -92,8 +102,10 @@
     "carbs": 77.4,
     "fat": 0.6,
     "fiber": 5.0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "quinoa",
@@ -108,8 +120,10 @@
     "carbs": 64.2,
     "fat": 6.1,
     "fiber": 7.0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "oats",
@@ -124,8 +138,10 @@
     "carbs": 67.7,
     "fat": 6.5,
     "fiber": 10.1,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "flour",
@@ -140,8 +156,10 @@
     "carbs": 76.3,
     "fat": 1.0,
     "fiber": 2.7,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "whole_flour",
@@ -156,8 +174,10 @@
     "carbs": 72.0,
     "fat": 2.5,
     "fiber": 10.7,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "bread",
@@ -172,8 +192,10 @@
     "carbs": 49.0,
     "fat": 3.2,
     "fiber": 2.7,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "whole_bread",
@@ -188,8 +210,10 @@
     "carbs": 41.0,
     "fat": 4.2,
     "fiber": 7.0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "tortilla",
@@ -204,8 +228,10 @@
     "carbs": 52.0,
     "fat": 7.8,
     "fiber": 3.4,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "potato",
@@ -220,8 +246,11 @@
     "carbs": 17.5,
     "fat": 0.1,
     "fiber": 2.2,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "pieceWeight": 150,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "sweet_potato",
@@ -236,8 +265,11 @@
     "carbs": 20.1,
     "fat": 0.1,
     "fiber": 3.0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "pieceWeight": 250,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "lentils",
@@ -252,8 +284,10 @@
     "carbs": 63.4,
     "fat": 1.1,
     "fiber": 10.7,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "red_lentils",
@@ -268,8 +302,10 @@
     "carbs": 63.1,
     "fat": 2.2,
     "fiber": 10.8,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "chickpeas",
@@ -284,8 +320,10 @@
     "carbs": 60.7,
     "fat": 6.0,
     "fiber": 17.4,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "kidney_beans",
@@ -300,8 +338,10 @@
     "carbs": 60.0,
     "fat": 0.8,
     "fiber": 24.9,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "black_beans",
@@ -316,8 +356,10 @@
     "carbs": 62.4,
     "fat": 1.4,
     "fiber": 15.5,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "chicken",
@@ -332,8 +374,10 @@
     "carbs": 0,
     "fat": 2.6,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "turkey",
@@ -348,8 +392,10 @@
     "carbs": 0,
     "fat": 1.5,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "beef_5",
@@ -364,8 +410,10 @@
     "carbs": 0,
     "fat": 5.0,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "beef_15",
@@ -380,8 +428,10 @@
     "carbs": 0,
     "fat": 15.0,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "pork",
@@ -396,8 +446,10 @@
     "carbs": 0,
     "fat": 6.0,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "bacon",
@@ -412,8 +464,10 @@
     "carbs": 1.0,
     "fat": 27.0,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "salmon",
@@ -428,8 +482,10 @@
     "carbs": 0,
     "fat": 13.0,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "tuna",
@@ -444,8 +500,10 @@
     "carbs": 0,
     "fat": 1.0,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "cod",
@@ -460,8 +518,10 @@
     "carbs": 0,
     "fat": 0.7,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "shrimp",
@@ -476,8 +536,10 @@
     "carbs": 0.2,
     "fat": 0.5,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "egg",
@@ -492,8 +554,11 @@
     "carbs": 0.7,
     "fat": 9.5,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "pieceWeight": 50,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "milk",
@@ -502,14 +567,16 @@
     "category": "Produits laitiers & œufs",
     "state": "ready_to_eat",
     "referenceQuantity": 100,
-    "referenceUnit": "g",
+    "referenceUnit": "ml",
     "kcal": 47,
     "protein": 3.3,
     "carbs": 4.8,
     "fat": 1.6,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "whole_milk",
@@ -518,14 +585,16 @@
     "category": "Produits laitiers & œufs",
     "state": "ready_to_eat",
     "referenceQuantity": 100,
-    "referenceUnit": "g",
+    "referenceUnit": "ml",
     "kcal": 61,
     "protein": 3.2,
     "carbs": 4.8,
     "fat": 3.3,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "cream",
@@ -534,14 +603,16 @@
     "category": "Produits laitiers & œufs",
     "state": "ready_to_eat",
     "referenceQuantity": 100,
-    "referenceUnit": "g",
+    "referenceUnit": "ml",
     "kcal": 170,
     "protein": 2.8,
     "carbs": 3.5,
     "fat": 15.0,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "greek_yogurt",
@@ -556,8 +627,10 @@
     "carbs": 3.9,
     "fat": 2.0,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "skyr",
@@ -572,8 +645,10 @@
     "carbs": 4.0,
     "fat": 0.2,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "cottage",
@@ -588,8 +663,10 @@
     "carbs": 4.0,
     "fat": 3.0,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "mozzarella",
@@ -604,8 +681,10 @@
     "carbs": 2.0,
     "fat": 19.0,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "parmesan",
@@ -620,8 +699,10 @@
     "carbs": 4.1,
     "fat": 29.0,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "grated_cheese",
@@ -636,8 +717,10 @@
     "carbs": 0.5,
     "fat": 29.0,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "feta",
@@ -652,8 +735,10 @@
     "carbs": 4.1,
     "fat": 21.3,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "butter",
@@ -668,8 +753,10 @@
     "carbs": 0.1,
     "fat": 81.1,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "olive_oil",
@@ -678,14 +765,16 @@
     "category": "Huiles & matières grasses",
     "state": "ready_to_eat",
     "referenceQuantity": 100,
-    "referenceUnit": "g",
+    "referenceUnit": "ml",
     "kcal": 884,
     "protein": 0,
     "carbs": 0,
     "fat": 100,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "review_external",
+    "auditNote": "Valeur plausible mais base 100 g / 100 ml à certifier avec la source externe avant publication."
   },
   {
     "id": "rapeseed_oil",
@@ -694,14 +783,16 @@
     "category": "Huiles & matières grasses",
     "state": "ready_to_eat",
     "referenceQuantity": 100,
-    "referenceUnit": "g",
+    "referenceUnit": "ml",
     "kcal": 884,
     "protein": 0,
     "carbs": 0,
     "fat": 100,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "review_external",
+    "auditNote": "Valeur plausible mais base 100 g / 100 ml à certifier avec la source externe avant publication."
   },
   {
     "id": "coconut_milk",
@@ -710,14 +801,16 @@
     "category": "Épicerie",
     "state": "ready_to_eat",
     "referenceQuantity": 100,
-    "referenceUnit": "g",
+    "referenceUnit": "ml",
     "kcal": 197,
     "protein": 2.0,
     "carbs": 2.8,
     "fat": 20.0,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "tomato",
@@ -732,8 +825,11 @@
     "carbs": 3.9,
     "fat": 0.2,
     "fiber": 1.2,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "pieceWeight": 120,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "tomato_crushed",
@@ -748,8 +844,10 @@
     "carbs": 5.8,
     "fat": 0.3,
     "fiber": 1.5,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "tomato_paste",
@@ -764,8 +862,10 @@
     "carbs": 18.9,
     "fat": 0.5,
     "fiber": 4.1,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "onion",
@@ -780,8 +880,11 @@
     "carbs": 9.3,
     "fat": 0.1,
     "fiber": 1.7,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "pieceWeight": 100,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "garlic",
@@ -796,8 +899,11 @@
     "carbs": 33.1,
     "fat": 0.5,
     "fiber": 2.1,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "pieceWeight": 5,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "carrot",
@@ -812,8 +918,10 @@
     "carbs": 9.6,
     "fat": 0.2,
     "fiber": 2.8,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "zucchini",
@@ -828,8 +936,10 @@
     "carbs": 3.1,
     "fat": 0.3,
     "fiber": 1.0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "eggplant",
@@ -844,8 +954,10 @@
     "carbs": 5.9,
     "fat": 0.2,
     "fiber": 3.0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "pepper",
@@ -860,8 +972,10 @@
     "carbs": 6.0,
     "fat": 0.3,
     "fiber": 2.1,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "broccoli",
@@ -876,8 +990,10 @@
     "carbs": 6.6,
     "fat": 0.4,
     "fiber": 2.6,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "spinach",
@@ -892,8 +1008,10 @@
     "carbs": 3.6,
     "fat": 0.4,
     "fiber": 2.2,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "mushroom",
@@ -908,8 +1026,10 @@
     "carbs": 3.3,
     "fat": 0.3,
     "fiber": 1.0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "cucumber",
@@ -924,8 +1044,10 @@
     "carbs": 3.6,
     "fat": 0.1,
     "fiber": 0.5,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "lettuce",
@@ -940,8 +1062,10 @@
     "carbs": 2.9,
     "fat": 0.2,
     "fiber": 1.3,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "avocado",
@@ -956,8 +1080,11 @@
     "carbs": 8.5,
     "fat": 14.7,
     "fiber": 6.7,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "pieceWeight": 200,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "corn",
@@ -972,8 +1099,10 @@
     "carbs": 21.0,
     "fat": 1.5,
     "fiber": 2.4,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "green_beans",
@@ -988,8 +1117,10 @@
     "carbs": 7.0,
     "fat": 0.2,
     "fiber": 3.4,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "peas",
@@ -1004,8 +1135,10 @@
     "carbs": 14.5,
     "fat": 0.4,
     "fiber": 5.1,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "leek",
@@ -1020,8 +1153,10 @@
     "carbs": 14.2,
     "fat": 0.3,
     "fiber": 1.8,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "cauliflower",
@@ -1036,8 +1171,10 @@
     "carbs": 5.0,
     "fat": 0.3,
     "fiber": 2.0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "cabbage",
@@ -1052,8 +1189,10 @@
     "carbs": 5.8,
     "fat": 0.1,
     "fiber": 2.5,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "apple",
@@ -1068,8 +1207,11 @@
     "carbs": 13.8,
     "fat": 0.2,
     "fiber": 2.4,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "pieceWeight": 180,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "banana",
@@ -1084,8 +1226,11 @@
     "carbs": 22.8,
     "fat": 0.3,
     "fiber": 2.6,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "pieceWeight": 120,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "pear",
@@ -1100,8 +1245,11 @@
     "carbs": 15.2,
     "fat": 0.1,
     "fiber": 3.1,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "pieceWeight": 180,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "orange",
@@ -1116,8 +1264,11 @@
     "carbs": 11.8,
     "fat": 0.1,
     "fiber": 2.4,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "pieceWeight": 160,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "lemon",
@@ -1132,8 +1283,11 @@
     "carbs": 9.3,
     "fat": 0.3,
     "fiber": 2.8,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "pieceWeight": 80,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "strawberry",
@@ -1148,8 +1302,10 @@
     "carbs": 7.7,
     "fat": 0.3,
     "fiber": 2.0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "blueberry",
@@ -1164,8 +1320,10 @@
     "carbs": 14.5,
     "fat": 0.3,
     "fiber": 2.4,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "berries",
@@ -1180,8 +1338,10 @@
     "carbs": 10.0,
     "fat": 0.4,
     "fiber": 4.0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "mango",
@@ -1196,8 +1356,10 @@
     "carbs": 15.0,
     "fat": 0.4,
     "fiber": 1.6,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "pineapple",
@@ -1212,8 +1374,10 @@
     "carbs": 13.1,
     "fat": 0.1,
     "fiber": 1.4,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "cocoa",
@@ -1228,8 +1392,10 @@
     "carbs": 57.9,
     "fat": 13.7,
     "fiber": 33.2,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "review_external",
+    "auditNote": "Écart énergie/macros attendu avec les facteurs énergétiques spécifiques et les fibres ; valeurs conservées."
   },
   {
     "id": "dark_chocolate",
@@ -1244,8 +1410,10 @@
     "carbs": 45.9,
     "fat": 42.6,
     "fiber": 10.9,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "sugar",
@@ -1260,8 +1428,10 @@
     "carbs": 100,
     "fat": 0,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "honey",
@@ -1276,8 +1446,10 @@
     "carbs": 82.4,
     "fat": 0,
     "fiber": 0.2,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "maple",
@@ -1292,8 +1464,10 @@
     "carbs": 67.0,
     "fat": 0.1,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "peanut_butter",
@@ -1308,8 +1482,10 @@
     "carbs": 20.0,
     "fat": 50.0,
     "fiber": 6.0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "almonds",
@@ -1324,8 +1500,10 @@
     "carbs": 21.6,
     "fat": 49.9,
     "fiber": 12.5,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "walnuts",
@@ -1340,8 +1518,10 @@
     "carbs": 13.7,
     "fat": 65.2,
     "fiber": 6.7,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "cashews",
@@ -1356,8 +1536,10 @@
     "carbs": 30.2,
     "fat": 43.8,
     "fiber": 3.3,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "chia",
@@ -1372,8 +1554,10 @@
     "carbs": 42.1,
     "fat": 30.7,
     "fiber": 34.4,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "sesame",
@@ -1388,8 +1572,10 @@
     "carbs": 23.5,
     "fat": 49.7,
     "fiber": 11.8,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "tofu",
@@ -1404,8 +1590,10 @@
     "carbs": 2.8,
     "fat": 8.7,
     "fiber": 2.3,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "soy_sauce",
@@ -1414,14 +1602,16 @@
     "category": "Condiments & sauces",
     "state": "ready_to_eat",
     "referenceQuantity": 100,
-    "referenceUnit": "g",
+    "referenceUnit": "ml",
     "kcal": 53,
     "protein": 8.1,
     "carbs": 4.9,
     "fat": 0.6,
     "fiber": 0.8,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "mustard",
@@ -1430,14 +1620,16 @@
     "category": "Condiments & sauces",
     "state": "ready_to_eat",
     "referenceQuantity": 100,
-    "referenceUnit": "g",
+    "referenceUnit": "ml",
     "kcal": 66,
     "protein": 4.4,
     "carbs": 5.8,
     "fat": 4.0,
     "fiber": 3.2,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "mayonnaise",
@@ -1446,14 +1638,16 @@
     "category": "Condiments & sauces",
     "state": "ready_to_eat",
     "referenceQuantity": 100,
-    "referenceUnit": "g",
+    "referenceUnit": "ml",
     "kcal": 680,
     "protein": 1.0,
     "carbs": 1.0,
     "fat": 75.0,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "ketchup",
@@ -1462,14 +1656,16 @@
     "category": "Condiments & sauces",
     "state": "ready_to_eat",
     "referenceQuantity": 100,
-    "referenceUnit": "g",
+    "referenceUnit": "ml",
     "kcal": 112,
     "protein": 1.3,
     "carbs": 26.0,
     "fat": 0.2,
     "fiber": 0.3,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "pesto",
@@ -1478,14 +1674,16 @@
     "category": "Condiments & sauces",
     "state": "ready_to_eat",
     "referenceQuantity": 100,
-    "referenceUnit": "g",
+    "referenceUnit": "ml",
     "kcal": 440,
     "protein": 5.0,
     "carbs": 6.0,
     "fat": 44.0,
     "fiber": 2.0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "curry_powder",
@@ -1500,8 +1698,10 @@
     "carbs": 55.8,
     "fat": 14.0,
     "fiber": 53.2,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "paprika",
@@ -1516,8 +1716,10 @@
     "carbs": 54.0,
     "fat": 13.0,
     "fiber": 34.9,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "cumin",
@@ -1532,8 +1734,10 @@
     "carbs": 44.2,
     "fat": 22.3,
     "fiber": 10.5,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "cinnamon",
@@ -1548,8 +1752,10 @@
     "carbs": 80.6,
     "fat": 1.2,
     "fiber": 53.1,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "baking_powder",
@@ -1564,8 +1770,10 @@
     "carbs": 28.0,
     "fat": 0,
     "fiber": 0.2,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "review_external",
+    "auditNote": "Écart énergie/macros important ; ingrédient utilisé en très faible quantité. Valeurs conservées, à rapprocher d'une table officielle."
   },
   {
     "id": "vanilla",
@@ -1574,14 +1782,16 @@
     "category": "Épicerie",
     "state": "ready_to_eat",
     "referenceQuantity": 100,
-    "referenceUnit": "g",
+    "referenceUnit": "ml",
     "kcal": 288,
     "protein": 0.1,
     "carbs": 12.7,
     "fat": 0.1,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "review_external",
+    "auditNote": "L'énergie de l'extrait de vanille inclut notamment l'alcool, non représenté dans P/G/L ; valeurs conservées."
   },
   {
     "id": "ham",
@@ -1596,8 +1806,10 @@
     "carbs": 1.0,
     "fat": 3.5,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "smoked_salmon",
@@ -1612,8 +1824,10 @@
     "carbs": 0,
     "fat": 4.3,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "ricotta",
@@ -1628,8 +1842,10 @@
     "carbs": 3.0,
     "fat": 13.0,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "goat_cheese",
@@ -1644,8 +1860,10 @@
     "carbs": 0.1,
     "fat": 30.0,
     "fiber": 0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "coconut_yogurt",
@@ -1660,8 +1878,10 @@
     "carbs": 5.0,
     "fat": 8.0,
     "fiber": 1.0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   },
   {
     "id": "granola",
@@ -1676,7 +1896,9 @@
     "carbs": 64.0,
     "fat": 17.0,
     "fiber": 7.0,
-    "source": "seed_v1_to_verify",
-    "verified": false
+    "source": "Noma seed V3 — contrôle interne 2026-09-28",
+    "verified": false,
+    "auditStatus": "passed_internal",
+    "auditNote": "Contrôle interne : bornes, unité de référence et cohérence arithmétique."
   }
 ]

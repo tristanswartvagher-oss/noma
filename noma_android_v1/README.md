@@ -1,38 +1,97 @@
-# Noma Android — V1
+# Noma Android — V2 / 1.1.0
 
-Application mobile React Native / Expo correspondant au périmètre V1 validé.
+Cette version remplace la V1 tout en conservant le package Android `com.noma.mealplanner`
+et la clé de stockage `noma-v1-state`, afin que les données locales puissent être migrées
+lors d'une mise à jour installée par-dessus la V1.
 
-## Inclus
-- 7 jours × 3 repas (Petit-déj / Déjeuner / Dîner)
-- 60 recettes initiales : 15 entrées, 30 plats, 15 desserts/encas
-- Base locale d'aliments de démarrage
-- Recherche d'aliments
-- Création de recettes personnelles
-- Calcul kcal / protéines / glucides / lipides à partir des ingrédients
-- Objectifs journaliers
-- Ajustement du nombre de portions
-- Liste de courses fusionnée sur toute la semaine
-- Cases à cocher + "J'en ai déjà" + ajouts manuels
-- Feedback privé après repas
-- Ajustements par ingrédient mémorisés et appliqués aux prochaines courses
-- Persistance locale
-- 4 onglets seulement
-- Configuration EAS pour produire un APK de test
+## Ce qui change
 
-## Convention nutrition
-Les quantités sont avant cuisson par défaut:
-- riz/pâtes/quinoa/lentilles = secs
-- viande/poisson = crus
-- une entrée `cooked`/`drained` n'est utilisée que si explicitement nécessaire
+### Semaine
+- navigation semaine précédente / suivante / aujourd'hui ;
+- 7 jours × Petit-déj / Déjeuner / Dîner ;
+- ajout, remplacement et suppression d'un repas ;
+- séparation **À préparer** / **Pour moi** :
+  - À préparer = quantité utilisée pour les courses ;
+  - Pour moi = quantité utilisée pour les macros journalières.
 
-## Données nutritionnelles
-La base incluse sert à rendre la V1 fonctionnelle. Les entrées sont volontairement marquées `verified: false`.
-Avant une diffusion publique, il faut remplacer/valider ces données à partir d'une source de référence (par ex. CIQUAL/ANSES) plutôt que prétendre qu'elles sont officielles.
+### Macros
+- kcal / protéines / glucides / lipides calculés à partir des ingrédients ;
+- total quotidien basé uniquement sur les portions consommées ;
+- objectifs journaliers dans Profil ;
+- adaptations Noma intégrées aux calculs.
 
-## APK
-`eas.json` contient un profil `preview` qui produit un APK Android d'installation directe.
+### Courses
+- uniquement les repas de la semaine sélectionnée ;
+- cases cochées indépendantes par semaine ;
+- `J'en ai déjà` indépendant par semaine ;
+- ajouts manuels cochables et supprimables ;
+- unités g / ml / pièce ;
+- fusion des ingrédients identiques.
 
-Commande de build, une fois le projet relié à un compte Expo:
-`eas build -p android --profile preview`
+### Recettes
+- 60 recettes système : 15 entrées, 30 plats, 15 desserts/encas ;
+- favoris ;
+- recherche par nom, tag ou ingrédient, sans dépendre des accents ;
+- création, édition et suppression des recettes personnelles ;
+- choix de catégorie ;
+- suppression d'un ingrédient dans le formulaire.
 
-Le service EAS renverra alors une URL de téléchargement de l'APK.
+### Noma apprend
+- feedback privé ;
+- quantité globale ;
+- ajustement par ingrédient ;
+- affichage des multiplicateurs dans la fiche recette ;
+- suppression d'un ajustement précis ou reset complet ;
+- recette système d'origine jamais modifiée.
+
+### Données
+- schéma local V2 ;
+- migration automatique des données V1 ;
+- les anciennes `servings` deviennent `cookedServings` ;
+- `consumedServings` démarre à 1 pour les anciens repas ;
+- les anciennes listes de courses sont rattachées à la semaine courante.
+
+## Base nutritionnelle
+
+La base locale embarquée contient 105 aliments et permet de tester l'ensemble du moteur.
+Les valeurs sont encore marquées `verified: false`. Elles ne doivent pas être présentées
+comme des valeurs CIQUAL officielles tant qu'un import vérifié n'a pas été effectué.
+
+La structure est prête pour une base officielle :
+- `source`
+- `sourceId`
+- `verified`
+- `referenceUnit`
+- `pieceWeight`
+
+## Build Android
+
+Après remplacement des fichiers dans Codespaces :
+
+```bash
+rm -rf node_modules package-lock.json
+npm install
+npx expo install --fix
+npx expo-doctor
+npx expo export --platform android
+npx eas-cli@latest build -p android --profile preview --clear-cache
+```
+
+Le profil `preview` produit un APK installable directement.
+La version Android de cette release est `versionCode: 2`.
+
+
+## V3 — 1.2.0
+
+Cette version ajoute les repas externes saisis manuellement (sans IA), corrige l'espace de la barre
+d'onglets Android et introduit le schéma de stockage V3.
+
+Les macros des recettes sont toujours calculées à partir des aliments :
+`macro aliment / 100 × quantité nutritionnelle`, somme des ingrédients, puis division par portions.
+
+Deux audits sont inclus :
+- `FOOD_MACRO_AUDIT.csv`
+- `RECIPE_MACRO_AUDIT.csv`
+
+Important : l'audit interne ne remplace pas une certification CIQUAL. Les aliments restent
+`verified:false` tant que leurs valeurs n'ont pas été rapprochées d'une source externe officielle.
