@@ -7,7 +7,8 @@
     "start": "expo start",
     "android": "expo start --android",
     "typecheck": "tsc --noEmit",
-    "check": "expo-doctor && tsc --noEmit"
+    "check": "expo-doctor && tsc --noEmit",
+    "test:ciqual": "node scripts/verify-ciqual.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",

@@ -2,6 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import React,{createContext,useContext,useEffect,useMemo,useState} from 'react';
 import seedFoods from './seedFoods.json';
 import seedRecipes from './seedRecipes.json';
+import {ingredientWeightGrams} from './nutrition';
 import {isoDay,mondayOf,weekDays,weekKey} from './date';
 import {
   CustomGrocery,ExternalPlannedMeal,Food,GroceryWeekState,MealType,NutritionGoals,
@@ -9,7 +10,7 @@ import {
 } from './types';
 
 const STORAGE_KEY='noma-v1-state';
-const SCHEMA_VERSION=3;
+const SCHEMA_VERSION=4;
 
 type StoreState={
   schemaVersion:number;
@@ -62,12 +63,13 @@ const defaultGoals:NutritionGoals={enabled:true,kcal:2400,protein:160,carbs:250,
 
 function normalizeIngredient(i:any,food?:Food):RecipeIngredient{
   const unit=(i.unit==='ml'||i.unit==='pièce')?i.unit:'g';
-  let nutritionAmount:number;
-  if(typeof i.nutritionAmount==='number') nutritionAmount=i.nutritionAmount;
-  else if(typeof i.grams==='number') nutritionAmount=i.grams;
-  else if(unit==='pièce'&&food?.pieceWeight) nutritionAmount=Number(i.amount||0)*food.pieceWeight;
-  else nutritionAmount=Number(i.amount||0);
-  return {foodId:String(i.foodId),amount:Number(i.amount||0),unit,nutritionAmount};
+  const amount=Number(i.amount??i.grams??i.nutritionAmount??0);
+  const normalized:RecipeIngredient={
+    foodId:String(i.foodId),amount:Number.isFinite(amount)?amount:0,unit,nutritionAmount:0
+  };
+  const grams=ingredientWeightGrams(normalized,food);
+  // Recompute the cache on loading, including legacy user-created recipes.
+  return {...normalized,nutritionAmount:Number.isFinite(grams)?grams:0};
 }
 
 function normalizeRecipe(r:any,foods:Food[]):Recipe{

@@ -1,0 +1,32 @@
+name: NOMA nutrition / CIQUAL validation
+on:
+  push:
+    paths:
+      - 'noma_android_v1/src/**'
+      - 'noma_android_v1/app/new-recipe.tsx'
+      - 'noma_android_v1/scripts/**'
+      - 'noma_android_v1/package.json'
+      - '.github/workflows/noma-ciqual.yml'
+  pull_request:
+    paths:
+      - 'noma_android_v1/src/**'
+      - 'noma_android_v1/app/new-recipe.tsx'
+      - 'noma_android_v1/scripts/**'
+      - 'noma_android_v1/package.json'
+      - '.github/workflows/noma-ciqual.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: noma_android_v1
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: noma_android_v1/package-lock.json
+      - run: npm ci --no-audit --no-fund
+      - run: npm run typecheck
+      - run: npm run test:ciqual
