@@ -32,12 +32,14 @@ export default function RecipeDetail(){
   const globalAdjusted=learned&&Math.abs(learned.overallMultiplier-1)>.001;
 
   function confirmDelete(){
+    if(!recipe) return;
+    const recipeIdToDelete=recipe.id;
     Alert.alert(
       'Supprimer cette recette ?',
       'Elle sera aussi retirée des repas où elle était planifiée.',
       [
         {text:'Annuler',style:'cancel'},
-        {text:'Supprimer',style:'destructive',onPress:()=>{deleteRecipe(recipe.id);router.back();}}
+        {text:'Supprimer',style:'destructive',onPress:()=>{deleteRecipe(recipeIdToDelete);router.back();}}
       ]
     );
   }
