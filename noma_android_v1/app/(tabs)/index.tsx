@@ -48,7 +48,7 @@ export default function Week(){
  const percent=goals.kcal?totals.kcal/goals.kcal*100:0;
  const add=(type:MealType)=>router.push({pathname:'/pick-recipe',params:{date:dateKey,meal:type}});
  return <Page contentStyle={{paddingTop:17}}>
-  <PageHeading title="Noma" subtitle="Ta semaine, tes repas, ton équilibre." action={
+  <PageHeading title="Noma" subtitle="Les bons repas font les belles semaines." action={
    <Pressable accessibilityLabel="Revenir à aujourd'hui" onPress={goToday} style={{padding:10}}><Ionicons name="calendar-outline" color={colors.text} size={24}/></Pressable>
   }/>
   <View style={s.weekNav}>
@@ -89,7 +89,7 @@ export default function Week(){
       </Pressable>
      </SoftCard>;
     return <Pressable key={type} accessibilityRole="button" onPress={()=>router.push({pathname:external?'/external-meal':'/meal-editor',params:{date:dateKey,meal:type}})} style={s.filledMeal}>
-      {recipe?<RecipeArtwork title={recipe.title} emoji={recipe.emoji} size={76}/>:<View style={s.external}><Ionicons name="restaurant-outline" size={30} color={colors.sageDark}/></View>}
+      {recipe?<RecipeArtwork title={recipe.title} emoji={recipe.emoji} recipeId={recipe.id} size={76}/>:<View style={s.external}><Ionicons name="restaurant-outline" size={30} color={colors.sageDark}/></View>}
       <View style={{flex:1,minWidth:0}}>
        <View style={s.mealLabel}><Ionicons name={icon} size={17} color={type==='dinner'?'#526B84':'#E7AC22'}/><Text style={s.mealTitle}>{label}</Text></View>
        <Text style={s.recipeName} numberOfLines={2}>{recipe?.title||external?.name}</Text>
@@ -109,7 +109,7 @@ const s=StyleSheet.create({
  dayOn:{backgroundColor:colors.sage,borderColor:colors.sage},
  dayName:{fontSize:11,color:colors.muted},dayNum:{fontSize:18,fontWeight:'800',color:colors.text,marginTop:3},
  white:{color:'#fff'},
- macroCard:{padding:14,flexDirection:'row',alignItems:'center',gap:13,marginBottom:16},
+ macroCard:{padding:15,flexDirection:'row',alignItems:'center',gap:13,marginBottom:16,backgroundColor:colors.cream},
  macroTop:{flexDirection:'row',alignItems:'center',justifyContent:'space-between',gap:7},
  kcal:{fontSize:18,fontWeight:'900',color:colors.text},
  kcalTarget:{fontSize:12.5,fontWeight:'500',color:colors.muted},
@@ -117,10 +117,10 @@ const s=StyleSheet.create({
  macroCaption:{fontSize:11.5,color:colors.muted,marginTop:5},
  emptyMeal:{padding:15,minHeight:116,flexDirection:'row',alignItems:'center',gap:10},
  mealLabel:{flexDirection:'row',alignItems:'center',gap:7,marginBottom:6},
- mealTitle:{fontSize:14,fontWeight:'800',color:colors.text},
+ mealTitle:{fontSize:14,fontWeight:'900',color:colors.text},
  hint:{fontSize:12,color:colors.muted,lineHeight:18,marginTop:6},
- add:{width:119,minHeight:77,borderRadius:17,borderStyle:'dashed',borderWidth:1,borderColor:'#B7C9B1',backgroundColor:'#FAFCF9',alignItems:'center',justifyContent:'center',padding:8},
- plus:{height:27,width:27,borderRadius:16,alignItems:'center',justifyContent:'center',backgroundColor:colors.sageDark,marginBottom:6},
+ add:{width:119,minHeight:83,borderRadius:17,borderStyle:'dashed',borderWidth:1,borderColor:'#B7C9B1',backgroundColor:'#FAFCF9',alignItems:'center',justifyContent:'center',padding:8},
+ plus:{height:32,width:32,borderRadius:16,alignItems:'center',justifyContent:'center',backgroundColor:colors.paprika,marginBottom:6},
  addText:{fontSize:11,color:colors.sageDark,fontWeight:'700',textAlign:'center'},
  filledMeal:{flexDirection:'row',gap:12,alignItems:'center',padding:11,backgroundColor:'#fff',borderRadius:24,borderWidth:1,borderColor:'#F0F2EC',...shadow},
  external:{height:76,width:76,backgroundColor:colors.sageSoft,borderRadius:17,alignItems:'center',justifyContent:'center'},

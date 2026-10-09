@@ -3,7 +3,7 @@ import {router,useLocalSearchParams} from 'expo-router';
 import React,{useState} from 'react';
 import {Alert,Pressable,StyleSheet,Text,View} from 'react-native';
 import {Page,PrimaryButton,Stepper} from '@/src/components';
-import {RecipeArtwork} from '@/src/ui';
+import {RecipeArtwork,Eyebrow} from '@/src/ui';
 import {perServing,roundMacro} from '@/src/nutrition';
 import {useApp} from '@/src/store';
 import {colors,radius} from '@/src/theme';
@@ -63,8 +63,8 @@ export default function RecipeDetail(){
         </View>
       </View>
 
-      <RecipeArtwork title={recipe.title} emoji={recipe.emoji} size={210} style={s.hero}/>
-      <Text style={s.title}>{recipe.title}</Text>
+      <RecipeArtwork title={recipe.title} emoji={recipe.emoji} recipeId={recipe.id} size={235} style={s.hero}/>
+      <Eyebrow>À cuisiner avec plaisir</Eyebrow><Text style={s.title}>{recipe.title}</Text>
       <Text style={s.subtitle}>{recipe.timeMinutes} min · {recipe.category}{recipe.custom?' · Recette perso':''}</Text>
       <View style={s.tags}><Text style={s.tag}>{recipe.category}</Text><Text style={s.tag}>{recipe.defaultServings} parts</Text></View>
 
@@ -183,23 +183,23 @@ export default function RecipeDetail(){
 
 const s=StyleSheet.create({
   topbar:{flexDirection:'row',justifyContent:'space-between',alignItems:'center'},
-  iconButton:{width:44,height:44,alignItems:'center',justifyContent:'center'},
-  title:{fontSize:29,fontWeight:'900',color:colors.text,marginTop:4,letterSpacing:-.6},
-  subtitle:{color:colors.muted,fontSize:13,marginTop:3,marginBottom:12},
-  hero:{width:'100%',height:210,borderRadius:radius.lg,marginTop:10,marginBottom:16},
+  iconButton:{width:48,height:48,alignItems:'center',justifyContent:'center'},
+  title:{fontSize:31,lineHeight:36,fontWeight:'900',color:colors.text,marginTop:8,letterSpacing:-.8},
+  subtitle:{color:colors.muted,fontSize:13,marginTop:7,marginBottom:13},
+  hero:{width:'100%',height:235,borderRadius:radius.lg,marginTop:8,marginBottom:17},
   tags:{flexDirection:'row',gap:8,marginBottom:14},
-  tag:{backgroundColor:colors.sageSoft,color:colors.sageDark,borderRadius:99,overflow:'hidden',fontSize:12,paddingHorizontal:12,paddingVertical:8},
-  afterMeal:{marginTop:12,minHeight:45,flexDirection:'row',alignItems:'center',justifyContent:'center',gap:8},
-  servings:{backgroundColor:'#fff',borderRadius:radius.lg,borderWidth:1,borderColor:colors.border,padding:13,alignItems:'center'},
-  macros:{position:'relative',flexDirection:'row',backgroundColor:'#fff',borderWidth:1,borderColor:colors.border,borderRadius:radius.md,marginTop:10,marginBottom:20,overflow:'visible'},
-  macro:{flex:1,alignItems:'center',paddingVertical:13,borderRightWidth:1,borderRightColor:colors.border},
-  macroN:{fontWeight:'900',color:colors.text},
+  tag:{backgroundColor:colors.cream,color:colors.sageDark,borderRadius:99,overflow:'hidden',fontSize:12,paddingHorizontal:12,paddingVertical:8},
+  afterMeal:{marginTop:12,minHeight:48,flexDirection:'row',alignItems:'center',justifyContent:'center',gap:8},
+  servings:{backgroundColor:colors.card,borderRadius:radius.lg,borderWidth:1,borderColor:colors.border,padding:14,alignItems:'center'},
+  macros:{position:'relative',flexDirection:'row',backgroundColor:colors.cream,borderWidth:1,borderColor:colors.border,borderRadius:radius.md,marginTop:10,marginBottom:20,overflow:'visible'},
+  macro:{flex:1,alignItems:'center',paddingVertical:17,borderRightWidth:1,borderRightColor:colors.border},
+  macroN:{fontSize:15,fontWeight:'900',color:colors.text},
   small:{fontSize:11.5,color:colors.muted,marginTop:2},
   perPart:{position:'absolute',bottom:-18,right:5,fontSize:10.5,color:colors.muted},
-  card:{backgroundColor:'#fff',borderRadius:radius.lg,borderWidth:1,borderColor:colors.border,padding:16,marginTop:11},
+  card:{backgroundColor:colors.card,borderRadius:radius.lg,borderWidth:1,borderColor:colors.border,padding:17,marginTop:13},
   cardHead:{flexDirection:'row',justifyContent:'space-between',alignItems:'center'},
-  h:{fontSize:17,fontWeight:'900',color:colors.text},
-  row:{flexDirection:'row',justifyContent:'space-between',alignItems:'center',paddingVertical:10,borderTopWidth:1,borderTopColor:'#F0F2EE'},
+  h:{fontSize:20,fontWeight:'900',color:colors.text},
+  row:{flexDirection:'row',justifyContent:'space-between',alignItems:'center',gap:12,paddingVertical:13,borderTopWidth:1,borderTopColor:colors.border},
   item:{color:colors.text,fontSize:14.5},
   personal:{fontSize:10.5,color:colors.sageDark,fontWeight:'800',marginTop:2},
   qty:{color:colors.muted,fontWeight:'700'},
@@ -207,13 +207,13 @@ const s=StyleSheet.create({
   learnTitle:{flexDirection:'row',alignItems:'center',gap:8,marginBottom:8},
   adjustment:{minHeight:42,flexDirection:'row',alignItems:'center',gap:8,borderTopWidth:1,borderTopColor:'#DCE6D7'},
   multiplier:{fontWeight:'900',color:colors.sageDark},
-  miniButton:{width:32,height:32,borderRadius:16,backgroundColor:'#fff',alignItems:'center',justifyContent:'center'},
+  miniButton:{width:48,height:48,borderRadius:24,backgroundColor:'#fff',alignItems:'center',justifyContent:'center'},
   note:{fontSize:12.5,color:colors.text,fontStyle:'italic',marginTop:10},
   reset:{alignSelf:'flex-start',marginTop:12,paddingVertical:8},
   resetText:{fontSize:12,color:colors.sageDark,fontWeight:'900'},
-  step:{flexDirection:'row',gap:10,paddingVertical:9},
-  stepN:{width:28,height:28,borderRadius:14,backgroundColor:colors.sageSoft,alignItems:'center',justifyContent:'center'},
-  stepText:{flex:1,color:colors.text,lineHeight:21},
+  step:{flexDirection:'row',gap:13,paddingVertical:12},
+  stepN:{width:32,height:32,borderRadius:16,backgroundColor:colors.lemon,alignItems:'center',justifyContent:'center'},
+  stepText:{flex:1,color:colors.text,lineHeight:23,fontSize:14},
   delete:{minHeight:52,flexDirection:'row',alignItems:'center',justifyContent:'center',gap:7,marginTop:10},
   deleteText:{fontWeight:'900',color:colors.danger}
 });

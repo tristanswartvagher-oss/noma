@@ -26,7 +26,7 @@ export default function ScheduleRecipe(){
  return <Page>
   <Pressable accessibilityLabel="Retour" onPress={()=>router.back()} style={{paddingVertical:8}}><Ionicons name="chevron-back" size={23} color={colors.text}/></Pressable>
   <Text style={s.title}>Ajouter à la semaine</Text>
-  <SoftCard style={s.recipe}><RecipeArtwork title={recipe.title} emoji={recipe.emoji} size={70}/><Text style={[s.meal,{flex:1}]}>{recipe.title}</Text></SoftCard>
+  <SoftCard style={s.recipe}><RecipeArtwork title={recipe.title} emoji={recipe.emoji} recipeId={recipe.id} size={80}/><Text style={[s.meal,{flex:1}]}>{recipe.title}</Text></SoftCard>
   <Text style={s.label}>Semaine du {formatWeekRange(fromIso(selectedWeekStart))}</Text>
   <View style={s.days}>{days.map((d,i)=><Pressable key={isoDay(d)} onPress={()=>setIndex(i)} style={[s.day,i===index&&s.active]}><Text style={[s.dayText,i===index&&s.light]}>{dayShort[d.getDay()]}</Text><Text style={[s.num,i===index&&s.light]}>{d.getDate()}</Text></Pressable>)}</View>
   <Text style={s.label}>Choisir le repas</Text>
@@ -39,14 +39,14 @@ export default function ScheduleRecipe(){
 }
 const s=StyleSheet.create({
  title:{fontSize:29,fontWeight:'900',color:colors.text,marginTop:8,marginBottom:14},
- recipe:{padding:12,flexDirection:'row',alignItems:'center',gap:12},
+ recipe:{padding:13,flexDirection:'row',alignItems:'center',gap:12},
  meal:{fontSize:15,fontWeight:'800',color:colors.text},
  label:{fontSize:14,color:colors.text,fontWeight:'800',marginTop:24,marginBottom:12},
  days:{flexDirection:'row',gap:5},
  day:{flex:1,height:61,borderWidth:1,borderColor:colors.border,backgroundColor:'#fff',borderRadius:14,alignItems:'center',justifyContent:'center'},
- active:{backgroundColor:colors.sage,borderColor:colors.sage},
+ active:{backgroundColor:colors.paprika,borderColor:colors.paprika},
  dayText:{fontSize:11,color:colors.muted},num:{fontSize:17,color:colors.text,fontWeight:'900'},
  light:{color:'#fff'},
- slot:{backgroundColor:'#fff',borderWidth:1,borderColor:colors.border,borderRadius:18,minHeight:64,flexDirection:'row',alignItems:'center',gap:12,paddingHorizontal:15,marginBottom:10},
+ slot:{backgroundColor:colors.card,borderWidth:1,borderColor:colors.border,borderRadius:18,minHeight:64,flexDirection:'row',alignItems:'center',gap:12,paddingHorizontal:15,marginBottom:10},
  replace:{color:colors.muted,fontSize:11}
 });

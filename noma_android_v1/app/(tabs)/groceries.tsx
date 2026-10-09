@@ -31,7 +31,7 @@ export default function Groceries(){
  const pct=total?done/total*100:0;
  const add=()=>{if(!q.trim())return;addCustomGrocery(week,q.trim());setQ('');};
  return <Page>
-  <PageHeading title="Courses" subtitle="Ta liste de courses, prête à l'emploi."/>
+  <PageHeading title="Courses" subtitle="Tout ce qu’il faut pour se régaler."/>
   <View style={s.weekNav}>
    <Pressable accessibilityLabel="Semaine précédente" style={s.arrow} onPress={()=>setSelectedWeekStart(weekKey(addWeeks(start,-1)))}><Ionicons name="chevron-back" size={18} color={colors.text}/></Pressable>
    <Text style={s.weekText}>{formatWeekRange(start)}</Text>
@@ -80,22 +80,22 @@ const s=StyleSheet.create({
  weekNav:{flexDirection:'row',alignItems:'center',justifyContent:'space-between',marginBottom:12},
  arrow:{height:32,width:40,alignItems:'center',justifyContent:'center'},
  weekText:{color:colors.text,fontSize:13,fontWeight:'700'},
- summary:{flexDirection:'row',alignItems:'center',gap:12,padding:13,marginBottom:11},
+ summary:{flexDirection:'row',alignItems:'center',gap:12,padding:13,marginBottom:11,backgroundColor:colors.cream},
  count:{fontSize:18,fontWeight:'900',color:colors.text},muted:{fontSize:12,color:colors.muted},
  track:{height:5,backgroundColor:colors.sageSoft,borderRadius:8,marginTop:8,overflow:'hidden'},
  fill:{height:5,backgroundColor:colors.sage,borderRadius:8},
  badge:{backgroundColor:colors.sageSoft,color:colors.sageDark,paddingHorizontal:9,paddingVertical:6,overflow:'hidden',borderRadius:99,fontWeight:'700',fontSize:12},
  add:{height:51,borderRadius:28,backgroundColor:'#fff',flexDirection:'row',alignItems:'center',gap:9,paddingHorizontal:10,marginBottom:13,borderWidth:1,borderColor:colors.border,...shadow},
- addCircle:{width:35,height:35,backgroundColor:colors.sageSoft,alignItems:'center',justifyContent:'center',borderRadius:19},
+ addCircle:{width:42,height:42,backgroundColor:colors.lemon,alignItems:'center',justifyContent:'center',borderRadius:19},
  card:{paddingHorizontal:12,paddingTop:7,paddingBottom:8,marginBottom:11},
  catHead:{flexDirection:'row',alignItems:'center',gap:9,minHeight:42},
  category:{color:colors.text,fontSize:14,fontWeight:'800'},
- row:{flexDirection:'row',alignItems:'center',gap:8,minHeight:45,borderTopWidth:1,borderTopColor:'#F4F5F0'},
- check:{width:24,height:24,borderRadius:5,borderWidth:1.5,borderColor:'#81928E',alignItems:'center',justifyContent:'center'},
+ row:{flexDirection:'row',alignItems:'center',gap:8,minHeight:51,borderTopWidth:1,borderTopColor:'#F4F5F0'},
+ check:{width:31,height:31,borderRadius:5,borderWidth:1.5,borderColor:'#81928E',alignItems:'center',justifyContent:'center'},
  checkOn:{backgroundColor:colors.sage,borderColor:colors.sage},
  item:{fontSize:12.5,color:colors.text},done:{textDecorationLine:'line-through',color:'#9CA7A2'},
  qty:{fontSize:11.5,color:colors.muted,maxWidth:60},
- have:{borderRadius:99,paddingHorizontal:7,paddingVertical:8,backgroundColor:colors.sageSoft,maxWidth:88},
+ have:{borderRadius:99,paddingHorizontal:7,paddingVertical:11,backgroundColor:colors.sageSoft,maxWidth:88},
  haveOn:{backgroundColor:colors.sageDark},
  haveText:{fontSize:10,color:colors.sageDark,textAlign:'center'},
  reset:{flexDirection:'row',alignItems:'center',justifyContent:'center',gap:5,padding:15},

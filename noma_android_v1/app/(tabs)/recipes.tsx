@@ -3,7 +3,7 @@ import {router} from 'expo-router';
 import React,{useMemo,useState} from 'react';
 import {Pressable,ScrollView,StyleSheet,Text,TextInput,View} from 'react-native';
 import {Chip,Page} from '@/src/components';
-import {PageHeading,RecipeArtwork} from '@/src/ui';
+import {PageHeading,RecipeArtwork,Eyebrow} from '@/src/ui';
 import {perServing} from '@/src/nutrition';
 import {useApp} from '@/src/store';
 import {normalizeText} from '@/src/text';
@@ -25,16 +25,17 @@ export default function Recipes(){
   });
  },[recipes,foods,q,filter,favorites]);
  return <Page>
-  <PageHeading title="Recettes" subtitle="Des recettes saines et gourmandes." action={<Pressable accessibilityLabel="Créer une recette" onPress={()=>router.push('/new-recipe')} style={s.addIcon}><Ionicons name="add" size={23} color={colors.sageDark}/></Pressable>}/>
+  <PageHeading title="Recettes" subtitle="Des idées à cuisiner, à partager et à savourer." action={<Pressable accessibilityLabel="Créer une recette" onPress={()=>router.push('/new-recipe')} style={s.addIcon}><Ionicons name="add" size={23} color={colors.sageDark}/></Pressable>}/>
   <View style={s.search}><Ionicons name="search-outline" size={21} color={colors.text}/><TextInput value={q} onChangeText={setQ} placeholder="Rechercher une recette..." placeholderTextColor={colors.muted} style={{flex:1,color:colors.text,fontSize:13.5}} clearButtonMode="while-editing"/></View>
   <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={s.filters}>
    {filters.map(([label,value])=><Chip key={value} label={label} active={filter===value} onPress={()=>setFilter(value)}/>)}
   </ScrollView>
+  <View style={s.catalogHead}><Eyebrow>Le plaisir est dans l’assiette</Eyebrow><Text style={s.total}>{list.length} recette{list.length>1?'s':''}</Text></View>
   {list.map(r=>{
    const n=perServing(r,foods,learning[r.id]);
    return <Pressable accessibilityRole="button" key={r.id} onPress={()=>router.push({pathname:'/recipe/[id]',params:{id:r.id}})} style={s.card}>
-    <RecipeArtwork title={r.title} emoji={r.emoji} size={76}/>
-    <View style={{flex:1,minWidth:0}}><Text style={s.name} numberOfLines={2}>{r.title}</Text>
+    <RecipeArtwork title={r.title} emoji={r.emoji} recipeId={r.id} size={92}/>
+    <View style={{flex:1,minWidth:0}}><Text style={s.name} numberOfLines={2}>{r.title}</Text><Text style={s.category}>{r.category==='Dessert & Encas'?'DESSERT / ENCAS':r.category.toUpperCase()}</Text>
      <Text style={s.meta}>{r.timeMinutes} min · {r.defaultServings} parts{r.custom?' · Perso':''}</Text>
      {goals.enabled?<Text style={s.macro} numberOfLines={1}>{Math.round(n.kcal)} kcal · {Math.round(n.protein)} g prot / part</Text>:null}
     </View>
@@ -47,13 +48,16 @@ export default function Recipes(){
  </Page>;
 }
 const s=StyleSheet.create({
- addIcon:{width:44,height:44,borderRadius:22,backgroundColor:colors.sageSoft,alignItems:'center',justifyContent:'center'},
- search:{height:51,borderRadius:27,backgroundColor:'#fff',borderWidth:1,borderColor:colors.border,flexDirection:'row',alignItems:'center',gap:10,paddingHorizontal:14,marginBottom:13,...shadow},
- filters:{gap:7,paddingBottom:15},
- card:{flexDirection:'row',gap:11,alignItems:'center',padding:9,backgroundColor:'#fff',borderRadius:22,borderWidth:1,borderColor:'#F0F2EC',marginBottom:10,...shadow},
- name:{fontSize:14,fontWeight:'800',color:colors.text,lineHeight:19},
+ addIcon:{width:48,height:48,borderRadius:24,backgroundColor:colors.lemon,alignItems:'center',justifyContent:'center'},
+ search:{height:54,borderRadius:27,backgroundColor:'#fff',borderWidth:1,borderColor:colors.border,flexDirection:'row',alignItems:'center',gap:10,paddingHorizontal:14,marginBottom:13,...shadow},
+ filters:{gap:7,paddingBottom:16},
+ catalogHead:{flexDirection:'row',alignItems:'center',justifyContent:'space-between',marginBottom:12,marginTop:4},
+ total:{fontSize:11.5,color:colors.muted,fontWeight:'700'},
+ category:{fontSize:10,color:colors.paprika,fontWeight:'900',letterSpacing:.4,marginTop:5},
+ card:{flexDirection:'row',gap:12,alignItems:'center',padding:10,backgroundColor:colors.card,borderRadius:24,borderWidth:1,borderColor:'#F0F2EC',marginBottom:10,...shadow},
+ name:{fontSize:15,fontWeight:'900',color:colors.text,lineHeight:20},
  meta:{fontSize:11.5,color:colors.muted,marginTop:5},
  macro:{fontSize:11.5,color:colors.muted,marginTop:5},
- fav:{width:32,minHeight:44,alignItems:'center',justifyContent:'center'},
+ fav:{width:48,minHeight:48,alignItems:'center',justifyContent:'center'},
  empty:{textAlign:'center',marginTop:40,color:colors.muted}
 });

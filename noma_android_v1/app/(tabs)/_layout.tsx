@@ -8,8 +8,8 @@ export default function TabsLayout(){
  const bottom=Math.max(insets.bottom,12);
  return <Tabs screenOptions={{
   headerShown:false,tabBarHideOnKeyboard:true,
-  tabBarActiveTintColor:colors.sageDark,tabBarInactiveTintColor:'#77848A',
-  tabBarStyle:{backgroundColor:'#fff',borderTopColor:'#EEF0EB',height:57+bottom,paddingTop:8,paddingBottom:bottom,elevation:3},
+  tabBarActiveTintColor:colors.sageDark,tabBarInactiveTintColor:colors.muted,
+  tabBarStyle:{backgroundColor:colors.card,borderTopColor:colors.border,height:61+bottom,paddingTop:9,paddingBottom:bottom,elevation:3},
   tabBarIconStyle:{marginBottom:1},tabBarLabelStyle:{fontSize:11,fontWeight:'700'}
  }}>
   <Tabs.Screen name="index" options={{title:'Semaine',tabBarIcon:({color,size})=><Ionicons name="calendar-outline" color={color} size={size}/>}}/>

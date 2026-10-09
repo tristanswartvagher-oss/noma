@@ -41,11 +41,11 @@ export default function PickRecipe(){
   {list.map(r=>{
    const m=perServing(r,foods,learning[r.id]);
    return <Pressable key={r.id} onPress={()=>select(r.id)} style={s.card}>
-    <RecipeArtwork title={r.title} emoji={r.emoji} size={72}/>
+    <RecipeArtwork title={r.title} emoji={r.emoji} recipeId={r.id} size={82}/>
     <View style={{flex:1,minWidth:0}}><Text style={s.name} numberOfLines={2}>{r.title}</Text>
      <Text style={s.small}>{r.timeMinutes} min · {r.defaultServings} parts</Text><Text style={s.small}>{Math.round(m.kcal)} kcal · {Math.round(m.protein)} g prot / part</Text>
     </View>
-    <Pressable accessibilityLabel="Favori" onPress={e=>{e.stopPropagation();toggleFavorite(r.id);}} style={{padding:8}}>
+    <Pressable accessibilityLabel="Favori" onPress={e=>{e.stopPropagation();toggleFavorite(r.id);}} style={{padding:12}}>
      <Ionicons name={favorites[r.id]?'heart':'heart-outline'} size={20} color={colors.sageDark}/>
     </Pressable>
    </Pressable>;
@@ -56,13 +56,13 @@ export default function PickRecipe(){
 const s=StyleSheet.create({
  header:{flexDirection:'row',alignItems:'center',justifyContent:'space-between',marginBottom:18},
  title:{fontSize:28,fontWeight:'900',letterSpacing:-.5,color:colors.text},
- close:{width:42,height:42,alignItems:'center',justifyContent:'center'},
+ close:{width:48,height:48,alignItems:'center',justifyContent:'center'},
  search:{height:51,backgroundColor:'#fff',borderRadius:26,borderWidth:1,borderColor:colors.border,flexDirection:'row',alignItems:'center',gap:9,paddingHorizontal:14,marginBottom:12},
  filters:{gap:8,paddingBottom:14},
- external:{flexDirection:'row',alignItems:'center',gap:12,padding:12,backgroundColor:colors.sageSoft,borderRadius:19,marginBottom:14},
+ external:{flexDirection:'row',alignItems:'center',gap:12,padding:13,backgroundColor:colors.cream,borderRadius:19,marginBottom:14},
  externalName:{fontSize:13,color:colors.text,fontWeight:'800'},
  small:{fontSize:11.5,color:colors.muted,marginTop:4},
- card:{flexDirection:'row',alignItems:'center',gap:11,backgroundColor:'#fff',borderRadius:20,borderWidth:1,borderColor:colors.border,padding:9,marginBottom:9,...shadow},
+ card:{flexDirection:'row',alignItems:'center',gap:11,backgroundColor:colors.card,borderRadius:20,borderWidth:1,borderColor:colors.border,padding:9,marginBottom:9,...shadow},
  name:{fontSize:14,color:colors.text,fontWeight:'800',lineHeight:20},
  none:{textAlign:'center',marginTop:22,color:colors.muted}
 });

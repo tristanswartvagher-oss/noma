@@ -16,7 +16,7 @@ const metrics=[
 export default function Profile(){
  const {goals,setGoals,householdSize,learning}=useApp();
  return <Page>
-  <PageHeading title="Profil" subtitle="Tes préférences, tes objectifs, ton Noma." action={
+  <PageHeading title="Profil" subtitle="À ton rythme, à ton goût." action={
    <Pressable accessibilityLabel="Réglages" onPress={()=>router.push('/profile-settings')} style={{padding:8}}><Ionicons name="settings-outline" color={colors.text} size={24}/></Pressable>
   }/>
   <Pressable style={s.mode} accessibilityRole="button" onPress={()=>setGoals({enabled:!goals.enabled})}>
@@ -43,15 +43,15 @@ export default function Profile(){
  </Page>;
 }
 const s=StyleSheet.create({
- mode:{backgroundColor:'#fff',borderRadius:24,flexDirection:'row',alignItems:'center',gap:11,padding:14,borderWidth:1,borderColor:colors.border,...shadow},
- leaf:{height:51,width:51,borderRadius:26,backgroundColor:colors.sageSoft,alignItems:'center',justifyContent:'center'},
+ mode:{backgroundColor:colors.cream,borderRadius:24,flexDirection:'row',alignItems:'center',gap:11,padding:14,borderWidth:1,borderColor:colors.border,...shadow},
+ leaf:{height:53,width:53,borderRadius:27,backgroundColor:colors.lemon,alignItems:'center',justifyContent:'center'},
  mini:{fontSize:12,color:colors.text},modeTitle:{fontSize:20,fontWeight:'800',color:colors.text,marginTop:2},
  sectionHead:{flexDirection:'row',justifyContent:'space-between',alignItems:'center',marginTop:26,marginBottom:13},
  section:{fontSize:17,color:colors.text,fontWeight:'800'},modify:{fontSize:13,color:colors.sageDark,fontWeight:'700'},
  grid:{flexDirection:'row',flexWrap:'wrap',gap:10,marginBottom:19},
- metric:{width:'48%',minHeight:84,backgroundColor:'#fff',borderRadius:20,padding:11,flexDirection:'row',alignItems:'center',gap:10,borderWidth:1,borderColor:colors.border,...shadow},
+ metric:{width:'48%',minHeight:84,backgroundColor:colors.card,borderRadius:20,padding:11,flexDirection:'row',alignItems:'center',gap:10,borderWidth:1,borderColor:colors.border,...shadow},
  ring:{height:36,width:36,borderRadius:20,borderWidth:6,borderColor:colors.sageSoft,transform:[{rotate:'-45deg'}]},
  metricLabel:{fontSize:12,color:colors.muted},metricValue:{fontSize:15,fontWeight:'800',color:colors.text,marginTop:3},
- row:{minHeight:77,backgroundColor:'#fff',borderRadius:19,borderWidth:1,borderColor:colors.border,padding:13,flexDirection:'row',alignItems:'center',gap:12,marginBottom:9,...shadow},
+ row:{minHeight:77,backgroundColor:colors.card,borderRadius:19,borderWidth:1,borderColor:colors.border,padding:13,flexDirection:'row',alignItems:'center',gap:12,marginBottom:9,...shadow},
  item:{fontSize:14,color:colors.text,fontWeight:'700'},desc:{fontSize:11.5,color:colors.muted,marginTop:4}
 });
