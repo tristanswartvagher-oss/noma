@@ -12,10 +12,10 @@
  * avant publication commerciale (voir docs/RECIPE_MEDIA_RIGHTS.md).
  */
 export const recipePhotoMap:Record<string,string>={
-  porridge:'https://unsplash.com/photos/qzRVPgqSWn4/download?w=960',
-  greek_salad:'https://unsplash.com/photos/25SHQMgsWEQ/download?w=960',
-  hummus:'https://unsplash.com/photos/cGhkqHN0Kfc/download?w=960',
-  pancakes:'https://unsplash.com/photos/tKKe3aDvncE/download?w=960',
-  protein_pancakes:'https://unsplash.com/photos/mcJcNdy8-IQ/download?w=960',
-  bolognese:'https://unsplash.com/photos/rQCBC9EgoDE/download?w=960'
+  porridge:'https://images.unsplash.com/photo-1715098841757-0e9690ec12d6?auto=format&fit=crop&w=960&q=80',
+  greek_salad:'https://images.unsplash.com/photo-1778449532114-430396ada55b?auto=format&fit=crop&w=960&q=80',
+  hummus:'https://images.unsplash.com/photo-1783696074463-3fb850d181a1?auto=format&fit=crop&w=960&q=80',
+  pancakes:'https://images.unsplash.com/photo-1568240464340-261c0f65a455?auto=format&fit=crop&w=960&q=80',
+  protein_pancakes:'https://images.unsplash.com/photo-1575853121613-72ce1dd6979d?auto=format&fit=crop&w=960&q=80',
+  bolognese:'https://images.unsplash.com/photo-1761545832779-bc0b4290fc5e?auto=format&fit=crop&w=960&q=80'
 };

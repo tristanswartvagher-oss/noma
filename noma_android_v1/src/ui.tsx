@@ -37,8 +37,8 @@ export function RecipeArtwork({title,emoji,recipeId,size=72,style}:ArtworkProps)
     {canShow?
       <Image accessibilityLabel={'Photo du plat '+title} source={{uri}} style={{width:'100%',height:'100%'}} resizeMode="cover" onError={()=>setFailed(true)}/>:
       <View accessible accessibilityLabel={'Illustration : '+title} style={{width:'100%',height:'100%',alignItems:'center',justifyContent:'center'}}>
-        <View style={{position:'absolute',width:size*.9,height:size*.9,borderRadius:size*.45,borderWidth:size*.026,borderColor:pal.edge,backgroundColor:pal.plate,top:size*.055,left:size*.05}}/>
-        <View style={{position:'absolute',width:size*.74,height:size*.74,borderRadius:size*.38,borderWidth:size*.012,borderColor:pal.edge,top:size*.13,left:size*.13}}/>
+        <View style={{position:'absolute',width:size*.9,height:size*.9,borderRadius:size*.45,borderWidth:size*.026,borderColor:pal.edge,backgroundColor:pal.plate,top:size*.055,alignSelf:'center'}}/>
+        <View style={{position:'absolute',width:size*.74,height:size*.74,borderRadius:size*.38,borderWidth:size*.012,borderColor:pal.edge,top:size*.13,alignSelf:'center'}}/>
         <View style={{position:'absolute',height:size*.055,width:size*.055,borderRadius:size*.03,backgroundColor:pal.dot,top:size*.17,left:size*.16}}/>
         <View style={{position:'absolute',height:size*.04,width:size*.04,borderRadius:size*.03,backgroundColor:pal.dot,bottom:size*.16,right:size*.13}}/>
         <Text style={{fontSize:size*.34,textAlign:'center',includeFontPadding:false}}>{emoji}</Text>
