@@ -26,7 +26,7 @@ function GoalInput({field,value,save}:{field:(typeof fields)[number];value:numbe
     style={s.value}/>
    <Text style={s.unit}>{field.unit}</Text>
   </View>
-  <View style={s.track}><View style={[s.fill,{backgroundColor:field.color,width:percent+'%'}]}/></View>
+  <View style={s.track}><View style={[s.fill,{backgroundColor:field.color,width:`${percent}%` as `${number}%`}]}/></View>
   <View style={s.range}><Text style={s.muted}>{field.min.toLocaleString('fr-FR')}</Text><Text style={s.muted}>{field.max.toLocaleString('fr-FR')}</Text></View>
  </SoftCard>;
 }

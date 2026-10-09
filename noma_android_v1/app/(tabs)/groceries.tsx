@@ -39,7 +39,7 @@ export default function Groceries(){
   </View>
   <SoftCard style={s.summary}><ProgressRing percent={pct} size={55}/><View style={{flex:1}}>
    <Text style={s.count}>{done}/{total} <Text style={s.muted}>articles</Text></Text>
-   <View style={s.track}><View style={[s.fill,{width:pct+'%'}]}/></View>
+   <View style={s.track}><View style={[s.fill,{width:`${pct}%` as `${number}%`}]}/></View>
   </View><Text style={s.badge}>{Math.round(pct)}%</Text></SoftCard>
   <View style={s.add}><Pressable accessibilityLabel="Ajouter un produit" onPress={add} style={s.addCircle}><Ionicons name="add" size={20} color={colors.sageDark}/></Pressable>
    <TextInput value={q} onChangeText={setQ} placeholder="Ajouter un produit..." placeholderTextColor={colors.muted} returnKeyType="done" onSubmitEditing={add} style={{flex:1,fontSize:13,color:colors.text}}/>
