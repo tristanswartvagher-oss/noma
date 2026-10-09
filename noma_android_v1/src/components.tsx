@@ -7,7 +7,7 @@ import {colors,radius,shadow} from './theme';
 export function Page({children,contentStyle,showsVerticalScrollIndicator=false}:{
  children:React.ReactNode;contentStyle?:ViewStyle|ViewStyle[];showsVerticalScrollIndicator?:boolean;
 }){
- return <SafeAreaView edges={['top']} style={{flex:1,backgroundColor:colors.bg}}>
+ return <SafeAreaView edges={['top','bottom']} style={{flex:1,backgroundColor:colors.bg}}>
   <ScrollView keyboardShouldPersistTaps="handled" showsVerticalScrollIndicator={showsVerticalScrollIndicator} contentContainerStyle={[s.page,contentStyle]}>{children}</ScrollView>
  </SafeAreaView>;
 }
@@ -32,17 +32,17 @@ export function Stepper({value,onMinus,onPlus,label}:{value:number;onMinus:()=>v
  </View>;
 }
 const s=StyleSheet.create({
- page:{paddingHorizontal:18,paddingTop:20,paddingBottom:44},
- title:{fontSize:36,lineHeight:42,fontWeight:'800',color:colors.text,letterSpacing:-1.3},
+ page:{paddingHorizontal:18,paddingTop:20,paddingBottom:58},
+ title:{fontSize:36,lineHeight:42,fontWeight:'900',color:colors.text,letterSpacing:-1.3},
  subtitle:{marginTop:3,color:colors.muted,fontSize:13.5,lineHeight:20},
- primary:{minHeight:52,borderRadius:radius.pill,backgroundColor:colors.sageDark,flexDirection:'row',alignItems:'center',justifyContent:'center',gap:8,paddingHorizontal:18,...shadow},
+ primary:{minHeight:54,borderRadius:radius.pill,backgroundColor:colors.sageDark,flexDirection:'row',alignItems:'center',justifyContent:'center',gap:8,paddingHorizontal:18,...shadow},
  primaryText:{color:'#fff',fontWeight:'800',fontSize:15},
- chip:{borderRadius:999,paddingVertical:10,paddingHorizontal:15,backgroundColor:'#fff',borderWidth:1,borderColor:colors.border},
+ chip:{minHeight:46,justifyContent:'center',borderRadius:999,paddingVertical:10,paddingHorizontal:15,backgroundColor:'#fff',borderWidth:1,borderColor:colors.border},
  chipOn:{backgroundColor:colors.sage,borderColor:colors.sage},
  chipText:{color:colors.text,fontWeight:'700',fontSize:12.5},
  chipTextOn:{color:'#fff'},
  stepWrap:{flexDirection:'row',alignItems:'center',gap:7},
- stepButton:{width:37,height:37,borderRadius:20,backgroundColor:colors.sageSoft,alignItems:'center',justifyContent:'center'},
+ stepButton:{width:48,height:48,borderRadius:24,backgroundColor:colors.sageSoft,alignItems:'center',justifyContent:'center'},
  stepValue:{fontSize:19,fontWeight:'800',color:colors.text},
  stepLabel:{fontSize:11,color:colors.muted,marginTop:1}
 });
