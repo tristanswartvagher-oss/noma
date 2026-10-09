@@ -27,7 +27,7 @@ export default function Settings(){
   <Text style={s.section}>Données personnelles</Text>
   <SoftCard style={s.card}><View style={s.line}><Ionicons name="sparkles-outline" size={22} color={colors.sageDark}/><View style={{flex:1}}><Text style={s.name}>Noma apprend</Text><Text style={s.muted}>{Object.keys(learning).length} recette(s) adaptée(s). Les originaux restent intacts.</Text></View></View></SoftCard>
   <Text style={s.section}>À propos</Text>
-  <SoftCard style={s.card}><Text style={s.name}>Base nutritionnelle</Text><Text style={s.muted}>{foods.length} aliments · {audited} audités · {review} à rapprocher d'une source · {verified} vérifiés.</Text><Text style={s.muted}>Vérifier la provenance des valeurs avant toute publication.</Text><Text style={[s.muted,{marginTop:11}]}>Noma 1.3.0 · données V3.2</Text></SoftCard>
+  <SoftCard style={s.card}><Text style={s.name}>Base nutritionnelle</Text><Text style={s.muted}>{foods.length} aliments · {audited} audités · {review} à rapprocher d'une source · {verified} vérifiés.</Text><Text style={s.muted}>Vérifier la provenance des valeurs avant toute publication.</Text><Text style={[s.muted,{marginTop:11}]}>Noma 1.2.0 · interface rénovée · données V3.2</Text></SoftCard>
   <Pressable onPress={()=>Alert.alert('Réinitialiser Noma ?','Le planning, les recettes personnelles et les ajustements seront supprimés.',[{text:'Annuler',style:'cancel'},{text:'Réinitialiser',style:'destructive',onPress:resetDemo}])} style={s.reset}><Ionicons name="refresh-outline" color={colors.danger} size={18}/><Text style={{color:colors.danger,fontWeight:'700'}}>Réinitialiser les données locales</Text></Pressable>
  </Page>;
 }

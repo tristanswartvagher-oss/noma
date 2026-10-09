@@ -60,7 +60,7 @@ export default function Groceries(){
      const checked=Boolean(checks[item.key]);
      const hidden=Boolean(have[item.key]);
      return <View style={s.row} key={item.key}>
-      <Pressable accessibilityRole="checkbox" accessibilityState={{checked:checked||hidden}} accessibilityLabel={'Acheter '+item.name} onPress={()=>toggleGroceryChecked(week,item.key)} style={[s.check,(checked||hidden)&&s.checkOn]}>
+      <Pressable accessibilityRole="checkbox" accessibilityState={{checked:checked||hidden}} accessibilityLabel={'Acheter '+item.name} onPress={()=>hidden?toggleAlreadyHave(week,item.key):toggleGroceryChecked(week,item.key)} style={[s.check,(checked||hidden)&&s.checkOn]}>
        {checked||hidden?<Ionicons name="checkmark" size={15} color="#fff"/>:null}
       </Pressable>
       <Text style={[s.item,{flex:1},(checked||hidden)&&s.done]} numberOfLines={2}>{item.name}</Text>
