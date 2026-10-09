@@ -122,17 +122,20 @@ export default function RecipeForm(){
 
   return (
     <Page>
-      <Text onPress={()=>router.back()} style={s.close}>Fermer</Text>
-      <Text style={s.title}>{existing?'Modifier la recette':'Nouvelle recette'}</Text>
+      <Pressable onPress={()=>router.back()} accessibilityLabel="Retour" style={s.back}><Ionicons name="chevron-back" color={colors.text} size={24}/></Pressable>
+      <Text style={s.title}>{existing?'Modifier ma recette':'Créer ma recette'}</Text>
+      <Text style={s.subtitle}>Ajoute ici une de tes recettes favorites.</Text>
+      <Text style={s.label}>Nom de la recette *</Text>
 
       <TextInput
         value={title}
         onChangeText={setTitle}
-        placeholder="Nom de la recette"
+        placeholder="Ex. Curry de légumes au lait de coco"
         style={s.input}
         placeholderTextColor={colors.muted}
       />
 
+      <Text style={[s.label,{marginTop:15}]}>Catégorie</Text>
       <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={s.chips}>
         {categories.map(cat=><Chip key={cat} label={cat} active={category===cat} onPress={()=>setCategory(cat)}/>)}
       </ScrollView>
@@ -230,20 +233,21 @@ export default function RecipeForm(){
       />
 
       <View style={{marginTop:6}}>
-        <PrimaryButton label={existing?'Enregistrer les modifications':'Créer la recette'} onPress={save}/>
+        <PrimaryButton label={existing?'Enregistrer les modifications':'Enregistrer ma recette'} onPress={save}/>
       </View>
     </Page>
   );
 }
 
 const s=StyleSheet.create({
-  close:{alignSelf:'flex-end',fontWeight:'900',color:colors.sageDark,marginBottom:8},
-  title:{fontFamily:'Georgia',fontSize:34,fontWeight:'700',color:colors.text,marginBottom:14},
-  input:{minHeight:48,borderRadius:16,borderWidth:1,borderColor:colors.border,backgroundColor:'#fff',paddingHorizontal:13,color:colors.text},
+  back:{width:42,height:42,borderRadius:21,backgroundColor:'#fff',alignItems:'center',justifyContent:'center',marginBottom:15},
+  subtitle:{fontSize:13,color:colors.muted,marginBottom:22},
+  title:{fontSize:29,fontWeight:'900',color:colors.text,marginBottom:6},
+  input:{minHeight:52,borderRadius:17,borderWidth:1,borderColor:colors.border,backgroundColor:'#fff',paddingHorizontal:13,color:colors.text},
   chips:{gap:7,marginVertical:10},
   two:{flexDirection:'row',gap:9,marginBottom:4},
   label:{fontSize:12,fontWeight:'800',color:colors.muted,marginBottom:5,marginLeft:3},
-  h:{fontSize:17,fontWeight:'900',color:colors.text,marginTop:12,marginBottom:7},
+  h:{fontSize:19,fontWeight:'900',color:colors.text,marginTop:20,marginBottom:10},
   muted:{fontSize:11.5,color:colors.muted,marginTop:2},
   foodResult:{minHeight:52,backgroundColor:'#fff',borderRadius:15,paddingHorizontal:12,flexDirection:'row',alignItems:'center',gap:8,borderWidth:1,borderColor:colors.border,marginTop:7},
   foodName:{flex:1,color:colors.text,fontWeight:'800'},

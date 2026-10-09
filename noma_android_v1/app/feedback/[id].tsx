@@ -126,7 +126,7 @@ export default function Feedback(){
 
 const s=StyleSheet.create({
   close:{alignSelf:'flex-end',width:44,height:44,alignItems:'center',justifyContent:'center'},
-  title:{fontFamily:'Georgia',fontSize:38,fontWeight:'700',color:colors.text},
+  title:{fontSize:38,fontWeight:'700',color:colors.text},
   sub:{color:colors.muted,fontSize:14,marginTop:4,marginBottom:14,lineHeight:20},
   recipe:{flexDirection:'row',gap:10,alignItems:'center',marginBottom:10},
   rname:{fontSize:18,fontWeight:'900',color:colors.text},

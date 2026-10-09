@@ -3,6 +3,7 @@ import {router,useLocalSearchParams} from 'expo-router';
 import React,{useState} from 'react';
 import {Alert,Pressable,StyleSheet,Text,View} from 'react-native';
 import {Page,PrimaryButton,Stepper} from '@/src/components';
+import {RecipeArtwork} from '@/src/ui';
 import {perServing,roundMacro} from '@/src/nutrition';
 import {useApp} from '@/src/store';
 import {colors,radius} from '@/src/theme';
@@ -62,10 +63,10 @@ export default function RecipeDetail(){
         </View>
       </View>
 
+      <RecipeArtwork title={recipe.title} emoji={recipe.emoji} size={210} style={s.hero}/>
       <Text style={s.title}>{recipe.title}</Text>
-      <Text style={s.subtitle}>{recipe.category} · {recipe.timeMinutes} min{recipe.custom?' · Recette perso':''}</Text>
-
-      <View style={s.hero}><Text style={{fontSize:82}}>{recipe.emoji}</Text></View>
+      <Text style={s.subtitle}>{recipe.timeMinutes} min · {recipe.category}{recipe.custom?' · Recette perso':''}</Text>
+      <View style={s.tags}><Text style={s.tag}>{recipe.category}</Text><Text style={s.tag}>{recipe.defaultServings} parts</Text></View>
 
       <View style={s.servings}>
         <Stepper
@@ -163,13 +164,12 @@ export default function RecipeDetail(){
         ))}
       </View>
 
-      <View style={{marginTop:12}}>
-        <PrimaryButton
-          label="Après le repas"
-          icon="sparkles-outline"
-          onPress={()=>router.push(`/feedback/${recipe.id}`)}
-        />
+      <View style={{marginTop:18}}>
+        <PrimaryButton label="Ajouter à la semaine" icon="calendar-outline" onPress={()=>router.push({pathname:'/schedule-recipe',params:{id:recipe.id}})}/>
       </View>
+      <Pressable style={s.afterMeal} onPress={()=>router.push({pathname:'/feedback/[id]',params:{id:recipe.id}})}>
+        <Ionicons name="sparkles-outline" color={colors.sageDark} size={18}/><Text style={{fontWeight:'800',color:colors.sageDark}}>Après le repas : ajuster mes quantités</Text>
+      </Pressable>
 
       {recipe.custom&&(
         <Pressable onPress={confirmDelete} style={s.delete}>
@@ -184,9 +184,12 @@ export default function RecipeDetail(){
 const s=StyleSheet.create({
   topbar:{flexDirection:'row',justifyContent:'space-between',alignItems:'center'},
   iconButton:{width:44,height:44,alignItems:'center',justifyContent:'center'},
-  title:{fontFamily:'Georgia',fontSize:36,fontWeight:'700',color:colors.text,marginTop:4},
+  title:{fontSize:29,fontWeight:'900',color:colors.text,marginTop:4,letterSpacing:-.6},
   subtitle:{color:colors.muted,fontSize:13,marginTop:3,marginBottom:12},
-  hero:{height:190,borderRadius:radius.lg,backgroundColor:colors.beige,alignItems:'center',justifyContent:'center',marginBottom:12},
+  hero:{width:'100%',height:210,borderRadius:radius.lg,marginTop:10,marginBottom:16},
+  tags:{flexDirection:'row',gap:8,marginBottom:14},
+  tag:{backgroundColor:colors.sageSoft,color:colors.sageDark,borderRadius:99,overflow:'hidden',fontSize:12,paddingHorizontal:12,paddingVertical:8},
+  afterMeal:{marginTop:12,minHeight:45,flexDirection:'row',alignItems:'center',justifyContent:'center',gap:8},
   servings:{backgroundColor:'#fff',borderRadius:radius.lg,borderWidth:1,borderColor:colors.border,padding:13,alignItems:'center'},
   macros:{position:'relative',flexDirection:'row',backgroundColor:'#fff',borderWidth:1,borderColor:colors.border,borderRadius:radius.md,marginTop:10,marginBottom:20,overflow:'visible'},
   macro:{flex:1,alignItems:'center',paddingVertical:13,borderRightWidth:1,borderRightColor:colors.border},

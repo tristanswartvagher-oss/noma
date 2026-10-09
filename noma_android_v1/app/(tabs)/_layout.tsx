@@ -16,5 +16,7 @@ export default function TabsLayout(){
   <Tabs.Screen name="recipes" options={{title:'Recettes',tabBarIcon:({color,size})=><Ionicons name="reader-outline" color={color} size={size}/>}}/>
   <Tabs.Screen name="groceries" options={{title:'Courses',tabBarIcon:({color,size})=><Ionicons name="cart-outline" color={color} size={size}/>}}/>
   <Tabs.Screen name="profile" options={{title:'Profil',tabBarIcon:({color,size})=><Ionicons name="person-outline" color={color} size={size}/>}}/>
+  <Tabs.Screen name="profile-goals" options={{href:null}}/>
+  <Tabs.Screen name="profile-settings" options={{href:null}}/>
  </Tabs>;
 }

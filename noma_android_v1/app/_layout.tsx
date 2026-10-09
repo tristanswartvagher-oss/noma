@@ -19,6 +19,7 @@ export default function Root(){
         <Stack.Screen name="meal-editor" options={{presentation:'modal'}}/>
         <Stack.Screen name="external-meal" options={{presentation:'modal'}}/>
         <Stack.Screen name="new-recipe" options={{presentation:'modal'}}/>
+        <Stack.Screen name="schedule-recipe"/>
       </Stack>
     </AppProvider>
   );
