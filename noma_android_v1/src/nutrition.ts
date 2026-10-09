@@ -2,11 +2,25 @@ import {Food,Recipe,RecipeIngredient,RecipeLearning} from './types';
 
 export type Macros={kcal:number;protein:number;carbs:number;fat:number;fiber:number};
 
-export function nutritionAmount(ing:RecipeIngredient,food?:Food){
-  if(typeof ing.nutritionAmount==='number') return ing.nutritionAmount;
-  if(typeof ing.grams==='number') return ing.grams;
-  if(ing.unit==='pièce' && food?.pieceWeight) return ing.amount*food.pieceWeight;
-  return ing.amount;
+/** All food nutrient references are per 100 g, never per 100 ml or per piece. */
+export function ingredientWeightGrams(ing:RecipeIngredient,food?:Food):number{
+  const amount=Number(ing.amount);
+  if(!Number.isFinite(amount)||amount<0) return NaN;
+  if(ing.unit==='g') return amount;
+  if(ing.unit==='ml'){
+    const density=food?.densityGPerMl;
+    return typeof density==='number'&&Number.isFinite(density)&&density>0?amount*density:NaN;
+  }
+  if(ing.unit==='pièce'){
+    const piece=food?.pieceWeight;
+    return typeof piece==='number'&&Number.isFinite(piece)&&piece>0?amount*piece:NaN;
+  }
+  return NaN;
+}
+
+/** Legacy nutritionAmount is deliberately ignored: it was wrong for ml quantities. */
+export function nutritionAmount(ing:RecipeIngredient,food?:Food):number{
+  return ingredientWeightGrams(ing,food);
 }
 
 export function recipeNutrition(
@@ -18,13 +32,16 @@ export function recipeNutrition(
   const overall=learning?.overallMultiplier||1;
   const scale=cookedServings/recipe.defaultServings;
   const total:Macros={kcal:0,protein:0,carbs:0,fat:0,fiber:0};
+  const byId=new Map(foods.map(f=>[f.id,f]));
 
   for(const ing of recipe.ingredients){
-    const food=foods.find(x=>x.id===ing.foodId);
-    if(!food) continue;
+    const food=byId.get(ing.foodId);
+    if(!food) throw new Error('Aliment introuvable : '+ing.foodId);
+    const grams=ingredientWeightGrams(ing,food);
+    if(!Number.isFinite(grams)||grams<0)
+      throw new Error('Unité ou densité non prise en charge : '+ing.foodId+' ('+ing.unit+')');
     const personal=learning?.ingredientMultipliers?.[ing.foodId]||1;
-    const normalized=nutritionAmount(ing,food)*scale*overall*personal;
-    const ratio=normalized/100;
+    const ratio=(grams*scale*overall*personal)/food.referenceQuantity;
     total.kcal+=food.kcal*ratio;
     total.protein+=food.protein*ratio;
     total.carbs+=food.carbs*ratio;

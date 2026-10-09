@@ -4,6 +4,7 @@ import React,{useMemo,useState} from 'react';
 import {Alert,Pressable,ScrollView,StyleSheet,Text,TextInput,View} from 'react-native';
 import {Chip,Page,PrimaryButton} from '@/src/components';
 import {useApp} from '@/src/store';
+import {ingredientWeightGrams} from '@/src/nutrition';
 import {normalizeText} from '@/src/text';
 import {colors,radius} from '@/src/theme';
 import {IngredientUnit,RecipeCategory,RecipeIngredient} from '@/src/types';
@@ -41,10 +42,11 @@ export default function RecipeForm(){
   function addIngredient(foodId:string){
     const food=foods.find(f=>f.id===foodId);
     if(!food) return;
-    const unit:IngredientUnit=food.referenceUnit;
+    const unit:IngredientUnit=food.preferredInputUnit==='ml'&&food.densityGPerMl?'ml':'g';
+    const ing:RecipeIngredient={foodId,amount:100,unit,nutritionAmount:0};
     setIngredients(list=>[
       ...list,
-      {foodId,amount:100,unit,nutritionAmount:100}
+      {...ing,nutritionAmount:ingredientWeightGrams(ing,food)}
     ]);
     setQuery('');
   }
@@ -54,10 +56,8 @@ export default function RecipeForm(){
     setIngredients(list=>list.map((ing,i)=>{
       if(i!==index) return ing;
       const food=foods.find(f=>f.id===ing.foodId);
-      const nutritionAmount=ing.unit==='pièce'
-        ? amount*(food?.pieceWeight||0)
-        : amount;
-      return {...ing,amount,nutritionAmount};
+      const next={...ing,amount};
+      return {...next,nutritionAmount:ingredientWeightGrams(next,food)};
     }));
   }
 
@@ -65,11 +65,13 @@ export default function RecipeForm(){
     setIngredients(list=>list.map((ing,i)=>{
       if(i!==index) return ing;
       const food=foods.find(f=>f.id===ing.foodId);
-      if(unit==='pièce'){
-        if(!food?.pieceWeight) return ing;
-        return {...ing,unit,amount:Math.round((ing.nutritionAmount/food.pieceWeight)*10)/10};
-      }
-      return {...ing,unit,amount:Math.round(ing.nutritionAmount*10)/10};
+      const grams=ingredientWeightGrams(ing,food);
+      if(!Number.isFinite(grams)) return ing;
+      const factor=unit==='ml'?food?.densityGPerMl:unit==='pièce'?food?.pieceWeight:1;
+      if(!factor||factor<=0) return ing;
+      const amount=Math.round((grams/factor)*1000)/1000;
+      const next={...ing,unit,amount};
+      return {...next,nutritionAmount:ingredientWeightGrams(next,food)};
     }));
   }
 
@@ -91,7 +93,10 @@ export default function RecipeForm(){
       Alert.alert('Ingrédients manquants','Ajoute au moins un ingrédient.');
       return;
     }
-    if(ingredients.some(i=>i.amount<=0||i.nutritionAmount<=0)){
+    if(ingredients.some(i=>{
+      const grams=ingredientWeightGrams(i,foods.find(f=>f.id===i.foodId));
+      return i.amount<=0||!Number.isFinite(grams)||grams<=0;
+    })){
       Alert.alert('Quantité invalide','Chaque ingrédient doit avoir une quantité supérieure à zéro.');
       return;
     }
@@ -178,7 +183,9 @@ export default function RecipeForm(){
         {ingredients.map((ing,index)=>{
           const food=foods.find(f=>f.id===ing.foodId);
           if(!food) return null;
-          const units:IngredientUnit[]=food.pieceWeight?[food.referenceUnit,'pièce']:[food.referenceUnit];
+          const units:IngredientUnit[]=['g'];
+          if(food.densityGPerMl&&food.densityGPerMl>0) units.push('ml');
+          if(food.pieceWeight&&food.pieceWeight>0) units.push('pièce');
           return (
             <View key={`${ing.foodId}-${index}`} style={s.ingCard}>
               <View style={s.ingTop}>

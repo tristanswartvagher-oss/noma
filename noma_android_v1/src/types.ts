@@ -18,9 +18,24 @@ export type Food = {
   fiber:number;
   source:string;
   sourceId?:string;
+  ciqualCode?:string|null;
+  sourceNameFromDataset?:string;
+  preferredInputUnit?:IngredientUnit;
+  requiresDensity?:boolean;
+  densityGPerMl?:number;
   verified:boolean;
-  auditStatus?:'passed_internal'|'review_external';
+  auditStatus?:string;
   auditNote?:string;
+  nutrientQualifiers?:Record<string,string>;
+  nutrientSourceValues?:Record<string,string|null>;
+  kcalQualifier?:string;
+  kcalSourceValue?:string|null;
+  kcalDerivation?:string;
+  externalSourceName?:string;
+  externalSourceId?:string;
+  externalSourceUrl?:string;
+  externalFoodName?:string;
+  carbsTransformation?:string;
 };
 
 export type RecipeIngredient = {
