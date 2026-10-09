@@ -1,120 +1,57 @@
 import {Ionicons} from '@expo/vector-icons';
+import {router} from 'expo-router';
 import React from 'react';
-import {Alert,Pressable,StyleSheet,Switch,Text,TextInput,View} from 'react-native';
-import {Page,ScreenTitle,Stepper} from '@/src/components';
+import {Pressable,StyleSheet,Switch,Text,View} from 'react-native';
+import {Page} from '@/src/components';
+import {PageHeading,SoftCard} from '@/src/ui';
 import {useApp} from '@/src/store';
-import {colors,radius} from '@/src/theme';
+import {colors,shadow} from '@/src/theme';
 
+const metrics=[
+ ['protein','Protéines','g',colors.red],
+ ['carbs','Glucides','g',colors.yellow],
+ ['fat','Lipides','g',colors.blue],
+ ['kcal','Calories','kcal',colors.sage]
+] as const;
 export default function Profile(){
-  const {goals,setGoals,householdSize,setHouseholdSize,learning,foods,resetDemo}=useApp();
-  const audited=foods.filter(f=>Boolean(f.auditStatus)).length;
-  const review=foods.filter(f=>f.auditStatus==='review_external').length;
-  const verified=foods.filter(f=>f.verified).length;
-
-  return (
-    <Page>
-      <ScreenTitle title="Profil" subtitle="Seulement les réglages utiles."/>
-
-      <View style={s.card}>
-        <Text style={s.h}>Foyer</Text>
-        <Text style={s.muted}>Nombre de portions à préparer par défaut.</Text>
-        <View style={s.center}>
-          <Stepper
-            value={householdSize}
-            label="personnes"
-            onMinus={()=>setHouseholdSize(householdSize-1)}
-            onPlus={()=>setHouseholdSize(householdSize+1)}
-          />
-        </View>
-      </View>
-
-      <View style={s.card}>
-        <View style={s.toggle}>
-          <View style={{flex:1}}>
-            <Text style={s.h}>Macros</Text>
-            <Text style={s.muted}>Calories, protéines, glucides et lipides dans ta semaine.</Text>
-          </View>
-          <Switch
-            value={goals.enabled}
-            onValueChange={enabled=>setGoals({enabled})}
-            trackColor={{true:colors.sage,false:'#D7DDD5'}}
-          />
-        </View>
-
-        {goals.enabled&&(
-          <View style={s.grid}>
-            {[
-              ['kcal','kcal'],
-              ['protein','g prot'],
-              ['carbs','g gluc'],
-              ['fat','g lip']
-            ].map(([key,label])=>(
-              <View key={key} style={s.target}>
-                <TextInput
-                  keyboardType="numeric"
-                  value={String((goals as any)[key])}
-                  onChangeText={value=>setGoals({[key]:Number(value)||0} as any)}
-                  style={s.input}
-                />
-                <Text style={s.muted}>{label} / jour</Text>
-              </View>
-            ))}
-          </View>
-        )}
-      </View>
-
-      <View style={[s.card,{backgroundColor:colors.sageSoft}]}>
-        <View style={s.rowTitle}>
-          <Ionicons name="sparkles-outline" size={22} color={colors.sageDark}/>
-          <Text style={s.h}>Noma apprend</Text>
-        </View>
-        <Text style={s.muted}>
-          {Object.keys(learning).length} recette(s) adaptée(s). Les recettes originales restent intactes et chaque ajustement peut être annulé dans la fiche recette.
-        </Text>
-      </View>
-
-      <View style={s.card}>
-        <View style={s.rowTitle}>
-          <Ionicons name="nutrition-outline" size={22} color={colors.sageDark}/>
-          <Text style={s.h}>Base nutritionnelle</Text>
-        </View>
-        <Text style={s.muted}>
-          {foods.length} aliments locaux · {audited} audités · {review} à rapprocher d’une source externe · {verified} certifiés. Le calcul des recettes est vérifié ; la certification CIQUAL ligne par ligne reste à faire avant publication.
-        </Text>
-      </View>
-
-      <View style={s.card}>
-        <Text style={s.h}>Version</Text>
-        <Text style={s.muted}>Noma 1.2.0 · schéma de données V3</Text>
-      </View>
-
-      <Pressable
-        onPress={()=>Alert.alert(
-          'Réinitialiser Noma ?',
-          'Le planning, les recettes personnelles et les ajustements seront remplacés par les données de démonstration.',
-          [
-            {text:'Annuler',style:'cancel'},
-            {text:'Réinitialiser',style:'destructive',onPress:resetDemo}
-          ]
-        )}
-        style={s.reset}
-      >
-        <Ionicons name="refresh" size={18} color={colors.danger}/>
-        <Text style={{fontWeight:'900',color:colors.danger}}>Réinitialiser les données</Text>
-      </Pressable>
-    </Page>
-  );
+ const {goals,setGoals,householdSize,learning}=useApp();
+ return <Page>
+  <PageHeading title="Profil" subtitle="Tes préférences, tes objectifs, ton Noma." action={
+   <Pressable accessibilityLabel="Réglages" onPress={()=>router.push('/profile-settings')} style={{padding:8}}><Ionicons name="settings-outline" color={colors.text} size={24}/></Pressable>
+  }/>
+  <Pressable style={s.mode} accessibilityRole="button" onPress={()=>setGoals({enabled:!goals.enabled})}>
+   <View style={s.leaf}><Ionicons name="leaf-outline" size={26} color={colors.sageDark}/></View>
+   <View style={{flex:1}}><Text style={s.mini}>Mon mode nutrition</Text><Text style={s.modeTitle}>{goals.enabled?'Équilibré':'Désactivé'}</Text></View>
+   <Switch accessibilityLabel="Afficher les macros" value={goals.enabled} onValueChange={enabled=>setGoals({enabled})} trackColor={{true:colors.sage,false:'#D7DDD5'}} thumbColor="#fff"/>
+  </Pressable>
+  <View style={s.sectionHead}><Text style={s.section}>Mes objectifs quotidiens</Text><Pressable onPress={()=>router.push('/profile-goals')}><Text style={s.modify}>Modifier</Text></Pressable></View>
+  <View style={s.grid}>
+   {metrics.map(([key,label,unit,color])=><Pressable onPress={()=>router.push('/profile-goals')} key={key} style={s.metric}>
+    <View style={[s.ring,{borderTopColor:color,borderRightColor:color}]}/>
+    <View><Text style={s.metricLabel}>{label}</Text><Text style={s.metricValue}>{goals[key].toLocaleString('fr-FR')} {unit}</Text></View>
+   </Pressable>)}
+  </View>
+  <Pressable style={s.row} onPress={()=>router.push('/profile-settings')}>
+   <Ionicons name="people-outline" size={23} color={colors.text}/><View style={{flex:1}}><Text style={s.item}>Mon foyer</Text><Text style={s.desc}>{householdSize} personne(s) · portions à préparer</Text></View><Ionicons name="chevron-forward" size={18} color={colors.muted}/>
+  </Pressable>
+  <Pressable style={s.row} onPress={()=>router.push('/profile-settings')}>
+   <Ionicons name="sparkles-outline" size={23} color={colors.text}/><View style={{flex:1}}><Text style={s.item}>Noma apprend</Text><Text style={s.desc}>{Object.keys(learning).length} recette(s) adaptée(s)</Text></View><Ionicons name="chevron-forward" size={18} color={colors.muted}/>
+  </Pressable>
+  <Pressable style={s.row} onPress={()=>router.push('/profile-settings')}>
+   <Ionicons name="shield-checkmark-outline" size={23} color={colors.text}/><View style={{flex:1}}><Text style={s.item}>Données et réglages</Text><Text style={s.desc}>Base nutritionnelle, version et sauvegarde locale</Text></View><Ionicons name="chevron-forward" size={18} color={colors.muted}/>
+  </Pressable>
+ </Page>;
 }
-
 const s=StyleSheet.create({
-  card:{backgroundColor:'#fff',borderRadius:radius.lg,borderWidth:1,borderColor:colors.border,padding:17,marginBottom:11},
-  h:{fontSize:17,fontWeight:'900',color:colors.text},
-  muted:{fontSize:12.5,color:colors.muted,marginTop:4,lineHeight:18},
-  center:{alignItems:'center',marginTop:16},
-  toggle:{flexDirection:'row',alignItems:'center',gap:12},
-  grid:{flexDirection:'row',flexWrap:'wrap',gap:9,marginTop:15},
-  target:{width:'48%',backgroundColor:'#FAFBF8',borderRadius:18,padding:12},
-  input:{fontSize:20,fontWeight:'900',color:colors.text,padding:0},
-  rowTitle:{flexDirection:'row',alignItems:'center',gap:8},
-  reset:{flexDirection:'row',gap:8,alignItems:'center',justifyContent:'center',padding:17}
+ mode:{backgroundColor:'#fff',borderRadius:24,flexDirection:'row',alignItems:'center',gap:11,padding:14,borderWidth:1,borderColor:colors.border,...shadow},
+ leaf:{height:51,width:51,borderRadius:26,backgroundColor:colors.sageSoft,alignItems:'center',justifyContent:'center'},
+ mini:{fontSize:12,color:colors.text},modeTitle:{fontSize:20,fontWeight:'800',color:colors.text,marginTop:2},
+ sectionHead:{flexDirection:'row',justifyContent:'space-between',alignItems:'center',marginTop:26,marginBottom:13},
+ section:{fontSize:17,color:colors.text,fontWeight:'800'},modify:{fontSize:13,color:colors.sageDark,fontWeight:'700'},
+ grid:{flexDirection:'row',flexWrap:'wrap',gap:10,marginBottom:19},
+ metric:{width:'48%',minHeight:84,backgroundColor:'#fff',borderRadius:20,padding:11,flexDirection:'row',alignItems:'center',gap:10,borderWidth:1,borderColor:colors.border,...shadow},
+ ring:{height:36,width:36,borderRadius:20,borderWidth:6,borderColor:colors.sageSoft,transform:[{rotate:'-45deg'}]},
+ metricLabel:{fontSize:12,color:colors.muted},metricValue:{fontSize:15,fontWeight:'800',color:colors.text,marginTop:3},
+ row:{minHeight:77,backgroundColor:'#fff',borderRadius:19,borderWidth:1,borderColor:colors.border,padding:13,flexDirection:'row',alignItems:'center',gap:12,marginBottom:9,...shadow},
+ item:{fontSize:14,color:colors.text,fontWeight:'700'},desc:{fontSize:11.5,color:colors.muted,marginTop:4}
 });

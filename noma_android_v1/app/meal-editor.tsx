@@ -70,7 +70,7 @@ export default function MealEditor(){
 const s=StyleSheet.create({
   close:{alignSelf:'flex-end',width:44,height:44,alignItems:'center',justifyContent:'center'},
   hero:{alignItems:'center',marginBottom:14},
-  title:{fontFamily:'Georgia',fontSize:31,fontWeight:'700',color:colors.text,textAlign:'center',marginTop:8},
+  title:{fontSize:31,fontWeight:'700',color:colors.text,textAlign:'center',marginTop:8},
   muted:{fontSize:12.5,color:colors.muted,marginTop:4,lineHeight:18},
   card:{backgroundColor:'#fff',borderWidth:1,borderColor:colors.border,borderRadius:radius.lg,padding:16,marginBottom:11},
   h:{fontSize:17,fontWeight:'900',color:colors.text},

@@ -125,7 +125,7 @@ function MacroInput({label,unit,value,onChange}:{label:string;unit:string;value:
 
 const s=StyleSheet.create({
   close:{alignSelf:'flex-end',width:44,height:44,alignItems:'center',justifyContent:'center'},
-  title:{fontFamily:'Georgia',fontSize:35,fontWeight:'700',color:colors.text},
+  title:{fontSize:35,fontWeight:'700',color:colors.text},
   subtitle:{fontSize:13,color:colors.muted,lineHeight:19,marginTop:4,marginBottom:14},
   card:{backgroundColor:'#fff',borderWidth:1,borderColor:colors.border,borderRadius:radius.lg,padding:15,marginBottom:11},
   h:{fontSize:17,fontWeight:'900',color:colors.text},
