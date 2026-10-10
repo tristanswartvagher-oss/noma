@@ -1,0 +1,50 @@
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {readFileSync,readdirSync,statSync} from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+
+const project=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const recipes=JSON.parse(readFileSync(path.join(project,'src/seedRecipes.json'),'utf8'));
+const manifest=JSON.parse(readFileSync(path.join(project,'docs/recipe-images-manifest.json'),'utf8'));
+const media=readFileSync(path.join(project,'src/recipeMedia.ts'),'utf8');
+const recipeIds=new Set(recipes.map(r=>r.id));
+const mappingIds=new Set(manifest.map(x=>x.recipeId));
+assert.equal(recipes.length,60,'expected 60 built-in recipes');
+assert.equal(recipeIds.size,60,'duplicate recipe id');
+assert.equal(manifest.length,60,'expected 60 image mappings');
+assert.equal(mappingIds.size,60,'duplicate image mapping id');
+for(const id of recipeIds)assert(mappingIds.has(id),`image not mapped: ${id}`);
+for(const id of mappingIds)assert(recipeIds.has(id),`unknown recipe: ${id}`);
+
+const files=new Set(readdirSync(path.join(project,'assets/recipe-photos')));
+const referenced=new Set();
+const status={exact:0,strong:0,approx:0};
+let bytes=0;
+for(const entry of manifest){
+  assert(Object.hasOwn(status,entry.matchType),`invalid match status: ${entry.recipeId}`);
+  status[entry.matchType]++;
+  assert.match(entry.assetPath,/^assets\/recipe-photos\/[a-z0-9_]+\.jpg$/);
+  const filename=path.basename(entry.assetPath);
+  referenced.add(filename);
+  assert(files.has(filename),`file not found: ${filename}`);
+  const absolute=path.join(project,entry.assetPath);
+  const payload=readFileSync(absolute);
+  assert.equal(statSync(absolute).size,entry.sizeBytes,`size mismatch: ${filename}`);
+  assert.equal(createHash('sha256').update(payload).digest('hex'),entry.assetSha256,`hash mismatch: ${filename}`);
+  assert.equal(payload[0],0xff,`bad JPEG header ${filename}`);
+  assert.equal(payload[1],0xd8,`bad JPEG header ${filename}`);
+  assert.equal(payload.at(-2),0xff,`bad JPEG trailer ${filename}`);
+  assert.equal(payload.at(-1),0xd9,`bad JPEG trailer ${filename}`);
+  const requireStatement=`${entry.recipeId}: require('../${entry.assetPath}')`;
+  assert(media.includes(requireStatement),`missing static require for ${entry.recipeId}`);
+  bytes+=payload.length;
+}
+assert.deepEqual([...files].sort(),[...referenced].sort(),'unexpected or missing assets');
+assert.deepEqual(status,{exact:38,strong:17,approx:5},'audit status drift');
+assert.equal(referenced.size,59,'expected one intentionally shared pancakes image');
+const a=manifest.find(e=>e.recipeId==='pancakes');
+const b=manifest.find(e=>e.recipeId==='protein_pancakes');
+assert.equal(a.assetPath,b.assetPath,'shared pancakes mapping unexpectedly changed');
+assert.equal(recipes.reduce((n,r)=>n+r.steps.length,0),327,'recipe instructions changed');
+console.log(JSON.stringify({imageAudit:'PASS',recipes:60,assets:referenced.size,matches:status,totalBytesUnique:[...referenced].reduce((s,f)=>s+statSync(path.join(project,'assets/recipe-photos',f)).size,0)}));

@@ -8,7 +8,8 @@
     "android": "expo start --android",
     "typecheck": "tsc --noEmit",
     "check": "expo-doctor && tsc --noEmit",
-    "test:ciqual": "node scripts/verify-ciqual.mjs"
+    "test:ciqual": "node scripts/verify-ciqual.mjs",
+    "test:recipe-images": "node scripts/verify-recipe-images.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",

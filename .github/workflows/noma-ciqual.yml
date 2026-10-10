@@ -3,6 +3,8 @@ on:
   push:
     paths:
       - 'noma_android_v1/src/**'
+      - 'noma_android_v1/assets/recipe-photos/**'
+      - 'noma_android_v1/docs/recipe-images-manifest.json'
       - 'noma_android_v1/app/new-recipe.tsx'
       - 'noma_android_v1/scripts/**'
       - 'noma_android_v1/package.json'
@@ -10,6 +12,8 @@ on:
   pull_request:
     paths:
       - 'noma_android_v1/src/**'
+      - 'noma_android_v1/assets/recipe-photos/**'
+      - 'noma_android_v1/docs/recipe-images-manifest.json'
       - 'noma_android_v1/app/new-recipe.tsx'
       - 'noma_android_v1/scripts/**'
       - 'noma_android_v1/package.json'
@@ -30,4 +34,5 @@ jobs:
       - run: npm ci --no-audit --no-fund
       - run: npm run typecheck
       - run: npm run test:ciqual
+      - run: npm run test:recipe-images
       - run: npx expo export --platform android
