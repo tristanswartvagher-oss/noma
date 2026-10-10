@@ -1,0 +1,602 @@
+[
+  {
+    "recipeId": "greek_salad",
+    "title": "Salade grecque",
+    "imageFilename": "salade_de_quinoa_méditerranéenne_rustique.png",
+    "matchType": "approx",
+    "notes": "Pas d’image exacte \"salade grecque\" dans le ZIP ; visuel le plus proche (feta, concombre, tomate, oignon) malgré la présence de quinoa.",
+    "assetPath": "assets/recipe-photos/greek_salad.jpg",
+    "sizeBytes": 158468,
+    "assetSha256": "b77129a3e07fa65372e80c21280430f1631f8452705966b2abf51ee26450b451"
+  },
+  {
+    "recipeId": "tomato_mozza",
+    "title": "Tomate mozzarella",
+    "imageFilename": "salade_caprese_au_basilic_frais.png",
+    "matchType": "exact",
+    "notes": "Caprese = équivalent visuel direct de tomate mozzarella.",
+    "assetPath": "assets/recipe-photos/tomato_mozza.jpg",
+    "sizeBytes": 127477,
+    "assetSha256": "653c32cbd70ca2fdc173aa5810d6b91805a90d181fe19fc4e085d5b88afcd87d"
+  },
+  {
+    "recipeId": "hummus",
+    "title": "Houmous maison",
+    "imageFilename": "bol_méditerranéen_de_falafels_gourmands.png",
+    "matchType": "approx",
+    "notes": "Aucune image de houmous seul ; ce visuel montre clairement du houmous, mais aussi des falafels et du quinoa.",
+    "assetPath": "assets/recipe-photos/hummus.jpg",
+    "sizeBytes": 155094,
+    "assetSha256": "3dc49213370cfb22648a1694bba6dcc1aed6f4a012f4495c352acb358b843bbf"
+  },
+  {
+    "recipeId": "lentil_salad",
+    "title": "Salade de lentilles",
+    "imageFilename": "salade_de_lentilles_méditerranéenne_à_la_feta.png",
+    "matchType": "strong",
+    "notes": "Correspondance directe malgré la mention feta.",
+    "assetPath": "assets/recipe-photos/lentil_salad.jpg",
+    "sizeBytes": 145753,
+    "assetSha256": "69a3106e1b62300804605353102bf51343f2a432907e5f291a15e9d099b529f7"
+  },
+  {
+    "recipeId": "tuna_avocado",
+    "title": "Avocat au thon",
+    "imageFilename": "avocats_farcis_au_thon_méditerranéen.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/tuna_avocado.jpg",
+    "sizeBytes": 142330,
+    "assetSha256": "055ecabcfe4a282200527707d6307ff4879706e628680414ffdf0b926be31900"
+  },
+  {
+    "recipeId": "egg_mimosa",
+    "title": "Œufs mimosa",
+    "imageFilename": "œufs_mimosa_aux_herbes_et_paprika.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/egg_mimosa.jpg",
+    "sizeBytes": 133832,
+    "assetSha256": "8d71319e86120e71ef4a7669d2c1160635509d99772021a907d09688e9178d54"
+  },
+  {
+    "recipeId": "zucchini_soup",
+    "title": "Velouté de courgettes",
+    "imageFilename": "soupe_de_courgettes_crémeuse_au_basilic.png",
+    "matchType": "strong",
+    "notes": "Même base visuelle, ajout de basilic non bloquant.",
+    "assetPath": "assets/recipe-photos/zucchini_soup.jpg",
+    "sizeBytes": 130973,
+    "assetSha256": "9aa0a5b421a36bb6901d4d82793d6f397225b03339e06867ae1abe7d44818f07"
+  },
+  {
+    "recipeId": "bruschetta",
+    "title": "Bruschetta tomate",
+    "imageFilename": "bruschettas_rustiques_aux_tomates_et_basilic.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/bruschetta.jpg",
+    "sizeBytes": 145468,
+    "assetSha256": "45ebcd6744cfd2f4da4757d3b0e2247237e10a221d43bde31171d1385b158e87"
+  },
+  {
+    "recipeId": "tabbouleh",
+    "title": "Taboulé",
+    "imageFilename": "taboulé_méditerranéen_aux_herbes_fraîches.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/tabbouleh.jpg",
+    "sizeBytes": 161857,
+    "assetSha256": "c0aad29788403e5a866663a851f1edfc4670223bc30a695a39802c38259368ba"
+  },
+  {
+    "recipeId": "carrot_salad",
+    "title": "Carottes râpées citron",
+    "imageFilename": "salade_de_carottes_râpées_au_citron_et_aux_herbes.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/carrot_salad.jpg",
+    "sizeBytes": 146490,
+    "assetSha256": "9b6517b17b9d8c984fc80599df8eb0ee196ea69931ccc0bd4556d1892ced4845"
+  },
+  {
+    "recipeId": "cucumber_yogurt",
+    "title": "Concombre au yaourt",
+    "imageFilename": "salade_de_concombre_crémeuse_aux_herbes.png",
+    "matchType": "strong",
+    "notes": "Concombre au yaourt : visuel cohérent même si le nom mentionne salade crémeuse.",
+    "assetPath": "assets/recipe-photos/cucumber_yogurt.jpg",
+    "sizeBytes": 139111,
+    "assetSha256": "d3266c6360fbef24ecfc66ef4d5aa856f23ecc9100fae1bede4970175b159c77"
+  },
+  {
+    "recipeId": "broccoli_salad",
+    "title": "Salade brocoli feta",
+    "imageFilename": "salade_de_brocoli_feta_et_amandes.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/broccoli_salad.jpg",
+    "sizeBytes": 160726,
+    "assetSha256": "210f1f6c96e8f8c4d914864bdb1d2c55a92d606d4a93824e5db4eb77ae441255"
+  },
+  {
+    "recipeId": "salmon_toast",
+    "title": "Toast saumon fumé",
+    "imageFilename": "tartines_de_saumon_fumé_aux_herbes.png",
+    "matchType": "exact",
+    "notes": "Tartines = toast.",
+    "assetPath": "assets/recipe-photos/salmon_toast.jpg",
+    "sizeBytes": 133923,
+    "assetSha256": "be4f1e75fb02eac0c11859afa0854bd2348317275f1cd208ca24aad8c45af63b"
+  },
+  {
+    "recipeId": "stuffed_mushrooms",
+    "title": "Champignons farcis ricotta",
+    "imageFilename": "champignons_farcis_aux_herbes_et_ricotta.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/stuffed_mushrooms.jpg",
+    "sizeBytes": 142026,
+    "assetSha256": "9109f9f06844a8c5bbe25b80065b5c4299201ab1d42914fe386107c91fd058f4"
+  },
+  {
+    "recipeId": "cauliflower_soup",
+    "title": "Velouté chou-fleur",
+    "imageFilename": "soupe_crémeuse_de_chou_fleur_rôti.png",
+    "matchType": "strong",
+    "notes": "Même base visuelle, mention rôti non bloquante.",
+    "assetPath": "assets/recipe-photos/cauliflower_soup.jpg",
+    "sizeBytes": 119916,
+    "assetSha256": "0872d28987861a46f2dc160079e717384381b879be32f8190f5e3b07f2ec6059"
+  },
+  {
+    "recipeId": "chicken_curry",
+    "title": "Poulet curry riz",
+    "imageFilename": "curry_crémeux_au_poulet_et_riz_basmati.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/chicken_curry.jpg",
+    "sizeBytes": 146398,
+    "assetSha256": "e74402b1dc144785c36d9204c5607a71cdc63fe1fefa985966da4958cf5c4724"
+  },
+  {
+    "recipeId": "salmon_rice",
+    "title": "Saumon riz brocoli",
+    "imageFilename": "saumon_rôti_riz_brocoli_et_citron.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/salmon_rice.jpg",
+    "sizeBytes": 144055,
+    "assetSha256": "3784fc3b9364ba9f7bb89df3ea61db96a44e2de2dab0b995d7a63a2021f29eeb"
+  },
+  {
+    "recipeId": "beef_lasagna",
+    "title": "Lasagnes bolognaise",
+    "imageFilename": "lasagnes_gratinées_aux_herbes_fraîches.png",
+    "matchType": "strong",
+    "notes": "Pas de mention bolognaise dans le nom du fichier, mais visuel de lasagnes cohérent.",
+    "assetPath": "assets/recipe-photos/beef_lasagna.jpg",
+    "sizeBytes": 136751,
+    "assetSha256": "c91a35ef04b74e1bca84120130a53af718de58cf28514c3aff7dbea057cf9c43"
+  },
+  {
+    "recipeId": "chili_con_carne",
+    "title": "Chili con carne",
+    "imageFilename": "chili_con_carne_et_riz_parfumé.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/chili_con_carne.jpg",
+    "sizeBytes": 146295,
+    "assetSha256": "6e4cd4b076693faa38558b51e5e4f0b7603eddb2287c88fc3538902d939bba2d"
+  },
+  {
+    "recipeId": "chili_sin_carne",
+    "title": "Chili sin carne",
+    "imageFilename": "chili_végétarien_gourmand_à_l_avocat.png",
+    "matchType": "strong",
+    "notes": "Correspondance sémantique : chili végétarien.",
+    "assetPath": "assets/recipe-photos/chili_sin_carne.jpg",
+    "sizeBytes": 150378,
+    "assetSha256": "c358691fde15e58b5a570261ea5c50d323f7d2fe4bf151f23e5d602b92bf3630"
+  },
+  {
+    "recipeId": "carbonara",
+    "title": "Pâtes carbonara",
+    "imageFilename": "spaghetti_carbonara_crémeux_au_parmesan.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/carbonara.jpg",
+    "sizeBytes": 133506,
+    "assetSha256": "575b981a7528d7c7844a6addbc078cd54891cafe765679e509a6f74c3785328f"
+  },
+  {
+    "recipeId": "bolognese",
+    "title": "Spaghetti bolognaise",
+    "imageFilename": "spaghetti_bolognaise_au_basilic_frais.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/bolognese.jpg",
+    "sizeBytes": 145937,
+    "assetSha256": "a004b219d7290eefaa0c85c35c037cc108c924e70bc980721d95fa46f0f4f88e"
+  },
+  {
+    "recipeId": "mushroom_risotto",
+    "title": "Risotto champignons",
+    "imageFilename": "risotto_crémeux_aux_champignons_dorés.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/mushroom_risotto.jpg",
+    "sizeBytes": 139487,
+    "assetSha256": "e60bc644afa70afe5fbe436180c375777c2e2264c1a7c0d3c9b86cc96457553a"
+  },
+  {
+    "recipeId": "red_lentil_dahl",
+    "title": "Dahl de lentilles corail",
+    "imageFilename": "dhal_crémeux_aux_herbes_fraîches.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/red_lentil_dahl.jpg",
+    "sizeBytes": 147204,
+    "assetSha256": "d6796de702d6938e50a5035e6885eda2e69b0d5759556c3ffb68c9d0f26e929b"
+  },
+  {
+    "recipeId": "chickpea_curry",
+    "title": "Curry de pois chiches",
+    "imageFilename": "curry_de_pois_chiches_au_riz_et_épinards.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/chickpea_curry.jpg",
+    "sizeBytes": 143790,
+    "assetSha256": "dbaf4a64d7f12c4eca50500a384dc9ea5b119b8df7aeee7c8b36eff65e288c67"
+  },
+  {
+    "recipeId": "beef_tacos",
+    "title": "Tacos maison",
+    "imageFilename": "délicieux_tacos_croustillants_aux_garnitures_fraîc.png",
+    "matchType": "strong",
+    "notes": "Visuel de tacos maison cohérent.",
+    "assetPath": "assets/recipe-photos/beef_tacos.jpg",
+    "sizeBytes": 142669,
+    "assetSha256": "85f331f4b39f9ed9269dae51f1cceabbfec7881a57b933e29a567beba6c36272"
+  },
+  {
+    "recipeId": "chicken_wrap",
+    "title": "Wrap poulet avocat",
+    "imageFilename": "wraps_au_poulet_et_avocat_grillés.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/chicken_wrap.jpg",
+    "sizeBytes": 128000,
+    "assetSha256": "fa2eb3ab25c7df8692fe6b0c65746054102cfeb41aa3f52e14dfe1d618a33955"
+  },
+  {
+    "recipeId": "salmon_poke",
+    "title": "Poke saumon avocat",
+    "imageFilename": "poke_bowl_au_saumon_frais_et_avocat.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/salmon_poke.jpg",
+    "sizeBytes": 131560,
+    "assetSha256": "1ff0c81805ecd409af28e8d51621ee791e15647d5167ff45b147c5fbbcf64cb1"
+  },
+  {
+    "recipeId": "lorraine_quiche",
+    "title": "Quiche lorraine",
+    "imageFilename": "quiche_lorraine_dorée_et_salade_fraîche.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/lorraine_quiche.jpg",
+    "sizeBytes": 135377,
+    "assetSha256": "9cf93eda756e843d8ebc19389a339988ff624ac7fc8572975db1d4d66604ae0c"
+  },
+  {
+    "recipeId": "dauphinois",
+    "title": "Gratin dauphinois",
+    "imageFilename": "gratin_dauphinois_doré_aux_herbes.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/dauphinois.jpg",
+    "sizeBytes": 150136,
+    "assetSha256": "e6da2226b2c1ef221f96917cf648dc51f643c4b2e25df868db6fc71d459ac8f2"
+  },
+  {
+    "recipeId": "shepherds_pie",
+    "title": "Hachis parmentier",
+    "imageFilename": "part_de_hachis_parmentier_rustique.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/shepherds_pie.jpg",
+    "sizeBytes": 108574,
+    "assetSha256": "c8341e85e27b5cc6c744ca23d274394de5717745166d4adcf71035ac16006c57"
+  },
+  {
+    "recipeId": "basque_chicken",
+    "title": "Poulet basquaise",
+    "imageFilename": "poulet_mijoté_aux_poivrons_et_riz.png",
+    "matchType": "strong",
+    "notes": "Poulet basquaise : visuel cohérent avec poivrons et riz.",
+    "assetPath": "assets/recipe-photos/basque_chicken.jpg",
+    "sizeBytes": 147182,
+    "assetSha256": "39375d594868cde0b00843c3882a823a14212ea8dd5bdec543e2051eaf27dd33"
+  },
+  {
+    "recipeId": "asian_beef",
+    "title": "Bœuf sauté asiatique",
+    "imageFilename": "bœuf_sauté_asiatique_et_riz_parfumé.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/asian_beef.jpg",
+    "sizeBytes": 142361,
+    "assetSha256": "62b90713d2fea28d7de20c9b48cedcd22bcc580d5d660e9ffae1122d3f2ce7ec"
+  },
+  {
+    "recipeId": "stir_fry_noodles",
+    "title": "Nouilles sautées poulet",
+    "imageFilename": "nouilles_sautées_au_poulet_et_légumes.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/stir_fry_noodles.jpg",
+    "sizeBytes": 157374,
+    "assetSha256": "4d22bf7fc228dd5955a5b0f2c55e79259c183f351d2bb0b8b94d10b920ea9fa5"
+  },
+  {
+    "recipeId": "couscous_chicken",
+    "title": "Couscous poulet légumes",
+    "imageFilename": "couscous_marocain_au_poulet_et_légumes.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/couscous_chicken.jpg",
+    "sizeBytes": 140160,
+    "assetSha256": "4fc3fd79a682cfa3c6dc24c1f4b30f90a1a2ff0bde543085e877bf9215f72517"
+  },
+  {
+    "recipeId": "homemade_burger",
+    "title": "Burger maison",
+    "imageFilename": "cheeseburger_gourmand_et_frites_croustillantes.png",
+    "matchType": "strong",
+    "notes": "Burger maison : le visuel montre une version cheeseburger.",
+    "assetPath": "assets/recipe-photos/homemade_burger.jpg",
+    "sizeBytes": 125518,
+    "assetSha256": "08104a862965ec9a7d49703490146d7ad7beb0f9cde4c16862ff2aa19c13cd2c"
+  },
+  {
+    "recipeId": "spanish_omelette",
+    "title": "Tortilla pommes de terre",
+    "imageFilename": "tortilla_espagnole_rustique_aux_pommes_de_terre.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/spanish_omelette.jpg",
+    "sizeBytes": 102627,
+    "assetSha256": "78874c34381fae220de5aa37770b0ddb1f0f0bbe6ac5962364bce70da76ca9d0"
+  },
+  {
+    "recipeId": "pesto_chicken_pasta",
+    "title": "Pâtes pesto poulet",
+    "imageFilename": "penne_au_pesto_poulet_et_parmesan.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/pesto_chicken_pasta.jpg",
+    "sizeBytes": 134462,
+    "assetSha256": "bdf270959786114eb37734e4ce7449be6de5b583283256041773d19739c3754d"
+  },
+  {
+    "recipeId": "baked_salmon",
+    "title": "Saumon au four légumes",
+    "imageFilename": "saumon_rôti_aux_légumes_dorés.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/baked_salmon.jpg",
+    "sizeBytes": 135915,
+    "assetSha256": "f67c17f2ad2bc8a5fcc8a17d6e25c29eb9bc50a3d0773fd2068388f4a859b3d7"
+  },
+  {
+    "recipeId": "quinoa_bowl",
+    "title": "Bowl quinoa légumes feta",
+    "imageFilename": "salade_de_quinoa_méditerranéenne_colorée.png",
+    "matchType": "strong",
+    "notes": "Quinoa, légumes et feta visibles ; correspondance cohérente.",
+    "assetPath": "assets/recipe-photos/quinoa_bowl.jpg",
+    "sizeBytes": 155042,
+    "assetSha256": "349b8f73298b28feb31ff1573ff8d9f8c0f3b53aa518faa59993d6c7829ad3a4"
+  },
+  {
+    "recipeId": "tofu_stirfry",
+    "title": "Tofu sauté riz légumes",
+    "imageFilename": "bol_de_tofu_sauté_aux_légumes_colorés.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/tofu_stirfry.jpg",
+    "sizeBytes": 150709,
+    "assetSha256": "0662eb21ad7f7cbad4574480ebb0f4219c3f70471a2149df94cc8e4892153375"
+  },
+  {
+    "recipeId": "turkey_meatballs",
+    "title": "Boulettes de dinde tomate",
+    "imageFilename": "boulettes_de_viande_à_la_sauce_tomate.png",
+    "matchType": "approx",
+    "notes": "Pas de mention dinde ; visuel de boulettes sauce tomate proche.",
+    "assetPath": "assets/recipe-photos/turkey_meatballs.jpg",
+    "sizeBytes": 125545,
+    "assetSha256": "a13ec4f616385814ef2dea87f93b98769dfeb0f442d1d7710e701c8e74c8a4df"
+  },
+  {
+    "recipeId": "cod_potatoes",
+    "title": "Cabillaud pommes de terre",
+    "imageFilename": "cabillaud_doré_pommes_rôties_et_haricots_verts.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/cod_potatoes.jpg",
+    "sizeBytes": 150698,
+    "assetSha256": "62cab660ef4441177793b505717510a33605c8ff635d2261e72bdab542dcc369"
+  },
+  {
+    "recipeId": "shrimp_rice",
+    "title": "Riz sauté crevettes",
+    "imageFilename": "riz_sauté_aux_crevettes_gourmandes.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/shrimp_rice.jpg",
+    "sizeBytes": 135973,
+    "assetSha256": "6233c7ac65bb2a736f4eb925f4536e500ed4fb8c1c81c740263ce0ed3bafa898"
+  },
+  {
+    "recipeId": "stuffed_zucchini",
+    "title": "Courgettes farcies",
+    "imageFilename": "courgettes_farcies_gratinées_aux_herbes.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/stuffed_zucchini.jpg",
+    "sizeBytes": 155426,
+    "assetSha256": "447a77d434834f7083ea03ee93c80ecc7f69711ed2fc9298b6963617ab9add95"
+  },
+  {
+    "recipeId": "pancakes",
+    "title": "Pancakes",
+    "imageFilename": "pancakes_banane_fruits_rouges_et_sirop.png",
+    "matchType": "strong",
+    "notes": "Visuel de pancakes ; garniture plus riche que le titre source.",
+    "assetPath": "assets/recipe-photos/pancakes.jpg",
+    "sizeBytes": 137710,
+    "assetSha256": "c2d7b9389840e39ae8a9eb3c185e027153661164f1bf5066b6e6826aad94aedf"
+  },
+  {
+    "recipeId": "overnight_oats",
+    "title": "Overnight oats",
+    "imageFilename": "overnight_oats_aux_fruits_rouges_et_banane.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/overnight_oats.jpg",
+    "sizeBytes": 119477,
+    "assetSha256": "7fe06c026c4ebada7301aafad84d6c957bad7679dae71d3bf7af412c33907042"
+  },
+  {
+    "recipeId": "banana_bread",
+    "title": "Banana bread",
+    "imageFilename": "pain_aux_bananes_et_noix_rustique.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/banana_bread.jpg",
+    "sizeBytes": 153643,
+    "assetSha256": "cf1517fadb7a54b4040585a9f2a2e103e38effd08f8613f36a86c5f655acb74e"
+  },
+  {
+    "recipeId": "cookies",
+    "title": "Cookies chocolat",
+    "imageFilename": "cookies_aux_pépites_de_chocolat_dorées.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/cookies.jpg",
+    "sizeBytes": 135232,
+    "assetSha256": "e72b3d68365128e590a95ef41472cd0483e36f296f54f7b4628ca28547ec24f9"
+  },
+  {
+    "recipeId": "chocolate_mousse",
+    "title": "Mousse au chocolat",
+    "imageFilename": "mousse_au_chocolat_et_framboises_gourmandes.png",
+    "matchType": "strong",
+    "notes": "Mousse chocolat avec framboises en plus.",
+    "assetPath": "assets/recipe-photos/chocolate_mousse.jpg",
+    "sizeBytes": 110407,
+    "assetSha256": "356585226b1a66c786123950b4bb144c819f0e2a08e289c5bc23c9432ec04f18"
+  },
+  {
+    "recipeId": "apple_crumble",
+    "title": "Crumble aux pommes",
+    "imageFilename": "crumble_aux_pommes_rustique_et_glace_vanille.png",
+    "matchType": "strong",
+    "notes": "Correspondance très proche ; glace vanille en extra.",
+    "assetPath": "assets/recipe-photos/apple_crumble.jpg",
+    "sizeBytes": 148781,
+    "assetSha256": "2218bd464c261dd5fb34f378f5a67a1703827c2c35a07e7ff969b1881e75d602"
+  },
+  {
+    "recipeId": "skyr_berries",
+    "title": "Skyr fruits rouges",
+    "imageFilename": "yaourt_crémeux_aux_fruits_rouges_geschniegelt.png",
+    "matchType": "strong",
+    "notes": "Visuellement parfait pour skyr fruits rouges malgré le nom \"yaourt\".",
+    "assetPath": "assets/recipe-photos/skyr_berries.jpg",
+    "sizeBytes": 124391,
+    "assetSha256": "d91c782d1cb3f4a70721f82b688b91ac094e9846af1f30083e08af22bd3c8504"
+  },
+  {
+    "recipeId": "skyr_granola",
+    "title": "Bowl skyr granola",
+    "imageFilename": "bol_gourmand_au_yaourt_et_granola_encadré_de_fruit.png",
+    "matchType": "strong",
+    "notes": "Visuellement très proche du bowl skyr granola.",
+    "assetPath": "assets/recipe-photos/skyr_granola.jpg",
+    "sizeBytes": 130679,
+    "assetSha256": "f6f703d4c21e761a35ac08a7e28a999a85c90b6ff4a72c8837baf781649e325b"
+  },
+  {
+    "recipeId": "energy_balls",
+    "title": "Energy balls cacao",
+    "imageFilename": "bouchées_énergétiques_cacao_et_noisettes.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/energy_balls.jpg",
+    "sizeBytes": 132966,
+    "assetSha256": "7f625b58e90ce60a1980fe4f1ab28db4d26f09d20a23f2f0b6869554f571ed25"
+  },
+  {
+    "recipeId": "porridge",
+    "title": "Porridge banane",
+    "imageFilename": "overnight_oats_aux_pommes_et_cannelle.png",
+    "matchType": "approx",
+    "notes": "Pas de visuel de porridge ; bowl d’avoine le plus proche, mais correspond plutôt à un overnight oats pomme-cannelle.",
+    "assetPath": "assets/recipe-photos/porridge.jpg",
+    "sizeBytes": 133102,
+    "assetSha256": "21d2ad28a2a23cb660541c92eb7af07ad2b3acdf5492fa8cc6a89724f1009af1"
+  },
+  {
+    "recipeId": "brownie",
+    "title": "Brownie chocolat",
+    "imageFilename": "brownies_fondants_aux_noix_ambiance_chaleureuse.png",
+    "matchType": "strong",
+    "notes": "Brownie chocolat avec noix.",
+    "assetPath": "assets/recipe-photos/brownie.jpg",
+    "sizeBytes": 132224,
+    "assetSha256": "174b32fcc8810605746ab78fb83f349f734b2d26b0f7a77702b31581ad795472"
+  },
+  {
+    "recipeId": "apple_compote",
+    "title": "Compote pomme cannelle",
+    "imageFilename": "compote_de_pommes_à_la_cannelle.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/apple_compote.jpg",
+    "sizeBytes": 111345,
+    "assetSha256": "a9606118a85caa057450374df665ee96baac68b2ff94c8be978eb975854c4bb0"
+  },
+  {
+    "recipeId": "chia_pudding",
+    "title": "Pudding de chia",
+    "imageFilename": "parfait_de_chia_aux_fruits_frais.png",
+    "matchType": "strong",
+    "notes": "Correspondance sémantique proche.",
+    "assetPath": "assets/recipe-photos/chia_pudding.jpg",
+    "sizeBytes": 101868,
+    "assetSha256": "78bd42ed282cab262f9a2f570635f4cd56e519499638955422b55a5b5679306f"
+  },
+  {
+    "recipeId": "protein_pancakes",
+    "title": "Pancakes skyr banane",
+    "imageFilename": "pancakes_banane_fruits_rouges_et_sirop.png",
+    "matchType": "approx",
+    "notes": "Aucun visuel distinct de pancakes protéinés/skyr dans le ZIP ; réutilisation du visuel pancakes.",
+    "assetPath": "assets/recipe-photos/pancakes.jpg",
+    "sizeBytes": 137710,
+    "assetSha256": "c2d7b9389840e39ae8a9eb3c185e027153661164f1bf5066b6e6826aad94aedf"
+  },
+  {
+    "recipeId": "pear_chocolate",
+    "title": "Poire chocolat amandes",
+    "imageFilename": "poire_pochée_au_chocolat_et_amandes.png",
+    "matchType": "exact",
+    "notes": "Correspondance directe.",
+    "assetPath": "assets/recipe-photos/pear_chocolate.jpg",
+    "sizeBytes": 110085,
+    "assetSha256": "c9dde91232c0ec9b6378235602191f5f998528eb025d31a094d8e996022ba08e"
+  }
+]

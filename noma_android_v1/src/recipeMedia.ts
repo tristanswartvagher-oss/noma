@@ -1,21 +1,71 @@
 /**
- * Photos contrôlées individuellement par ID recette.
+ * Images de recettes embarquées (pas de téléchargement réseau).
  *
- * Ne JAMAIS déduire une photographie depuis les mots-clés du titre.
- * Un plat sans photographie validée est rendu sous forme d'illustration locale.
- *
- * Chaque visuel référencé ici correspond à un plat identifiable et à une photo
- * annoncée comme gratuite sous licence Unsplash au 09/10/2026.
- * La représentation photographique n'est pas une garantie de portions / macros.
- *
- * ATTENTION : contrôler la fiabilité du téléchargement et les droits tiers
- * avant publication commerciale (voir docs/RECIPE_MEDIA_RIGHTS.md).
+ * Correspondance fixe par ID recette ; un plat personnalisé sans photo utilise
+ * l'illustration NOMA. Les 5 appariements approximatifs restent documentés dans
+ * docs/recipe-images-manifest.json : une photo n'atteste pas les ingrédients.
  */
-export const recipePhotoMap:Record<string,string>={
-  porridge:'https://images.unsplash.com/photo-1715098841757-0e9690ec12d6?auto=format&fit=crop&w=960&q=80',
-  greek_salad:'https://images.unsplash.com/photo-1778449532114-430396ada55b?auto=format&fit=crop&w=960&q=80',
-  hummus:'https://images.unsplash.com/photo-1783696074463-3fb850d181a1?auto=format&fit=crop&w=960&q=80',
-  pancakes:'https://images.unsplash.com/photo-1568240464340-261c0f65a455?auto=format&fit=crop&w=960&q=80',
-  protein_pancakes:'https://images.unsplash.com/photo-1575853121613-72ce1dd6979d?auto=format&fit=crop&w=960&q=80',
-  bolognese:'https://images.unsplash.com/photo-1761545832779-bc0b4290fc5e?auto=format&fit=crop&w=960&q=80'
+import type {ImageSourcePropType} from 'react-native';
+
+export const recipePhotoMap:Record<string,ImageSourcePropType> = {
+  greek_salad: require('../assets/recipe-photos/greek_salad.jpg'),
+  tomato_mozza: require('../assets/recipe-photos/tomato_mozza.jpg'),
+  hummus: require('../assets/recipe-photos/hummus.jpg'),
+  lentil_salad: require('../assets/recipe-photos/lentil_salad.jpg'),
+  tuna_avocado: require('../assets/recipe-photos/tuna_avocado.jpg'),
+  egg_mimosa: require('../assets/recipe-photos/egg_mimosa.jpg'),
+  zucchini_soup: require('../assets/recipe-photos/zucchini_soup.jpg'),
+  bruschetta: require('../assets/recipe-photos/bruschetta.jpg'),
+  tabbouleh: require('../assets/recipe-photos/tabbouleh.jpg'),
+  carrot_salad: require('../assets/recipe-photos/carrot_salad.jpg'),
+  cucumber_yogurt: require('../assets/recipe-photos/cucumber_yogurt.jpg'),
+  broccoli_salad: require('../assets/recipe-photos/broccoli_salad.jpg'),
+  salmon_toast: require('../assets/recipe-photos/salmon_toast.jpg'),
+  stuffed_mushrooms: require('../assets/recipe-photos/stuffed_mushrooms.jpg'),
+  cauliflower_soup: require('../assets/recipe-photos/cauliflower_soup.jpg'),
+  chicken_curry: require('../assets/recipe-photos/chicken_curry.jpg'),
+  salmon_rice: require('../assets/recipe-photos/salmon_rice.jpg'),
+  beef_lasagna: require('../assets/recipe-photos/beef_lasagna.jpg'),
+  chili_con_carne: require('../assets/recipe-photos/chili_con_carne.jpg'),
+  chili_sin_carne: require('../assets/recipe-photos/chili_sin_carne.jpg'),
+  carbonara: require('../assets/recipe-photos/carbonara.jpg'),
+  bolognese: require('../assets/recipe-photos/bolognese.jpg'),
+  mushroom_risotto: require('../assets/recipe-photos/mushroom_risotto.jpg'),
+  red_lentil_dahl: require('../assets/recipe-photos/red_lentil_dahl.jpg'),
+  chickpea_curry: require('../assets/recipe-photos/chickpea_curry.jpg'),
+  beef_tacos: require('../assets/recipe-photos/beef_tacos.jpg'),
+  chicken_wrap: require('../assets/recipe-photos/chicken_wrap.jpg'),
+  salmon_poke: require('../assets/recipe-photos/salmon_poke.jpg'),
+  lorraine_quiche: require('../assets/recipe-photos/lorraine_quiche.jpg'),
+  dauphinois: require('../assets/recipe-photos/dauphinois.jpg'),
+  shepherds_pie: require('../assets/recipe-photos/shepherds_pie.jpg'),
+  basque_chicken: require('../assets/recipe-photos/basque_chicken.jpg'),
+  asian_beef: require('../assets/recipe-photos/asian_beef.jpg'),
+  stir_fry_noodles: require('../assets/recipe-photos/stir_fry_noodles.jpg'),
+  couscous_chicken: require('../assets/recipe-photos/couscous_chicken.jpg'),
+  homemade_burger: require('../assets/recipe-photos/homemade_burger.jpg'),
+  spanish_omelette: require('../assets/recipe-photos/spanish_omelette.jpg'),
+  pesto_chicken_pasta: require('../assets/recipe-photos/pesto_chicken_pasta.jpg'),
+  baked_salmon: require('../assets/recipe-photos/baked_salmon.jpg'),
+  quinoa_bowl: require('../assets/recipe-photos/quinoa_bowl.jpg'),
+  tofu_stirfry: require('../assets/recipe-photos/tofu_stirfry.jpg'),
+  turkey_meatballs: require('../assets/recipe-photos/turkey_meatballs.jpg'),
+  cod_potatoes: require('../assets/recipe-photos/cod_potatoes.jpg'),
+  shrimp_rice: require('../assets/recipe-photos/shrimp_rice.jpg'),
+  stuffed_zucchini: require('../assets/recipe-photos/stuffed_zucchini.jpg'),
+  pancakes: require('../assets/recipe-photos/pancakes.jpg'),
+  overnight_oats: require('../assets/recipe-photos/overnight_oats.jpg'),
+  banana_bread: require('../assets/recipe-photos/banana_bread.jpg'),
+  cookies: require('../assets/recipe-photos/cookies.jpg'),
+  chocolate_mousse: require('../assets/recipe-photos/chocolate_mousse.jpg'),
+  apple_crumble: require('../assets/recipe-photos/apple_crumble.jpg'),
+  skyr_berries: require('../assets/recipe-photos/skyr_berries.jpg'),
+  skyr_granola: require('../assets/recipe-photos/skyr_granola.jpg'),
+  energy_balls: require('../assets/recipe-photos/energy_balls.jpg'),
+  porridge: require('../assets/recipe-photos/porridge.jpg'),
+  brownie: require('../assets/recipe-photos/brownie.jpg'),
+  apple_compote: require('../assets/recipe-photos/apple_compote.jpg'),
+  chia_pudding: require('../assets/recipe-photos/chia_pudding.jpg'),
+  protein_pancakes: require('../assets/recipe-photos/pancakes.jpg'),
+  pear_chocolate: require('../assets/recipe-photos/pear_chocolate.jpg'),
 };

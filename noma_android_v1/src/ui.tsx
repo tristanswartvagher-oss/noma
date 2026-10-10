@@ -26,16 +26,16 @@ function platePalette(key:string){
 
 export function RecipeArtwork({title,emoji,recipeId,size=72,style}:ArtworkProps){
   const [failed,setFailed]=useState(false);
-  const uri=recipeId?recipePhotoMap[recipeId]:undefined;
-  useEffect(()=>setFailed(false),[uri]);
+  const photo=recipeId?recipePhotoMap[recipeId]:undefined;
+  useEffect(()=>setFailed(false),[photo]);
   const pal=platePalette(recipeId||title);
-  const canShow=Boolean(uri&&!failed);
+  const canShow=photo!==undefined&&!failed;
   return <View style={[{
     width:size,height:size,borderRadius:Math.min(28,size*.23),
     backgroundColor:pal.bg,overflow:'hidden',alignItems:'center',justifyContent:'center'
   },style]}>
     {canShow?
-      <Image accessibilityLabel={'Photo du plat '+title} source={{uri}} style={{width:'100%',height:'100%'}} resizeMode="cover" onError={()=>setFailed(true)}/>:
+      <Image accessibilityLabel={'Photo du plat '+title} source={photo!} style={{width:'100%',height:'100%'}} resizeMode="cover" onError={()=>setFailed(true)}/>:
       <View accessible accessibilityLabel={'Illustration : '+title} style={{width:'100%',height:'100%',alignItems:'center',justifyContent:'center'}}>
         <View style={{position:'absolute',width:size*.9,height:size*.9,borderRadius:size*.45,borderWidth:size*.026,borderColor:pal.edge,backgroundColor:pal.plate,top:size*.055,alignSelf:'center'}}/>
         <View style={{position:'absolute',width:size*.74,height:size*.74,borderRadius:size*.38,borderWidth:size*.012,borderColor:pal.edge,top:size*.13,alignSelf:'center'}}/>
